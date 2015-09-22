@@ -1,0 +1,13 @@
+
+Intro:
+ ☐ Update JS so it's only being called if intro is present
+
+ Blue Header:
+
+
+ Featured Article:
+
+
+ Styles:
+   ☐ Make JSON variables which can be accessed by SCSS and JS
+   ☐ Organize JS so it's able to be component driven, and only called if the component is on the screen

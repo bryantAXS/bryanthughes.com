@@ -1,0 +1,104 @@
+[featured-article]{
+
+  height: 890px;
+  position:relative;
+
+  //
+  // Base Styles
+  //
+  .content{
+    position:relative;
+    z-index:2;
+  }
+
+  h1{
+    position:relative;
+    text-transform: uppercase;
+    @include font("DecimaMono", 56px, 400);
+    @include transition(all 500ms $easing);
+
+    &::after{
+      background-color: $blue;
+      content: "";
+      height:45px;
+      left:-17px;
+      position:absolute;
+      bottom:-73px;
+      width:45px;
+      z-index:3;
+      @include border-radius(50%);
+    }
+  }
+
+  .intro-big{
+    position:relative;
+    z-index:4;
+    @include font("Erato", 22.6px, 400, 36px);
+    @include transition(all 500ms 200ms $easing);
+  }
+
+  .intro-small{
+    @include font("Erato", 18px, 400, 32px);
+    @include transition(all 500ms 400ms $easing);
+  }
+
+  h1, .intro-big, .intro-small{
+    @include opacity(0);
+    @include transform(translateX(20px));
+  }
+
+  //
+  // Grey rotated background
+  //
+
+  &::before{
+    background-color: $grey;
+    content: "";
+    height:100%;
+    left:-15%;
+    position:absolute;
+    top:-200px;
+    width:130%;
+    z-index:1;
+    @include transform(rotate(7deg) translateY(100%));
+  }
+
+}
+
+//
+// Animations
+//
+
+// animating gey background
+
+[featured-article].animated-in{
+  &::before{
+    @include animation(featured-article-animate-in 800ms $easing);
+    @include animation-fill-mode(forwards);
+  }
+}
+
+@keyframes featured-article-animate-in{
+  100%{
+    @include transform(rotate(-15deg) translateY(0));
+  }
+}
+
+[featured-article] .content.animated-in{
+
+  h1{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+  .intro-big{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+  .intro-small{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+}

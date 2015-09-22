@@ -1,0 +1,7 @@
+/* line 1, ../sass/ie.scss */
+.navigation.sticky {
+  top: -142px; }
+
+/* line 5, ../sass/ie.scss */
+.navigation.sticky.is-activated {
+  top: 0; }

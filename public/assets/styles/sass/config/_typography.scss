@@ -1,0 +1,18 @@
+$font-size: 16px;
+$line-height-body: 1.45em;
+$line-height-header: 1.25em;
+$type-scale-ratio: 1.25;
+$em-ratio: $font-size / 1em;
+
+@include font-face("Ripley", "atc-ripley/ACTRipley-Regular", 400);
+
+@include font-face("DecimaMono", "decima-nova/DecimaMono-Light", 200);
+@include font-face("DecimaMono", "decima-nova/DecimaMono", 400);
+@include font-face("DecimaMonoItalic", "decima-nova/DecimaMono-Italic", 400);
+@include font-face("DecimaMono", "decima-nova/DecimaMono-Bold", 600);
+
+@include font-face("Erato", "erato/Erato-Light", 200);
+@include font-face("EratoItalic", "erato/Erato-LightItalic", 200);
+@include font-face("Erato", "erato/Erato-Regular", 400);
+@include font-face("Erato", "erato/Erato-Bold", 600);
+

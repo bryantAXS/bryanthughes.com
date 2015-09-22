@@ -1,0 +1,102 @@
+@mixin link-with-border($color){
+
+  position:relative;
+
+  &:after{
+    border-bottom: 1px $color dotted;
+    bottom: 1px;
+    content: "";
+    left:0;
+    position:absolute;
+    width:100%;
+    @include opacity(0);
+    @include transition(all 150ms ease-in-out);
+  }
+
+  &:hover{
+    color: $color;
+
+    &:after{
+      bottom: -5px;
+      @include opacity(1);
+    }
+
+  }
+
+}
+
+$i: 0;
+@while $i < 100 {
+
+  .pt#{$i} {
+    padding-top: $i * 1px;
+  }
+  .pb#{$i} {
+    padding-bottom: $i * 1px;
+  }
+  .pl#{$i} {
+    padding-left: $i * 1px;
+  }
+  .pr#{$i} {
+    padding-right: $i * 1px;
+  }
+  .mt#{$i} {
+    margin-top: $i * 1px;
+  }
+  .mb#{$i} {
+    margin-bottom: $i * 1px;
+  }
+  .ml#{$i} {
+    margin-left: $i * 1px;
+  }
+  .mr#{$i} {
+    margin-right: $i * 1px;
+  }
+
+  $i: $i + 5;
+}
+
+// keyframe animation mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// animation mixin
+@mixin animation($animation-content) {
+  -webkit-animation: $animation-content;
+     -moz-animation: $animation-content;
+       -o-animation: $animation-content;
+          animation: $animation-content;
+}
+
+.prevent-select {
+  // prevent text select
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  * {
+    // prevent text select in all children
+    // use on lowest needed
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

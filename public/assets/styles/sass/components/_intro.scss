@@ -1,0 +1,104 @@
+[intro]{
+
+  height:100%;
+
+  @include flexbox((
+    display: flex,
+    flex-direction: row,
+    justify-content: center,
+    align-items: center
+  ));
+
+}
+
+[intro] .gradient-container{
+
+  height:100%;
+  width:100%;
+  @include transition(height 500ms $easing, width 500ms $easing);
+  @include background-image($blue-gradient);
+
+}
+
+[intro].show-border .gradient-container{
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
+[intro].is-hidden{
+  display:none;
+}
+
+[intro] svg{
+
+  height: 43px;
+  left:50%;
+  margin: -21.5px 0 0 -311.5px;
+  position: absolute;
+  top:50%;
+  width: 623px;
+
+  [letter] {
+    fill: transparent;
+    stroke: $white;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+// individual letter lengths
+$lengths: 104.7193832397461,142.44610595703125,129.3754425048828,123.20748901367188,150.05165100097656,118.17904663085938,115.72023010253906,123.0123062133789,137.65687561035156,174.01275634765625,123.20712280273438,120.9314193725586,151.69227600097656,151.69398498535156,123.01367950439453,129.48268127441406,118.17913055419922,165.5325927734375,150.17178344726562;
+
+// unique animation properties for each letter
+@each $length in $lengths {
+
+  $index: index($lengths, $length);
+  $halfLength: $length / 2;
+  $delay: 0ms + ($index * 150);
+
+  [intro] svg [letter='#{$index}'] {
+    stroke-dasharray: 0 $length 0 $length;
+  }
+
+  [intro].animate-in svg [letter='#{$index}']{
+    @include animation(animate-in 1000ms $delay linear);
+    @include animation-fill-mode(forwards);
+  }
+
+  [intro].animated-in svg [letter='#{$index}'] {
+    stroke-dasharray: $halfLength 0 $halfLength 0;
+    stroke-dashoffset: $length;
+    fill:$white;
+  }
+
+  [intro].animated-in.animate-out svg [letter='#{$index}']{
+    @include animation(animate-out 750ms $delay linear);
+    @include animation-fill-mode(forwards);
+  }
+
+  // Animations
+  @keyframes animate-in {
+    50%{
+      fill:transparent;
+    }
+    100% {
+      stroke-dasharray: $halfLength 0 $halfLength 0;
+      stroke-dashoffset: $length;
+      fill:$white;
+    }
+  }
+
+  @keyframes animate-out {
+    50%{
+      fill:transparent;
+    }
+    100% {
+      fill:transparent;
+      stroke-dasharray: 0 $length 0 $length;
+      stroke-dashoffset: 0;
+    }
+  }
+
+}
