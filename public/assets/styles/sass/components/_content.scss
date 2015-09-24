@@ -3,23 +3,10 @@
 }
 
 [content].is-shown{
-
-  height:100%;
-
-  @include flexbox((
-    display: flex,
-    flex-direction: row,
-    justify-content: center,
-    align-items: center
-  ));
-
+  display:block;
 }
 
 [content] .gradient-container{
-
-  height: calc(100% - 40px);
   overflow:hidden;
-  width: calc(100% - 40px);
   @include background-image($blue-gradient);
-
 }

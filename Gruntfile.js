@@ -65,7 +65,8 @@ module.exports = function(grunt) {
           imagesDir: 'public/assets/images',
           javascriptsDir: 'public/assets/scripts',
           outputStyle: "nested",
-          environment: "development"
+          environment: "development",
+          require: "sass-json-vars"
         }
       }
     },
@@ -110,8 +111,15 @@ module.exports = function(grunt) {
         }
       },
       scripts: {
-        files: ['public/assets/scripts/**/*.js',  'node_modules/underscore/underscore.js', '!public/assets/scripts/built/*'],
-        tasks: ['browserify'],
+        files: ['public/assets/scripts/**/*.js',  'node_modules/underscore/underscore.js', 'public/assets/scripts/built/variables.js','!public/assets/scripts/built/*'],
+        tasks: ['json:main','browserify'],
+        options: {
+          livereload: true
+        }
+      },
+      json: {
+        files: ['public/assets/styles/sass/_variables.json'],
+        tasks: ['json:main','browserify', 'compass'],
         options: {
           livereload: true
         }
@@ -124,7 +132,6 @@ module.exports = function(grunt) {
       }
     },
 
-
     bless: {
       css: {
         options: {
@@ -134,6 +141,18 @@ module.exports = function(grunt) {
           'public/assets/styles/css/app-blessed.css': 'public/assets/styles/css/app.css',
           'public/assets/styles/css/app-blessed.min.css': 'public/assets/styles/css/app.min.css',
         }
+      }
+    },
+
+    json: {
+      main: {
+          options: {
+              namespace: 'settings',
+              includePath: false,
+              commonjs: true
+          },
+          src: ['public/assets/styles/sass/_variables.json'],
+          dest: 'public/assets/scripts/built/variables.js'
       }
     }
 
@@ -153,10 +172,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-bless');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-json');
 
   grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
   grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["compass", "browserify", "uglify", 'cssmin', 'bless']);
+  grunt.registerTask("compile", ["compass", "json:main", "browserify", "uglify", 'cssmin', 'bless']);
 
   // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
   // grunt.registerTask("get-content", ["rsync:production"]);

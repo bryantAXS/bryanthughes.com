@@ -11,11 +11,15 @@
     z-index:2;
   }
 
+  .title{
+    @include transition(all 500ms $easing);
+  }
+
   h1{
     position:relative;
     text-transform: uppercase;
     @include font("DecimaMono", 56px, 400);
-    @include transition(all 500ms $easing);
+    @include transition(all 500ms 200ms $easing);
 
     &::after{
       background-color: $blue;
@@ -34,7 +38,7 @@
     position:relative;
     z-index:4;
     @include font("Erato", 22.6px, 400, 36px);
-    @include transition(all 500ms 200ms $easing);
+    @include transition(all 500ms 400ms $easing);
   }
 
   .intro-small{
@@ -42,7 +46,7 @@
     @include transition(all 500ms 400ms $easing);
   }
 
-  h1, .intro-big, .intro-small{
+  .title, h1, .intro-big, .intro-small{
     @include opacity(0);
     @include transform(translateX(20px));
   }
@@ -85,6 +89,11 @@
 }
 
 [featured-article] .content.animated-in{
+
+  .title{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
 
   h1{
     @include opacity(1);

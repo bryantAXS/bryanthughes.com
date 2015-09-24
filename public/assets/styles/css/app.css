@@ -9030,63 +9030,59 @@ body {
 .clickable {
   cursor: pointer; }
 
-/* line 1, ../sass/components/_intro.scss */
+/* line 1, ../sass/elements/_titles.scss */
+.title {
+  display: inline-block;
+  font-family: "DecimaMono";
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 25px; }
+  /* line 6, ../sass/elements/_titles.scss */
+  .title span {
+    border: 2px solid #282828;
+    color: #282828;
+    display: block;
+    height: 29px;
+    padding-top: 2px; }
+  /* line 14, ../sass/elements/_titles.scss */
+  .title span + span {
+    margin-top: 4px; }
+
+/* line 8, ../sass/components/_intro.scss */
 [intro] {
-  height: 100%;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  height: 100%; }
+  /* line 12, ../sass/components/_intro.scss */
+  [intro] .gradient-container {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZmVmZiIvPjxzdG9wIG9mZnNldD0iOTElIiBzdG9wLWNvbG9yPSIjYjdlZmYxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ebfeff), color-stop(91%, #b7eff1));
+    background-image: -moz-linear-gradient(left, #ebfeff 0%, #b7eff1 91%);
+    background-image: -webkit-linear-gradient(left, #ebfeff 0%, #b7eff1 91%);
+    background-image: linear-gradient(to right, #ebfeff 0%, #b7eff1 91%); }
+  /* line 16, ../sass/components/_intro.scss */
+  [intro].is-hidden {
+    display: none; }
+  /* line 20, ../sass/components/_intro.scss */
+  [intro] svg {
+    height: 43px;
+    left: 50%;
+    margin: -21.5px 0 0 -311.5px;
+    position: absolute;
+    top: 50%;
+    width: 623px; }
+    /* line 28, ../sass/components/_intro.scss */
+    [intro] svg [letter] {
+      fill: transparent;
+      stroke: #fff;
+      stroke-width: 1;
+      stroke-linejoin: round;
+      stroke-dashoffset: 0; }
 
-/* line 14, ../sass/components/_intro.scss */
-[intro] .gradient-container {
-  height: 100%;
-  width: 100%;
-  -moz-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZmVmZiIvPjxzdG9wIG9mZnNldD0iOTElIiBzdG9wLWNvbG9yPSIjYjdlZmYxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ebfeff), color-stop(91%, #b7eff1));
-  background-image: -moz-linear-gradient(left, #ebfeff 0%, #b7eff1 91%);
-  background-image: -webkit-linear-gradient(left, #ebfeff 0%, #b7eff1 91%);
-  background-image: linear-gradient(to right, #ebfeff 0%, #b7eff1 91%); }
-
-/* line 23, ../sass/components/_intro.scss */
-[intro].show-border .gradient-container {
-  height: calc(100% - 40px);
-  width: calc(100% - 40px); }
-
-/* line 28, ../sass/components/_intro.scss */
-[intro].is-hidden {
-  display: none; }
-
-/* line 32, ../sass/components/_intro.scss */
-[intro] svg {
-  height: 43px;
-  left: 50%;
-  margin: -21.5px 0 0 -311.5px;
-  position: absolute;
-  top: 50%;
-  width: 623px; }
-  /* line 41, ../sass/components/_intro.scss */
-  [intro] svg [letter] {
-    fill: transparent;
-    stroke: #fff;
-    stroke-width: 1;
-    stroke-linejoin: round;
-    stroke-dashoffset: 0; }
-
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='1'] {
   stroke-dasharray: 0 104.71938 0 104.71938; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='1'] {
   -webkit-animation: animate-in 1000ms 150ms linear;
   -moz-animation: animate-in 1000ms 150ms linear;
@@ -9096,13 +9092,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='1'] {
   stroke-dasharray: 52.35969 0 52.35969 0;
   stroke-dashoffset: 104.71938;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='1'] {
   -webkit-animation: animate-out 750ms 150ms linear;
   -moz-animation: animate-out 750ms 150ms linear;
@@ -9126,11 +9122,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 104.71938 0 104.71938;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='2'] {
   stroke-dasharray: 0 142.44611 0 142.44611; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='2'] {
   -webkit-animation: animate-in 1000ms 300ms linear;
   -moz-animation: animate-in 1000ms 300ms linear;
@@ -9140,13 +9136,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='2'] {
   stroke-dasharray: 71.22305 0 71.22305 0;
   stroke-dashoffset: 142.44611;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='2'] {
   -webkit-animation: animate-out 750ms 300ms linear;
   -moz-animation: animate-out 750ms 300ms linear;
@@ -9170,11 +9166,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 142.44611 0 142.44611;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='3'] {
   stroke-dasharray: 0 129.37544 0 129.37544; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='3'] {
   -webkit-animation: animate-in 1000ms 450ms linear;
   -moz-animation: animate-in 1000ms 450ms linear;
@@ -9184,13 +9180,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='3'] {
   stroke-dasharray: 64.68772 0 64.68772 0;
   stroke-dashoffset: 129.37544;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='3'] {
   -webkit-animation: animate-out 750ms 450ms linear;
   -moz-animation: animate-out 750ms 450ms linear;
@@ -9214,11 +9210,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 129.37544 0 129.37544;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='4'] {
   stroke-dasharray: 0 123.20749 0 123.20749; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='4'] {
   -webkit-animation: animate-in 1000ms 600ms linear;
   -moz-animation: animate-in 1000ms 600ms linear;
@@ -9228,13 +9224,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='4'] {
   stroke-dasharray: 61.60374 0 61.60374 0;
   stroke-dashoffset: 123.20749;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='4'] {
   -webkit-animation: animate-out 750ms 600ms linear;
   -moz-animation: animate-out 750ms 600ms linear;
@@ -9258,11 +9254,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 123.20749 0 123.20749;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='5'] {
   stroke-dasharray: 0 150.05165 0 150.05165; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='5'] {
   -webkit-animation: animate-in 1000ms 750ms linear;
   -moz-animation: animate-in 1000ms 750ms linear;
@@ -9272,13 +9268,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='5'] {
   stroke-dasharray: 75.02583 0 75.02583 0;
   stroke-dashoffset: 150.05165;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='5'] {
   -webkit-animation: animate-out 750ms 750ms linear;
   -moz-animation: animate-out 750ms 750ms linear;
@@ -9302,11 +9298,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 150.05165 0 150.05165;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='6'] {
   stroke-dasharray: 0 118.17905 0 118.17905; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='6'] {
   -webkit-animation: animate-in 1000ms 900ms linear;
   -moz-animation: animate-in 1000ms 900ms linear;
@@ -9316,13 +9312,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='6'] {
   stroke-dasharray: 59.08952 0 59.08952 0;
   stroke-dashoffset: 118.17905;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='6'] {
   -webkit-animation: animate-out 750ms 900ms linear;
   -moz-animation: animate-out 750ms 900ms linear;
@@ -9346,11 +9342,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 118.17905 0 118.17905;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='7'] {
   stroke-dasharray: 0 115.72023 0 115.72023; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='7'] {
   -webkit-animation: animate-in 1000ms 1050ms linear;
   -moz-animation: animate-in 1000ms 1050ms linear;
@@ -9360,13 +9356,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='7'] {
   stroke-dasharray: 57.86012 0 57.86012 0;
   stroke-dashoffset: 115.72023;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='7'] {
   -webkit-animation: animate-out 750ms 1050ms linear;
   -moz-animation: animate-out 750ms 1050ms linear;
@@ -9390,11 +9386,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 115.72023 0 115.72023;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='8'] {
   stroke-dasharray: 0 123.01231 0 123.01231; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='8'] {
   -webkit-animation: animate-in 1000ms 1200ms linear;
   -moz-animation: animate-in 1000ms 1200ms linear;
@@ -9404,13 +9400,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='8'] {
   stroke-dasharray: 61.50615 0 61.50615 0;
   stroke-dashoffset: 123.01231;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='8'] {
   -webkit-animation: animate-out 750ms 1200ms linear;
   -moz-animation: animate-out 750ms 1200ms linear;
@@ -9434,11 +9430,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 123.01231 0 123.01231;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='9'] {
   stroke-dasharray: 0 137.65688 0 137.65688; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='9'] {
   -webkit-animation: animate-in 1000ms 1350ms linear;
   -moz-animation: animate-in 1000ms 1350ms linear;
@@ -9448,13 +9444,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='9'] {
   stroke-dasharray: 68.82844 0 68.82844 0;
   stroke-dashoffset: 137.65688;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='9'] {
   -webkit-animation: animate-out 750ms 1350ms linear;
   -moz-animation: animate-out 750ms 1350ms linear;
@@ -9478,11 +9474,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 137.65688 0 137.65688;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='10'] {
   stroke-dasharray: 0 174.01276 0 174.01276; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='10'] {
   -webkit-animation: animate-in 1000ms 1500ms linear;
   -moz-animation: animate-in 1000ms 1500ms linear;
@@ -9492,13 +9488,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='10'] {
   stroke-dasharray: 87.00638 0 87.00638 0;
   stroke-dashoffset: 174.01276;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='10'] {
   -webkit-animation: animate-out 750ms 1500ms linear;
   -moz-animation: animate-out 750ms 1500ms linear;
@@ -9522,11 +9518,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 174.01276 0 174.01276;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='11'] {
   stroke-dasharray: 0 123.20712 0 123.20712; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='11'] {
   -webkit-animation: animate-in 1000ms 1650ms linear;
   -moz-animation: animate-in 1000ms 1650ms linear;
@@ -9536,13 +9532,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='11'] {
   stroke-dasharray: 61.60356 0 61.60356 0;
   stroke-dashoffset: 123.20712;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='11'] {
   -webkit-animation: animate-out 750ms 1650ms linear;
   -moz-animation: animate-out 750ms 1650ms linear;
@@ -9566,11 +9562,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 123.20712 0 123.20712;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='12'] {
   stroke-dasharray: 0 120.93142 0 120.93142; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='12'] {
   -webkit-animation: animate-in 1000ms 1800ms linear;
   -moz-animation: animate-in 1000ms 1800ms linear;
@@ -9580,13 +9576,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='12'] {
   stroke-dasharray: 60.46571 0 60.46571 0;
   stroke-dashoffset: 120.93142;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='12'] {
   -webkit-animation: animate-out 750ms 1800ms linear;
   -moz-animation: animate-out 750ms 1800ms linear;
@@ -9610,11 +9606,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 120.93142 0 120.93142;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='13'] {
   stroke-dasharray: 0 151.69228 0 151.69228; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='13'] {
   -webkit-animation: animate-in 1000ms 1950ms linear;
   -moz-animation: animate-in 1000ms 1950ms linear;
@@ -9624,13 +9620,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='13'] {
   stroke-dasharray: 75.84614 0 75.84614 0;
   stroke-dashoffset: 151.69228;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='13'] {
   -webkit-animation: animate-out 750ms 1950ms linear;
   -moz-animation: animate-out 750ms 1950ms linear;
@@ -9654,11 +9650,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 151.69228 0 151.69228;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='14'] {
   stroke-dasharray: 0 151.69398 0 151.69398; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='14'] {
   -webkit-animation: animate-in 1000ms 2100ms linear;
   -moz-animation: animate-in 1000ms 2100ms linear;
@@ -9668,13 +9664,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='14'] {
   stroke-dasharray: 75.84699 0 75.84699 0;
   stroke-dashoffset: 151.69398;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='14'] {
   -webkit-animation: animate-out 750ms 2100ms linear;
   -moz-animation: animate-out 750ms 2100ms linear;
@@ -9698,11 +9694,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 151.69398 0 151.69398;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='15'] {
   stroke-dasharray: 0 123.01368 0 123.01368; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='15'] {
   -webkit-animation: animate-in 1000ms 2250ms linear;
   -moz-animation: animate-in 1000ms 2250ms linear;
@@ -9712,13 +9708,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='15'] {
   stroke-dasharray: 61.50684 0 61.50684 0;
   stroke-dashoffset: 123.01368;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='15'] {
   -webkit-animation: animate-out 750ms 2250ms linear;
   -moz-animation: animate-out 750ms 2250ms linear;
@@ -9742,11 +9738,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 123.01368 0 123.01368;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='16'] {
   stroke-dasharray: 0 129.48268 0 129.48268; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='16'] {
   -webkit-animation: animate-in 1000ms 2400ms linear;
   -moz-animation: animate-in 1000ms 2400ms linear;
@@ -9756,13 +9752,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='16'] {
   stroke-dasharray: 64.74134 0 64.74134 0;
   stroke-dashoffset: 129.48268;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='16'] {
   -webkit-animation: animate-out 750ms 2400ms linear;
   -moz-animation: animate-out 750ms 2400ms linear;
@@ -9786,11 +9782,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 129.48268 0 129.48268;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='17'] {
   stroke-dasharray: 0 118.17913 0 118.17913; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='17'] {
   -webkit-animation: animate-in 1000ms 2550ms linear;
   -moz-animation: animate-in 1000ms 2550ms linear;
@@ -9800,13 +9796,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='17'] {
   stroke-dasharray: 59.08957 0 59.08957 0;
   stroke-dashoffset: 118.17913;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='17'] {
   -webkit-animation: animate-out 750ms 2550ms linear;
   -moz-animation: animate-out 750ms 2550ms linear;
@@ -9830,11 +9826,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 118.17913 0 118.17913;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='18'] {
   stroke-dasharray: 0 165.53259 0 165.53259; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='18'] {
   -webkit-animation: animate-in 1000ms 2700ms linear;
   -moz-animation: animate-in 1000ms 2700ms linear;
@@ -9844,13 +9840,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='18'] {
   stroke-dasharray: 82.7663 0 82.7663 0;
   stroke-dashoffset: 165.53259;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='18'] {
   -webkit-animation: animate-out 750ms 2700ms linear;
   -moz-animation: animate-out 750ms 2700ms linear;
@@ -9874,11 +9870,11 @@ body {
     fill: transparent;
     stroke-dasharray: 0 165.53259 0 165.53259;
     stroke-dashoffset: 0; } }
-/* line 61, ../sass/components/_intro.scss */
+/* line 49, ../sass/components/_intro.scss */
 [intro] svg [letter='19'] {
   stroke-dasharray: 0 150.17178 0 150.17178; }
 
-/* line 65, ../sass/components/_intro.scss */
+/* line 53, ../sass/components/_intro.scss */
 [intro].animate-in svg [letter='19'] {
   -webkit-animation: animate-in 1000ms 2850ms linear;
   -moz-animation: animate-in 1000ms 2850ms linear;
@@ -9888,13 +9884,13 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 70, ../sass/components/_intro.scss */
+/* line 58, ../sass/components/_intro.scss */
 [intro].animated-in svg [letter='19'] {
   stroke-dasharray: 75.08589 0 75.08589 0;
   stroke-dashoffset: 150.17178;
   fill: #fff; }
 
-/* line 76, ../sass/components/_intro.scss */
+/* line 64, ../sass/components/_intro.scss */
 [intro].animated-in.animate-out svg [letter='19'] {
   -webkit-animation: animate-out 750ms 2850ms linear;
   -moz-animation: animate-out 750ms 2850ms linear;
@@ -9924,21 +9920,11 @@ body {
 
 /* line 5, ../sass/components/_content.scss */
 [content].is-shown {
-  height: 100%;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  display: block; }
 
-/* line 18, ../sass/components/_content.scss */
+/* line 9, ../sass/components/_content.scss */
 [content] .gradient-container {
-  height: calc(100% - 40px);
   overflow: hidden;
-  width: calc(100% - 40px);
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZmVmZiIvPjxzdG9wIG9mZnNldD0iOTElIiBzdG9wLWNvbG9yPSIjYjdlZmYxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ebfeff), color-stop(91%, #b7eff1));
@@ -9987,6 +9973,12 @@ body {
     position: relative;
     z-index: 2; }
   /* line 14, ../sass/components/_featured-article.scss */
+  [featured-article] .title {
+    -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1); }
+  /* line 18, ../sass/components/_featured-article.scss */
   [featured-article] h1 {
     position: relative;
     text-transform: uppercase;
@@ -9994,11 +9986,12 @@ body {
     font-size: 3.5em;
     font-weight: 400;
     line-height: 56px;
-    -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms;
+    -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms;
     -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1); }
-    /* line 20, ../sass/components/_featured-article.scss */
+    -webkit-transition-delay: 200ms;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms; }
+    /* line 24, ../sass/components/_featured-article.scss */
     [featured-article] h1::after {
       background-color: #C3ECF0;
       content: "";
@@ -10011,7 +10004,7 @@ body {
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
       border-radius: 50%; }
-  /* line 33, ../sass/components/_featured-article.scss */
+  /* line 37, ../sass/components/_featured-article.scss */
   [featured-article] .intro-big {
     position: relative;
     z-index: 4;
@@ -10019,12 +10012,12 @@ body {
     font-size: 1.4125em;
     font-weight: 400;
     line-height: 36px;
-    -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms;
-    -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms;
+    -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 400ms;
+    -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 400ms;
     -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transition-delay: 200ms;
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 200ms; }
-  /* line 40, ../sass/components/_featured-article.scss */
+    -webkit-transition-delay: 400ms;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 400ms; }
+  /* line 44, ../sass/components/_featured-article.scss */
   [featured-article] .intro-small {
     font-family: "Erato";
     font-size: 1.125em;
@@ -10035,15 +10028,15 @@ body {
     -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-transition-delay: 400ms;
     transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 400ms; }
-  /* line 45, ../sass/components/_featured-article.scss */
-  [featured-article] h1, [featured-article] .intro-big, [featured-article] .intro-small {
+  /* line 49, ../sass/components/_featured-article.scss */
+  [featured-article] .title, [featured-article] h1, [featured-article] .intro-big, [featured-article] .intro-small {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     -moz-transform: translateX(20px);
     -ms-transform: translateX(20px);
     -webkit-transform: translateX(20px);
     transform: translateX(20px); }
-  /* line 54, ../sass/components/_featured-article.scss */
+  /* line 58, ../sass/components/_featured-article.scss */
   [featured-article]::before {
     background-color: #F6F6F6;
     content: "";
@@ -10058,7 +10051,7 @@ body {
     -webkit-transform: rotate(7deg) translateY(100%);
     transform: rotate(7deg) translateY(100%); }
 
-/* line 75, ../sass/components/_featured-article.scss */
+/* line 79, ../sass/components/_featured-article.scss */
 [featured-article].animated-in::before {
   -webkit-animation: featured-article-animate-in 800ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-animation: featured-article-animate-in 800ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -10074,7 +10067,15 @@ body {
     -ms-transform: rotate(-15deg) translateY(0);
     -webkit-transform: rotate(-15deg) translateY(0);
     transform: rotate(-15deg) translateY(0); } }
-/* line 89, ../sass/components/_featured-article.scss */
+/* line 93, ../sass/components/_featured-article.scss */
+[featured-article] .content.animated-in .title {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0); }
+/* line 98, ../sass/components/_featured-article.scss */
 [featured-article] .content.animated-in h1 {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -10082,7 +10083,7 @@ body {
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0); }
-/* line 94, ../sass/components/_featured-article.scss */
+/* line 103, ../sass/components/_featured-article.scss */
 [featured-article] .content.animated-in .intro-big {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -10090,7 +10091,7 @@ body {
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0); }
-/* line 99, ../sass/components/_featured-article.scss */
+/* line 108, ../sass/components/_featured-article.scss */
 [featured-article] .content.animated-in .intro-small {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -10098,6 +10099,36 @@ body {
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0); }
+
+/* line 1, ../sass/components/_frame.scss */
+[frame] {
+  background-color: #fff;
+  position: fixed;
+  z-index: 100; }
+
+/* line 7, ../sass/components/_frame.scss */
+[frame="top"] {
+  height: 20px;
+  top: 0;
+  width: 100%; }
+
+/* line 13, ../sass/components/_frame.scss */
+[frame="right"] {
+  height: 100vh;
+  right: 0;
+  width: 20px; }
+
+/* line 19, ../sass/components/_frame.scss */
+[frame="bottom"] {
+  height: 20px;
+  top: calc(100vh - 20px);
+  width: 100%; }
+
+/* line 25, ../sass/components/_frame.scss */
+[frame="left"] {
+  height: 100vh;
+  left: 0;
+  width: 20px; }
 
 /* line 2, ../sass/overrides/_shame.scss */
 .clearfix:before,

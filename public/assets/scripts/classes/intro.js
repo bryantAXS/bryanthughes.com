@@ -18,7 +18,6 @@ var Intro = {
 Intro.load = function(){
 
   var self = this;
-  var animationComplete = $.Deferred();
   var introLoaded = $.Deferred();
 
   if(! $("[intro]").length){
@@ -41,7 +40,7 @@ Intro.load = function(){
 
         setTimeout(function(){
 
-          animationComplete.resolve();
+          introLoaded.resolve();
 
         }, self.timings.pauseBeforeResolving);
 
@@ -50,13 +49,6 @@ Intro.load = function(){
     }, self.timings.renderText);
 
   }, self.timings.initialWait);
-
-  animationComplete.done(function(){
-
-    $("[intro]").addClass("is-hidden");
-    introLoaded.resolve();
-
-  });
 
   return introLoaded;
 

@@ -1,0 +1,18 @@
+.title{
+
+  display:inline-block;
+  @include font("DecimaMono", 24px, 400, 25px);
+
+  span{
+    border: 2px solid $black;
+    color: $black;
+    display:block;
+    height:29px;
+    padding-top:2px;
+  }
+
+  span + span{
+    margin-top: 4px;
+  }
+
+}

@@ -17169,6 +17169,10 @@ return jQuery;
 }.call(this));
 
 },{}],4:[function(require,module,exports){
+var settings = {};
+module.exports = settings;
+settings["_variables"] = {    "intro": {      "frameSpeed": "500ms",      "letterSpeedIn": "1000ms",      "letterSpeedOut": "750ms"    }};
+},{}],5:[function(require,module,exports){
 
 var BlueHeader = {
 
@@ -17196,7 +17200,7 @@ BlueHeader.load = function(){
 };
 
 module.exports = BlueHeader;
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 
 var FeaturedArticle = {
 
@@ -17237,7 +17241,7 @@ FeaturedArticle.loadContent = function(){
 };
 
 module.exports = FeaturedArticle;
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 
 
 /**
@@ -17258,7 +17262,6 @@ var Intro = {
 Intro.load = function(){
 
   var self = this;
-  var animationComplete = $.Deferred();
   var introLoaded = $.Deferred();
 
   if(! $("[intro]").length){
@@ -17281,7 +17284,7 @@ Intro.load = function(){
 
         setTimeout(function(){
 
-          animationComplete.resolve();
+          introLoaded.resolve();
 
         }, self.timings.pauseBeforeResolving);
 
@@ -17291,19 +17294,12 @@ Intro.load = function(){
 
   }, self.timings.initialWait);
 
-  animationComplete.done(function(){
-
-    $("[intro]").addClass("is-hidden");
-    introLoaded.resolve();
-
-  });
-
   return introLoaded;
 
 };
 
 module.exports = Intro;
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 
 var Sitewide = {
 
@@ -17320,15 +17316,49 @@ Sitewide.init = function(){
 };
 
 module.exports = Sitewide;
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
+
+
+/**
+ * Some high-level JS includes
+ */
 window.$ = window.jQuery = require('jquery');
 var _ = window._ = require('underscore');
 var foundation = require('foundation');
 
+
+
+/**
+ * Loading in our settings which we're sharing with SCSS
+ */
+var Settings = require('./built/variables.js');
+window.settings = Settings["_variables"];
+
+
+/**
+ * Converting a speed specified in "XXXms" into a number
+ * @param  {[type]} speed [description]
+ * @return {[type]}       [description]
+ */
+window.speedToNumber = function(speed){
+  return Number(speed.replace("ms", ""));
+};
+
+
+/**
+ * All our Components
+ */
 var Sitewide = require('./classes/sitewide.js');
 var Intro = require('./classes/intro.js');
 var FeaturedArticle = require('./classes/featured-article.js');
 var BlueHeader = require('./classes/blue-header.js');
+
+
+
+
+/**
+ * Starting things up!
+ */
 
 $(document).foundation();
 
@@ -17337,24 +17367,30 @@ $(window).ready(function(){
   Sitewide.init();
 
   // 1) load in intro
-  var introLoaded = Intro.load();
+  // var introLoaded = Intro.load();
 
-  introLoaded.done(function(){
+  // introLoaded.done(function(){
 
-    $("[content]").addClass("is-shown");
+    setTimeout(function(){
 
-    // 2) transition in grey box
-    FeaturedArticle.load();
+      $("[intro]").addClass("is-hidden");
+      $("[content]").addClass("is-shown");
 
-    // 3) animate in blue header / mountains
-    var done = BlueHeader.load();
+      // 2) transition in grey box
+      FeaturedArticle.load();
 
-    done.done(function(){
-      console.log("asdf");
-      FeaturedArticle.loadContent();
-    });
+      // 3) animate in blue header / mountains
+      var done = BlueHeader.load();
 
-  });
+      done.done(function(){
+        FeaturedArticle.loadContent();
+      });
+
+    }, 1000);
+
+
+
+  // });
 
 });
-},{"./classes/blue-header.js":4,"./classes/featured-article.js":5,"./classes/intro.js":6,"./classes/sitewide.js":7,"foundation":1,"jquery":2,"underscore":3}]},{},[8]);
+},{"./built/variables.js":4,"./classes/blue-header.js":5,"./classes/featured-article.js":6,"./classes/intro.js":7,"./classes/sitewide.js":8,"foundation":1,"jquery":2,"underscore":3}]},{},[9]);

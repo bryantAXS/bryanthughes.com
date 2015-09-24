@@ -1,0 +1,7 @@
+{
+    "intro": {
+      "frameSpeed": "500ms",
+      "letterSpeedIn": "1000ms",
+      "letterSpeedOut": "750ms"
+    }
+}

@@ -1,49 +1,37 @@
+@import "_variables.json";
+
+// variables
+$frameSpeed: map-get($intro, frameSpeed);
+$letterSpeedIn: map-get($intro, letterSpeedIn);
+$letterSpeedOut: map-get($intro, letterSpeedOut);
+
 [intro]{
 
   height:100%;
 
-  @include flexbox((
-    display: flex,
-    flex-direction: row,
-    justify-content: center,
-    align-items: center
-  ));
+  .gradient-container{
+    @include background-image($blue-gradient);
+  }
 
-}
+  &.is-hidden{
+    display:none;
+  }
 
-[intro] .gradient-container{
+  svg{
+    height: 43px;
+    left:50%;
+    margin: -21.5px 0 0 -311.5px;
+    position: absolute;
+    top:50%;
+    width: 623px;
 
-  height:100%;
-  width:100%;
-  @include transition(height 500ms $easing, width 500ms $easing);
-  @include background-image($blue-gradient);
-
-}
-
-[intro].show-border .gradient-container{
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
-}
-
-[intro].is-hidden{
-  display:none;
-}
-
-[intro] svg{
-
-  height: 43px;
-  left:50%;
-  margin: -21.5px 0 0 -311.5px;
-  position: absolute;
-  top:50%;
-  width: 623px;
-
-  [letter] {
-    fill: transparent;
-    stroke: $white;
-    stroke-width: 1;
-    stroke-linejoin: round;
-    stroke-dashoffset: 0;
+    [letter] {
+      fill: transparent;
+      stroke: $white;
+      stroke-width: 1;
+      stroke-linejoin: round;
+      stroke-dashoffset: 0;
+    }
   }
 
 }
@@ -63,7 +51,7 @@ $lengths: 104.7193832397461,142.44610595703125,129.3754425048828,123.20748901367
   }
 
   [intro].animate-in svg [letter='#{$index}']{
-    @include animation(animate-in 1000ms $delay linear);
+    @include animation(animate-in $letterSpeedIn $delay linear);
     @include animation-fill-mode(forwards);
   }
 
@@ -74,7 +62,7 @@ $lengths: 104.7193832397461,142.44610595703125,129.3754425048828,123.20748901367
   }
 
   [intro].animated-in.animate-out svg [letter='#{$index}']{
-    @include animation(animate-out 750ms $delay linear);
+    @include animation(animate-out $letterSpeedOut $delay linear);
     @include animation-fill-mode(forwards);
   }
 

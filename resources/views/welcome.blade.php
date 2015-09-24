@@ -64,6 +64,11 @@
 
 <body>
 
+  <div frame="top">&nbsp;</div>
+  <div frame="right">&nbsp;</div>
+  <div frame="bottom">&nbsp;</div>
+  <div frame="left">&nbsp;</div>
+
   <section intro>
 
     <div class='gradient-container'>
@@ -103,7 +108,7 @@
 
       </svg>
 
-    </div>
+    </div><!-- gradient-container -->
 
   </section>
 
@@ -116,33 +121,38 @@
         <img src="/assets/images/mountains-header.png" />
       </div>
 
-      <div featured-article>
+        <div featured-article>
 
-        <div class="row">
-          <div class="columns small-offset-2 small-8">
+          <div class="row">
+            <div class="columns small-offset-2 small-8">
 
-            <div class="content">
+              <div class="content">
 
-              <h1>
-                Beyond Remote
-              </h1>
+                <h2 class="title">
+                  <span>THE</span>
+                  <span>LATEST</span>
+                </h2>
 
-              <p class="intro-big mt35">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
+                <h1 class="mt55">
+                  Beyond Remote
+                </h1>
 
-              <p class="intro-small mt20">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+                <p class="intro-big mt35">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
 
-            </div><!-- content -->
+                <p class="intro-small mt20">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
-          </div><!-- columns -->
-        </div><!-- row -->
+              </div><!-- content -->
 
-      </div><!-- featured-article -->
+            </div><!-- columns -->
+          </div><!-- row -->
 
-      </div><!-- gradient-container -->
+        </div><!-- featured-article -->
+
+    </div><!-- gradient-container -->
 
   </div><!-- CONTENT  AREA -->
 

@@ -1,0 +1,30 @@
+[frame]{
+  background-color:$white;
+  position:fixed;
+  z-index:100;
+}
+
+[frame="top"]{
+  height:20px;
+  top:0;
+  width:100%;
+}
+
+[frame="right"]{
+  height:100vh;
+  right:0;
+  width:20px;
+}
+
+[frame="bottom"]{
+  height:20px;
+  top:calc(100vh - 20px);
+  width:100%;
+}
+
+[frame="left"]{
+  height:100vh;
+  left:0;
+  width:20px;
+}
+
