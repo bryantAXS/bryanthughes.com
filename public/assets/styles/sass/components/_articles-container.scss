@@ -1,0 +1,35 @@
+[articles-container]{
+
+  background-color: $white;
+  display:none;
+  position:relative;
+
+  &::before{
+    background-color: $white;
+    content: "";
+    height:700px;
+    left:0;
+    top:-700px;
+    position:absolute;
+    width:100%;
+    z-index:1;
+  }
+
+  &.animated-in{
+    display: block;
+  }
+
+  .title-container{
+    position:relative;
+
+    .title{
+      position:absolute;
+      top:-185px;
+      z-index:5;
+      @media #{$xlarge-up}{
+        top:-325px;
+      }
+    }
+  }
+
+}

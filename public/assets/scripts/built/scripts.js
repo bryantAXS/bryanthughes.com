@@ -17212,8 +17212,6 @@ FeaturedArticle.load = function(){
 
   setTimeout(function(){
 
-    console.log("vv");
-
     $("[featured-article]").addClass("animated-in");
 
     loaded.resolve();
@@ -17230,9 +17228,8 @@ FeaturedArticle.loadContent = function(){
 
   setTimeout(function(){
 
-    console.log("aa");
-
     $("[featured-article] .content").addClass("animated-in");
+    loaded.resolve();
 
   }, 300);
 
@@ -17264,29 +17261,31 @@ Intro.load = function(){
   var self = this;
   var introLoaded = $.Deferred();
 
-  if(! $("[intro]").length){
-    return;
-  }
-
+  // initial wait
   setTimeout(function(){
 
     $("[intro]").addClass("animate-in");
 
+    // time to render in all the text
     setTimeout(function(){
 
       $("[intro]").addClass("animated-in");
       $("[intro]").removeClass("animate-in");
       $("[intro]").addClass("animate-out");
 
+      // time to remove all the text
       setTimeout(function(){
 
-        $("[intro]").addClass("show-border");
 
+        $("body").addClass("show-border");
+
+        // time to animate the border and resolve the intro animation
         setTimeout(function(){
 
           introLoaded.resolve();
 
         }, self.timings.pauseBeforeResolving);
+
 
       }, self.timings.removeText);
 
@@ -17354,7 +17353,10 @@ var FeaturedArticle = require('./classes/featured-article.js');
 var BlueHeader = require('./classes/blue-header.js');
 
 
-
+//
+// CONSTANTS
+//
+var LOAD_INTRO = false;
 
 /**
  * Starting things up!
@@ -17364,12 +17366,25 @@ $(document).foundation();
 
 $(window).ready(function(){
 
+
   Sitewide.init();
 
   // 1) load in intro
-  // var introLoaded = Intro.load();
+  var introLoaded = $.Deferred();
 
-  // introLoaded.done(function(){
+  // if our constant is set to false, we'll resolve it ourself and skip the intro
+  if(! LOAD_INTRO){
+
+    introLoaded.resolve();
+
+  }else{
+
+    introLoaded = Intro.load();
+
+  }
+
+  // Getting things going
+  introLoaded.done(function(){
 
     setTimeout(function(){
 
@@ -17383,14 +17398,19 @@ $(window).ready(function(){
       var done = BlueHeader.load();
 
       done.done(function(){
-        FeaturedArticle.loadContent();
+
+        var featuredArticleDone = FeaturedArticle.loadContent();
+
+        featuredArticleDone.done(function(){
+          console.log("aaaa");
+          $("[articles-container]").addClass("animated-in");
+        });
+
       });
 
     }, 1000);
 
-
-
-  // });
+  });
 
 });
 },{"./built/variables.js":4,"./classes/blue-header.js":5,"./classes/featured-article.js":6,"./classes/intro.js":7,"./classes/sitewide.js":8,"foundation":1,"jquery":2,"underscore":3}]},{},[9]);

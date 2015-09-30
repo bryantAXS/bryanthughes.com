@@ -1,0 +1,26 @@
+[small-article]{
+
+  span{
+    color: $darkgrey;
+    display:block;
+    @include font("DecimaMono", 14px, 400, 18px);
+  }
+
+  h2{
+    color: $black;
+    margin-top:20px;
+    @include font("DecimaMono", 24px, 400, 28px);
+  }
+
+  .line{
+    background-color: $blue;
+    height:4px;
+    margin-top: 20px;
+    width:95px;
+  }
+
+  &:nth-child(1n+5){
+    margin-top: 80px;
+  }
+
+}

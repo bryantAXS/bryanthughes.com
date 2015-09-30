@@ -9,8 +9,6 @@ FeaturedArticle.load = function(){
 
   setTimeout(function(){
 
-    console.log("vv");
-
     $("[featured-article]").addClass("animated-in");
 
     loaded.resolve();
@@ -27,9 +25,8 @@ FeaturedArticle.loadContent = function(){
 
   setTimeout(function(){
 
-    console.log("aa");
-
     $("[featured-article] .content").addClass("animated-in");
+    loaded.resolve();
 
   }, 300);
 

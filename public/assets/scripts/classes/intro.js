@@ -20,29 +20,31 @@ Intro.load = function(){
   var self = this;
   var introLoaded = $.Deferred();
 
-  if(! $("[intro]").length){
-    return;
-  }
-
+  // initial wait
   setTimeout(function(){
 
     $("[intro]").addClass("animate-in");
 
+    // time to render in all the text
     setTimeout(function(){
 
       $("[intro]").addClass("animated-in");
       $("[intro]").removeClass("animate-in");
       $("[intro]").addClass("animate-out");
 
+      // time to remove all the text
       setTimeout(function(){
 
-        $("[intro]").addClass("show-border");
 
+        $("body").addClass("show-border");
+
+        // time to animate the border and resolve the intro animation
         setTimeout(function(){
 
           introLoaded.resolve();
 
         }, self.timings.pauseBeforeResolving);
+
 
       }, self.timings.removeText);
 

@@ -35,7 +35,10 @@ var FeaturedArticle = require('./classes/featured-article.js');
 var BlueHeader = require('./classes/blue-header.js');
 
 
-
+//
+// CONSTANTS
+//
+var LOAD_INTRO = false;
 
 /**
  * Starting things up!
@@ -45,12 +48,25 @@ $(document).foundation();
 
 $(window).ready(function(){
 
+
   Sitewide.init();
 
   // 1) load in intro
-  // var introLoaded = Intro.load();
+  var introLoaded = $.Deferred();
 
-  // introLoaded.done(function(){
+  // if our constant is set to false, we'll resolve it ourself and skip the intro
+  if(! LOAD_INTRO){
+
+    introLoaded.resolve();
+
+  }else{
+
+    introLoaded = Intro.load();
+
+  }
+
+  // Getting things going
+  introLoaded.done(function(){
 
     setTimeout(function(){
 
@@ -64,13 +80,18 @@ $(window).ready(function(){
       var done = BlueHeader.load();
 
       done.done(function(){
-        FeaturedArticle.loadContent();
+
+        var featuredArticleDone = FeaturedArticle.loadContent();
+
+        featuredArticleDone.done(function(){
+          console.log("aaaa");
+          $("[articles-container]").addClass("animated-in");
+        });
+
       });
 
     }, 1000);
 
-
-
-  // });
+  });
 
 });

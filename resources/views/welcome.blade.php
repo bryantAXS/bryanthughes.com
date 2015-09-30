@@ -123,6 +123,11 @@
 
         <div featured-article>
 
+          <div class="bg">
+            <img class="mountain" src="/assets/images/mountains-grey.png" />
+          </div>
+
+
           <div class="row">
             <div class="columns small-offset-2 small-8">
 
@@ -145,6 +150,10 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
 
+                <a class="continue-reading" href="">
+                  <span>CONTINUE READING</span>
+                </a>
+
               </div><!-- content -->
 
             </div><!-- columns -->
@@ -153,6 +162,65 @@
         </div><!-- featured-article -->
 
     </div><!-- gradient-container -->
+
+    <div articles-container>
+
+      <div class="row">
+        <div class="columns small-3 small-offset-2 title-container">
+          <h2 class="title">
+            <span>PAST</span>
+            <span>THOUGHTS</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div small-article class="columns small-3">
+          <span>01</span>
+          <h2>Why React Destroys Angular</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>02</span>
+          <h2>An Athiest Finding Spirituality</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>03</span>
+          <h2>Why React Destroys Angular</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>04</span>
+          <h2>An Athiest Finding Spirituality</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>05</span>
+          <h2>An Athiest Finding Spirituality</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>06</span>
+          <h2>Why React Destroys Angular</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+        <div small-article class="columns small-3">
+          <span>07</span>
+          <h2>An Athiest Finding Spirituality</h2>
+          <div class="line">&nbsp;</div>
+        </div>
+
+      </div><!-- row -->
+
+    </div><!-- bg-white -->
 
   </div><!-- CONTENT  AREA -->
 

@@ -2,10 +2,11 @@
   background-color:$white;
   position:fixed;
   z-index:100;
+  @include transition(all 500ms $easing);
 }
 
 [frame="top"]{
-  height:20px;
+  height:0;
   top:0;
   width:100%;
 }
@@ -13,18 +14,38 @@
 [frame="right"]{
   height:100vh;
   right:0;
-  width:20px;
+  width:0;
 }
 
 [frame="bottom"]{
   height:20px;
-  top:calc(100vh - 20px);
+  top:calc(100vh);
   width:100%;
 }
 
 [frame="left"]{
   height:100vh;
   left:0;
-  width:20px;
+  width:0;
+}
+
+body.show-border{
+
+  [frame="top"]{
+    height:20px;
+  }
+
+  [frame="right"]{
+    width:20px;
+  }
+
+  [frame="bottom"]{
+    top:calc(100vh - 20px);
+  }
+
+  [frame="left"]{
+    width:20px;
+  }
+
 }
 

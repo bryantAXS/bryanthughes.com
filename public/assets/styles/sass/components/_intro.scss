@@ -10,6 +10,7 @@ $letterSpeedOut: map-get($intro, letterSpeedOut);
   height:100%;
 
   .gradient-container{
+    height:100%;
     @include background-image($blue-gradient);
   }
 

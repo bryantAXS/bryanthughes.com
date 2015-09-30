@@ -1,14 +1,19 @@
 [featured-article]{
 
-  height: 890px;
+  margin-bottom: 25px;
+  padding-bottom: 420px;
   position:relative;
+
+  @media #{$xlarge-up}{
+    margin-bottom: 150px;
+  }
 
   //
   // Base Styles
   //
   .content{
     position:relative;
-    z-index:2;
+    z-index:4;
   }
 
   .title{
@@ -29,7 +34,7 @@
       position:absolute;
       bottom:-73px;
       width:45px;
-      z-index:3;
+      z-index:4;
       @include border-radius(50%);
     }
   }
@@ -55,16 +60,29 @@
   // Grey rotated background
   //
 
-  &::before{
+  .bg{
     background-color: $grey;
-    content: "";
     height:100%;
     left:-15%;
+    overflow:hidden;
     position:absolute;
-    top:-200px;
+    top:-213px;
     width:130%;
-    z-index:1;
+    z-index:3;
     @include transform(rotate(7deg) translateY(100%));
+  }
+
+  //
+  //
+  //
+  .mountain{
+    bottom: -345px;
+    left: -65px;
+    height:593px;
+    width:633px;
+    position: absolute;
+    z-index:1;
+    @include transform(rotate(15deg));
   }
 
 }
@@ -76,7 +94,7 @@
 // animating gey background
 
 [featured-article].animated-in{
-  &::before{
+  .bg{
     @include animation(featured-article-animate-in 800ms $easing);
     @include animation-fill-mode(forwards);
   }
