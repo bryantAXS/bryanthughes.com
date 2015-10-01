@@ -1,0 +1,36 @@
+
+
+//
+// Styles
+//
+[button~="diamond"]{
+
+  display:inline-block;
+  height: 95px;
+  text-align:center;
+  width: 95px;
+  @include rotate(45deg);
+
+  span{
+    display:block;
+    margin-top: -12px;
+    position: relative;
+    text-transform: uppercase;
+    top:50%;
+    @include font("DecimaMonoItalic", 22px, 400);
+    @include rotate(-45deg);
+  }
+
+}
+
+//
+//  Colors
+//
+[button~="blue"]{
+
+  background-color: $blue;
+  span{
+    color: $white;
+  }
+
+}

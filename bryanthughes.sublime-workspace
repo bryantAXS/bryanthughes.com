@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"featured",
+				"featuredArticleDone"
+			],
+			[
 				"todays",
 				"todaysWrigleyvilleOrders"
 			],
@@ -287,7 +291,7 @@
 			"file": "resources/views/welcome.blade.php",
 			"settings":
 			{
-				"buffer_size": 12779,
+				"buffer_size": 13010,
 				"line_ending": "Unix"
 			}
 		},
@@ -295,7 +299,7 @@
 			"file": "public/assets/styles/sass/components/_featured-article.scss",
 			"settings":
 			{
-				"buffer_size": 2091,
+				"buffer_size": 2177,
 				"line_ending": "Unix"
 			}
 		},
@@ -303,7 +307,39 @@
 			"file": "public/assets/styles/sass/components/_articles-container.scss",
 			"settings":
 			{
-				"buffer_size": 238,
+				"buffer_size": 480,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/assets/styles/sass/_foundation.scss",
+			"settings":
+			{
+				"buffer_size": 1755,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/assets/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 1795,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/assets/scripts/classes/featured-article.js",
+			"settings":
+			{
+				"buffer_size": 484,
 				"line_ending": "Unix"
 			}
 		}
@@ -428,40 +464,34 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views"
 	],
 	"file_history":
 	[
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_chrome.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_intro.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/jquery/src/intro.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_articles-container.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_chrome.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_colors.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_small-article.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_intro.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_links.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/box.svg",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_content.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_interactions.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_titles.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_variables.json",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/jquery/src/intro.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/Gruntfile.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/built/variables.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/settings-helper.js",
@@ -471,7 +501,6 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/blue-header.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_global_mixins.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_interactions.scss",
@@ -813,15 +842,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12779,
+						"buffer_size": 13010,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9887,
-								9887
+								11378,
+								11393
 							]
 						],
 						"settings":
@@ -831,16 +860,16 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1732.0,
+						"translation.y": 2515.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -849,51 +878,46 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2091,
+						"buffer_size": 2177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1129,
-								1129
+								89,
+								89
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 398.0,
+						"translation.x": -0.0,
+						"translation.y": 1120.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
 					"file": "public/assets/styles/sass/components/_articles-container.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 480,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								230
+								456,
+								456
 							]
 						],
 						"settings":
@@ -907,6 +931,128 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/assets/styles/sass/_foundation.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "public/assets/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1684,
+								1684
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 586.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/assets/scripts/classes/featured-article.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -979,6 +1125,42 @@
 		"selected_items":
 		[
 			[
+				"articles-container",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"featuredar",
+				"public/assets/scripts/classes/featured-article.js"
+			],
+			[
+				"main.js",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"featured.a",
+				"public/assets/styles/sass/components/_featured-article.scss"
+			],
+			[
+				"app.css",
+				"public/assets/styles/css/app.css"
+			],
+			[
+				"frame",
+				"public/assets/styles/sass/components/_frame.scss"
+			],
+			[
+				"layout",
+				"public/assets/styles/sass/base/_layout.scss"
+			],
+			[
+				"intro.js",
+				"public/assets/scripts/classes/intro.js"
+			],
+			[
+				"intro",
+				"public/assets/styles/sass/components/_intro.scss"
+			],
+			[
 				"articles",
 				"public/assets/styles/sass/components/_articles-container.scss"
 			],
@@ -1015,10 +1197,6 @@
 				"public/assets/styles/sass/components/_intro.scss"
 			],
 			[
-				"main.js",
-				"public/assets/scripts/main.js"
-			],
-			[
 				"welcome",
 				"resources/views/welcome.blade.php"
 			],
@@ -1031,24 +1209,12 @@
 				"public/assets/styles/sass/components/_content.scss"
 			],
 			[
-				"intro",
-				"public/assets/styles/sass/components/_intro.scss"
-			],
-			[
 				"featuredarticle",
 				"public/assets/styles/sass/components/_featured-article.scss"
 			],
 			[
-				"layout",
-				"public/assets/styles/sass/base/_layout.scss"
-			],
-			[
 				"classesintro.js",
 				"public/assets/scripts/classes/intro.js"
-			],
-			[
-				"intro.js",
-				"node_modules/jquery/src/intro.js"
 			],
 			[
 				"grunt",
@@ -1079,10 +1245,6 @@
 				"public/assets/styles/sass/utility/_global_mixins.scss"
 			],
 			[
-				"app.css",
-				"public/assets/styles/css/app.css"
-			],
-			[
 				"typoh",
 				"public/assets/styles/sass/base/_typography.scss"
 			],
@@ -1109,10 +1271,6 @@
 			[
 				"appscss",
 				"public/assets/styles/sass/app.scss"
-			],
-			[
-				"featuredar",
-				"public/assets/styles/sass/components/_featured-article.scss"
 			],
 			[
 				"sitewide",
@@ -1477,18 +1635,6 @@
 			[
 				"favorites",
 				"httpdocs/assets/scripts/bb/instant/layouts/FavoritesLayout.js"
-			],
-			[
-				"ordermodel",
-				"httpdocs/assets/scripts/bb/instant/models/OrderModel.js"
-			],
-			[
-				"total",
-				"httpdocs/assets/scripts/bb/instant/layouts/TotalLayout.js"
-			],
-			[
-				"orderslayout",
-				"httpdocs/assets/scripts/bb/instant/layouts/OrdersLayout.js"
 			]
 		],
 		"width": 0.0

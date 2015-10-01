@@ -38,7 +38,7 @@ var BlueHeader = require('./classes/blue-header.js');
 //
 // CONSTANTS
 //
-var LOAD_INTRO = false;
+var LOAD_INTRO = true;
 
 /**
  * Starting things up!

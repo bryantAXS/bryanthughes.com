@@ -1,0 +1,57 @@
+[bio-container]{
+
+  background-color: $grey;
+  position:relative;
+  padding-top:350px;
+
+  .white-bg-container{
+    background-color: $white;
+    position:absolute;
+    height: 380px;
+    top:-190px;
+    left:0;
+    width:100%;
+    @include rotate(7deg);
+
+    .more-container{
+      @include rotate(-7deg);
+
+      .small-12{
+        text-align:center;
+      }
+    }
+
+  }
+
+  .bio-content-row{
+    margin-top: 60px;
+  }
+
+  .subtitle{
+    color: $darkgrey;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    @include font("DecimaMono", 16px, 400, 20px);
+    a{
+      color: $black;
+      border-bottom: 2px solid $black;
+      padding-bottom: 3px;
+    }
+  }
+
+  h4{
+    border-bottom: 3px solid $blue;
+    color: $black;
+    display:inline-block;
+    margin-bottom:35px;
+    padding-bottom:10px;
+    @include font("DecimaMono", 32px, 400);
+  }
+
+  p{
+    color: $black;
+    @include font("Erato", 18px, 400, 29px);
+  }
+
+
+}

@@ -8954,26 +8954,26 @@ a {
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-nova/DecimaMono-Light.eot");
-  src: url("/assets/fonts/decima-nova/DecimaMono-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-nova/DecimaMono-Light.woff") format("woff"), url("/assets/fonts/decima-nova/DecimaMono-Light.ttf") format("truetype"), url("/assets/fonts/decima-nova/DecimaMono-Light.otf") format("opentype"), url("/assets/fonts/decima-nova/DecimaMono-Light.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Light.eot");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Light.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Light.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Light.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Light.svg#DecimaMono") format("svg");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-nova/DecimaMono.eot");
-  src: url("/assets/fonts/decima-nova/DecimaMono.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-nova/DecimaMono.woff") format("woff"), url("/assets/fonts/decima-nova/DecimaMono.ttf") format("truetype"), url("/assets/fonts/decima-nova/DecimaMono.otf") format("opentype"), url("/assets/fonts/decima-nova/DecimaMono.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/DecimaMono.eot");
+  src: url("/assets/fonts/decima-mono/DecimaMono.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono.svg#DecimaMono") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMonoItalic";
-  src: url("/assets/fonts/decima-nova/DecimaMono-Italic.eot");
-  src: url("/assets/fonts/decima-nova/DecimaMono-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-nova/DecimaMono-Italic.woff") format("woff"), url("/assets/fonts/decima-nova/DecimaMono-Italic.ttf") format("truetype"), url("/assets/fonts/decima-nova/DecimaMono-Italic.otf") format("opentype"), url("/assets/fonts/decima-nova/DecimaMono-Italic.svg#DecimaMonoItalic") format("svg");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Italic.eot");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Italic.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.svg#DecimaMonoItalic") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-nova/DecimaMono-Bold.eot");
-  src: url("/assets/fonts/decima-nova/DecimaMono-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-nova/DecimaMono-Bold.woff") format("woff"), url("/assets/fonts/decima-nova/DecimaMono-Bold.ttf") format("truetype"), url("/assets/fonts/decima-nova/DecimaMono-Bold.otf") format("opentype"), url("/assets/fonts/decima-nova/DecimaMono-Bold.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Bold.eot");
+  src: url("/assets/fonts/decima-mono/DecimaMono-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Bold.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.svg#DecimaMono") format("svg");
   font-weight: 600;
   font-style: normal; }
 @font-face {
@@ -9030,9 +9030,46 @@ body {
 .bg-white {
   background-color: #fff; }
 
+/* line 9, ../sass/base/_chrome.scss */
+.bg-white {
+  background-color: #F6F6F6; }
+
 /* line 1, ../sass/base/_interactions.scss */
 .clickable {
   cursor: pointer; }
+
+/* line 6, ../sass/elements/_buttons.scss */
+[button~="diamond"] {
+  display: inline-block;
+  height: 95px;
+  text-align: center;
+  width: 95px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  /* line 14, ../sass/elements/_buttons.scss */
+  [button~="diamond"] span {
+    display: block;
+    margin-top: -12px;
+    position: relative;
+    text-transform: uppercase;
+    top: 50%;
+    font-family: "DecimaMonoItalic";
+    font-size: 1.375em;
+    font-weight: 400;
+    line-height: 22px;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+/* line 29, ../sass/elements/_buttons.scss */
+[button~="blue"] {
+  background-color: #C3ECF0; }
+  /* line 32, ../sass/elements/_buttons.scss */
+  [button~="blue"] span {
+    color: #fff; }
 
 /* line 1, ../sass/elements/_titles.scss */
 .title {
@@ -9047,8 +9084,9 @@ body {
     color: #282828;
     display: block;
     height: 29px;
+    min-width: 119px;
     padding-top: 2px; }
-  /* line 14, ../sass/elements/_titles.scss */
+  /* line 15, ../sass/elements/_titles.scss */
   .title span + span {
     margin-top: 4px; }
 
@@ -10232,8 +10270,9 @@ body.show-border [frame="left"] {
 [articles-container] {
   background-color: #fff;
   display: none;
+  padding-bottom: 400px;
   position: relative; }
-  /* line 7, ../sass/components/_articles-container.scss */
+  /* line 8, ../sass/components/_articles-container.scss */
   [articles-container]::before {
     background-color: #fff;
     content: "";
@@ -10243,21 +10282,83 @@ body.show-border [frame="left"] {
     position: absolute;
     width: 100%;
     z-index: 1; }
-  /* line 18, ../sass/components/_articles-container.scss */
+  /* line 19, ../sass/components/_articles-container.scss */
   [articles-container].animated-in {
     display: block; }
-  /* line 22, ../sass/components/_articles-container.scss */
+  /* line 23, ../sass/components/_articles-container.scss */
   [articles-container] .title-container {
     position: relative; }
-    /* line 25, ../sass/components/_articles-container.scss */
+    /* line 26, ../sass/components/_articles-container.scss */
     [articles-container] .title-container .title {
       position: absolute;
       top: -185px;
       z-index: 5; }
       @media only screen and (min-width: 90.0625em) {
-        /* line 25, ../sass/components/_articles-container.scss */
+        /* line 26, ../sass/components/_articles-container.scss */
         [articles-container] .title-container .title {
           top: -325px; } }
+
+/* line 1, ../sass/components/_bio-container.scss */
+[bio-container] {
+  background-color: #F6F6F6;
+  position: relative;
+  padding-top: 350px; }
+  /* line 7, ../sass/components/_bio-container.scss */
+  [bio-container] .white-bg-container {
+    background-color: #fff;
+    position: absolute;
+    height: 380px;
+    top: -190px;
+    left: 0;
+    width: 100%;
+    -moz-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg); }
+    /* line 16, ../sass/components/_bio-container.scss */
+    [bio-container] .white-bg-container .more-container {
+      -moz-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+      -webkit-transform: rotate(-7deg);
+      transform: rotate(-7deg); }
+      /* line 19, ../sass/components/_bio-container.scss */
+      [bio-container] .white-bg-container .more-container .small-12 {
+        text-align: center; }
+  /* line 26, ../sass/components/_bio-container.scss */
+  [bio-container] .bio-content-row {
+    margin-top: 60px; }
+  /* line 30, ../sass/components/_bio-container.scss */
+  [bio-container] .subtitle {
+    color: #9B9B9B;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    font-family: "DecimaMono";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px; }
+    /* line 35, ../sass/components/_bio-container.scss */
+    [bio-container] .subtitle a {
+      color: #282828;
+      border-bottom: 2px solid #282828;
+      padding-bottom: 3px; }
+  /* line 42, ../sass/components/_bio-container.scss */
+  [bio-container] h4 {
+    border-bottom: 3px solid #C3ECF0;
+    color: #282828;
+    display: inline-block;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    font-family: "DecimaMono";
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 32px; }
+  /* line 51, ../sass/components/_bio-container.scss */
+  [bio-container] p {
+    color: #282828;
+    font-family: "Erato";
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 29px; }
 
 /* line 2, ../sass/overrides/_shame.scss */
 .clearfix:before,

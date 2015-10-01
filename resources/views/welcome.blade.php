@@ -222,6 +222,65 @@
 
     </div><!-- bg-white -->
 
+
+    <div bio-container>
+
+      <div class="white-bg-container">
+        <div class="more-container row">
+          <div class="small-12">
+            <a button="diamond blue" href="javascript:;"><span>More</span></a>
+          </div>
+        </div><!-- more-container -->
+      </div>
+
+      <div class="row">
+        <div class="columns small-3 small-offset-2 title-container">
+          <h2 class="title">
+            <span>AN</span>
+            <span>OUTRO</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="row bio-content-row">
+        <div class="columns small-3 small-offset-2 title-container">
+          <p class="subtitle">
+            THE PERSONAL MUSING OF BRYANT HUGHES: WEB DEVELOPER,
+            DESIGNER &amp; PARTNER AT <a href="http://authenticff.com">AUTHENTIC F&F</a>
+          </p>
+        </div>
+        <div class="columns small-5">
+
+          <h4>
+            WORD
+          </h4>
+
+          <p>
+            Over the course of my career I have worked with digital agencies,
+            web product shops, and have collaborated and been a founding
+            member of several tech related startups. I have operated my
+            own firm since 2010, opening Authentic Form & Function
+            in early 2013.
+          </p>
+
+          <p>
+            Over the course of my career I have worked with digital agencies,
+            web product shops, and have collaborated and been a founding
+            member of several tech related startups. I have operated my
+            own firm since 2010, opening Authentic Form & Function
+            in early 2013.
+          </p>
+
+          <p>
+            Good things,
+          </p>
+
+        </div>
+      </div>
+
+    </div><!-- bio-container -->
+
+
   </div><!-- CONTENT  AREA -->
 
   <script src="/assets/scripts/built/scripts.js"></script>
