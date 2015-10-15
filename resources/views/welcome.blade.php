@@ -64,10 +64,22 @@
 
 <body>
 
+  <!--
+    **
+    FRAME
+    **
+  -->
+
   <div frame="top">&nbsp;</div>
   <div frame="right">&nbsp;</div>
   <div frame="bottom">&nbsp;</div>
   <div frame="left">&nbsp;</div>
+
+    <!--
+      **
+      INTRO
+      **
+    -->
 
   <section intro>
 
@@ -112,7 +124,13 @@
 
   </section>
 
-  <!-- CONTENT AREA -->
+
+  <!--
+    **
+    PAGE CONTENET
+    **
+  -->
+
   <div content>
 
     <div class="gradient-container">
@@ -129,7 +147,7 @@
 
 
           <div class="row">
-            <div class="columns small-offset-2 small-8">
+            <div class="columns small-12 medium-offset-1 medium-10 large-offset-1 large-10">
 
               <div class="content">
 
@@ -138,12 +156,16 @@
                   <span>LATEST</span>
                 </h2>
 
-                <h1 class="mt55">
+                <h1>
                   Beyond Remote
                 </h1>
 
+                <h3>
+                  Subtitle goes here about something
+                </h3>
+
                 <p class="intro-big mt35">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <span class="big-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
                 <p class="intro-small mt20">
@@ -163,10 +185,18 @@
 
     </div><!-- gradient-container -->
 
+
+
+    <!--
+      **
+      ARTICLES
+      **
+    -->
+
     <div articles-container>
 
       <div class="row">
-        <div class="columns small-3 small-offset-2 title-container">
+        <div class="columns small-3 medium-offset-1 title-container">
           <h2 class="title">
             <span>PAST</span>
             <span>THOUGHTS</span>
@@ -174,48 +204,62 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="articles-row row">
 
-        <div small-article class="columns small-3">
-          <span>01</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">01</span>
           <h2>Why React Destroys Angular</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>02</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">02</span>
           <h2>An Athiest Finding Spirituality</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>03</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">03</span>
           <h2>Why React Destroys Angular</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>04</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">04</span>
           <h2>An Athiest Finding Spirituality</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>05</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">05</span>
           <h2>An Athiest Finding Spirituality</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>06</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">06</span>
           <h2>Why React Destroys Angular</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
-        <div small-article class="columns small-3">
-          <span>07</span>
+        <div small-article class="columns small-12 medium-6 large-3">
+          <span class="digit">07</span>
           <h2>An Athiest Finding Spirituality</h2>
-          <div class="line">&nbsp;</div>
+          <a class="read-this" href="javascript:;">
+            <span>Read this</span>
+          </a>
         </div>
 
       </div><!-- row -->
@@ -223,18 +267,33 @@
     </div><!-- bg-white -->
 
 
+    <!--
+      **
+      BIO
+      **
+    -->
+
+
     <div bio-container>
 
       <div class="white-bg-container">
+
         <div class="more-container row">
           <div class="small-12">
-            <a button="diamond blue" href="javascript:;"><span>More</span></a>
+            <a button="diamond" href="javascript:;">
+              <span class="more">More</span>
+              <span class="plus">+</span>
+            </a>
           </div>
         </div><!-- more-container -->
-      </div>
+
+        <img class="birds" src="/assets/images/birds-slow.gif" />
+        <img class="mountains" src="/assets/images/mountains-white.png" />
+
+      </div><!-- white-bg-container -->
 
       <div class="row">
-        <div class="columns small-3 small-offset-2 title-container">
+        <div class="columns small-3 medium-offset-2 title-container">
           <h2 class="title">
             <span>AN</span>
             <span>OUTRO</span>
@@ -242,43 +301,154 @@
         </div>
       </div>
 
-      <div class="row bio-content-row">
-        <div class="columns small-3 small-offset-2 title-container">
-          <p class="subtitle">
-            THE PERSONAL MUSING OF BRYANT HUGHES: WEB DEVELOPER,
-            DESIGNER &amp; PARTNER AT <a href="http://authenticff.com">AUTHENTIC F&F</a>
-          </p>
+      <div class="bio-content-row">
+
+        <div class="row">
+          <div class="columns medium-offset-4 medium-8 large-offset-5 large-5">
+            <h4>
+              WORD
+            </h4>
+          </div>
         </div>
-        <div class="columns small-5">
 
-          <h4>
-            WORD
-          </h4>
+        <div class="row">
 
-          <p>
-            Over the course of my career I have worked with digital agencies,
-            web product shops, and have collaborated and been a founding
-            member of several tech related startups. I have operated my
-            own firm since 2010, opening Authentic Form & Function
-            in early 2013.
-          </p>
+          <div class="columns show-for-medium-up medium-4 large-offset-2 large-3 title-container">
+            <p class="subtitle">
+              THE PERSONAL MUSING OF BRYANT HUGHES: WEB DEVELOPER,
+              DESIGNER &amp; PARTNER AT <a href="http://authenticff.com">AUTHENTIC F&F</a>
+            </p>
+          </div><!-- columns -->
 
-          <p>
-            Over the course of my career I have worked with digital agencies,
-            web product shops, and have collaborated and been a founding
-            member of several tech related startups. I have operated my
-            own firm since 2010, opening Authentic Form & Function
-            in early 2013.
-          </p>
+          <div class="columns small-12 medium-8 large-5">
 
-          <p>
-            Good things,
-          </p>
+            <p>
+              Over the course of my career I have worked with digital agencies,
+              web product shops, and have collaborated and been a founding
+              member of several tech related startups. I have operated my
+              own firm since 2010, opening Authentic Form & Function
+              in early 2013.
+            </p>
 
-        </div>
-      </div>
+            <p>
+              Over the course of my career I have worked with digital agencies,
+              web product shops, and have collaborated and been a founding
+              member of several tech related startups. I have operated my
+              own firm since 2010, opening Authentic Form & Function
+              in early 2013.
+            </p>
+
+            <p>
+              Good things,
+            </p>
+
+            <span class="signature">
+              Bryant
+              <img class="birds" src="/assets/images/signature-birds.png" />
+            </span>
+
+          </div><!-- columns -->
+
+        </div><!-- row -->
+
+      </div><!-- bio-content -->
 
     </div><!-- bio-container -->
+
+
+    <!--
+      **
+      STATS
+      **
+    -->
+
+
+    <div class="bg-white">
+      <div class="row">
+        <div class="small-12 large-8 large-centered columns">
+
+          <table stats-table class="for-medium-up">
+            <tr>
+              <td>
+                <p><span>01</span>MOST VISTS PER DAY</p>
+                <span>23</span>
+              </td>
+              <td>
+                <p><span>02</span>AVG MIN ON SITE</p>
+                <span>5.6</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span>03</span>ARTICLE COUNT</p>
+                <span>7</span>
+              </td>
+              <td>
+                <p><span>04</span>CODE DEPLOYS</p>
+                <span>18</span>
+              </td>
+            </tr>
+          </table>
+
+          <table stats-table class="for-small">
+            <tr>
+              <td>
+                <p><span>01</span>MOST VISTS PER DAY</p>
+                <span>23</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span>02</span>AVG MIN ON SITE</p>
+                <span>5.6</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span>03</span>ARTICLE COUNT</p>
+                <span>7</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span>04</span>CODE DEPLOYS</p>
+                <span>18</span>
+              </td>
+            </tr>
+          </table>
+
+        </div><!-- small-8 -->
+      </div><!-- row -->
+    </div><!-- bg-white -->
+
+
+
+
+
+    <!--
+      **
+      BLUE FOOTER
+      **
+    -->
+
+    <div footer class="row full-width">
+
+      <div class="show-for-medium-up medium-4 medium-collapse columns">
+        &nbsp;
+      </div><!-- small-8 -->
+
+      <div class="small-12 small-collapse medium-4 medium-collapse columns">
+        <div class="square">&nbsp;</div>
+        <img src="/assets/images/mountains-white.png" />
+      </div><!-- small-8 -->
+
+      <div class="show-for-medium-up medium-4 medium-collapse columns">
+        &nbsp;
+      </div><!-- small-8 -->
+
+    </div><!-- bg-white -->
+
+
 
 
   </div><!-- CONTENT  AREA -->

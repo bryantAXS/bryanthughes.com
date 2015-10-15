@@ -5,20 +5,55 @@
 //
 [button~="diamond"]{
 
+  background-color: $blue;
+  border: 2px solid transparent;
+  color: $white;
   display:inline-block;
   height: 95px;
   text-align:center;
   width: 95px;
   @include rotate(45deg);
+  @include border-radius(0);
+  @include transition(all 600ms $easing);
 
-  span{
+  .more, .plus{
     display:block;
-    margin-top: -12px;
     position: relative;
     text-transform: uppercase;
     top:50%;
-    @include font("DecimaMonoItalic", 22px, 400);
+
     @include rotate(-45deg);
+    @include transition(opacity 400ms $easing);
+  }
+
+  .more{
+    margin-top: -12px;
+    @include font("DecimaMonoItalic", 22px, 400);
+    @include opacity(1);
+  }
+
+  .plus{
+    margin-top: -25px;
+    @include font("DecimaMonoItalic", 30px, 400);
+    @include opacity(0);
+  }
+
+  &:hover{
+
+    background-color: transparent;
+    color: $blue;
+    border-color: $blue;
+
+    @include rotate(-315deg);
+    @include border-radius(50%);
+
+    .more{
+      @include opacity(0);
+    }
+
+    .plus{
+      @include opacity(1);
+    }
   }
 
 }

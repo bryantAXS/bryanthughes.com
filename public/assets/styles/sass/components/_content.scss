@@ -7,6 +7,13 @@
 }
 
 [content] .gradient-container{
+
+  padding-bottom: 160px;
+
+  @media #{$medium-up}{
+    padding-bottom: 0;
+  }
+
   overflow:hidden;
   @include background-image($blue-gradient);
 }

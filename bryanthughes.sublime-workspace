@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"reqes",
+				"requestedPostsCollection"
+			],
+			[
+				"request",
+				"requestedPostsCollection"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
 				"featured",
 				"featuredArticleDone"
 			],
@@ -148,10 +160,6 @@
 				"foundation_reveal"
 			],
 			[
-				"json",
-				"json_encode"
-			],
-			[
 				"distribu",
 				"distribution-input"
 			],
@@ -288,58 +296,34 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/welcome.blade.php",
+			"file": "tests/Medium/Services/MediumServiceTest.php",
 			"settings":
 			{
-				"buffer_size": 13010,
+				"buffer_size": 1341,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/assets/styles/sass/components/_featured-article.scss",
+			"file": "app/Lib/Medium/Services/MediumService.php",
 			"settings":
 			{
-				"buffer_size": 2177,
+				"buffer_size": 2669,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/assets/styles/sass/components/_articles-container.scss",
+			"file": "app/Post.php",
 			"settings":
 			{
-				"buffer_size": 480,
+				"buffer_size": 170,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "app/FeaturedPost.php",
 			"settings":
 			{
-				"buffer_size": 72,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/assets/styles/sass/_foundation.scss",
-			"settings":
-			{
-				"buffer_size": 1755,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/assets/scripts/main.js",
-			"settings":
-			{
-				"buffer_size": 1795,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/assets/scripts/classes/featured-article.js",
-			"settings":
-			{
-				"buffer_size": 484,
+				"buffer_size": 664,
 				"line_ending": "Unix"
 			}
 		}
@@ -462,47 +446,63 @@
 	"expanded_folders":
 	[
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views"
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass"
 	],
 	"file_history":
 	[
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_typography.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_settings.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_global_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/composer.lock",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/composer.json",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/_Fixtures/articles.json",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/_Fixtures/article.json",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/TestCase.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_bio-container.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_small-article.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_stats-table.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_footer.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_articles-container.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_content.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_colors.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_buttons.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/blue-header.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/dev.todo",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/jquery/src/intro.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/foundation-sites/scss/foundation/components/_grid.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_links.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_chrome.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_foundation.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_titles.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/.gitignore",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_intro.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/jquery/src/intro.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_articles-container.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_chrome.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_colors.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_small-article.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_links.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/box.svg",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_content.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_interactions.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_titles.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_variables.json",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/Gruntfile.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/built/variables.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/settings-helper.js",
 		"/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/dev.todo",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/package.json",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/blue-header.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_typography.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_global_mixins.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_interactions.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app-trebuchet.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/sitewide.js",
@@ -581,27 +581,11 @@
 		"/Users/bryanthughes/Sites/Clients/dimos/third_party/store_helpers/mod.store_helpers.php",
 		"/Users/bryanthughes/Sites/Clients/dimos/third_party/store/src/Model/Order.php",
 		"/Users/bryanthughes/Sites/clients/dimos/templates/default_site/store.group/confirmation.html",
-		"/Users/bryanthughes/Sites/Clients/dimos/templates/default_site/home.group/index.html",
-		"/Users/bryanthughes/Sites/Clients/dimos/templates/default_site/_stash_templates/menu/menu_header_row.html",
-		"/Users/bryanthughes/.aliases",
-		"/Users/bryanthughes/Sites/Clients/dimos/config/deploy.rb",
-		"/Users/bryanthughes/Sites/Clients/dimos/dev.todo",
-		"/Users/bryanthughes/Sites/Clients/dimos/httpdocs/assets/scripts/main-instant.js",
-		"/Users/bryanthughes/Sites/Clients/dimos/system/expressionengine/config/config.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/tests/acceptance/InstantCheckoutCest.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/README.md",
-		"/Users/bryanthughes/Sites/Clients/dimos/tests/acceptance/AcceptanceGuy.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/httpdocs/assets/scripts/main.js",
-		"/Users/bryanthughes/Sites/Clients/dimos/httpdocs/assets/scripts/bb/instant/views/itemViews/CheckoutFormItemView.js",
-		"/Users/bryanthughes/Sites/Clients/dimos/httpdocs/assets/scripts/bb/instant/views/itemViews/CheckoutInfoItemView.js",
-		"/Users/bryanthughes/Sites/Clients/dimos/node_modules/bower/node_modules/colors/ReadMe.md",
-		"/Users/bryanthughes/Sites/Clients/dimos/templates/default_site/ajax.group/thanks.html",
-		"/Users/bryanthughes/Sites/Clients/dimos/third_party/mobile_checkout_api/src/Api/Service/CartService.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/third_party/store/src/Service/OrdersService.php"
+		"/Users/bryanthughes/Sites/Clients/dimos/templates/default_site/home.group/index.html"
 	],
 	"find":
 	{
-		"height": 54.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -649,6 +633,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"guzz",
+			"verticalDisplayEnabled",
+			"class=\"read-this",
+			"small-3",
+			"<div class=\"line\">&nbsp;</div>",
+			"<a class=\"read-this\" href=\"javascript:;\">Read this</a>",
+			"<div class=\"line\">&nbsp;</div>",
+			"collapse",
+			"table",
+			"23",
+			"MOST VISTS PER DAY",
+			"nova",
 			"Transition",
 			"$i;",
 			"$i",
@@ -764,19 +760,7 @@
 			"OrderModel",
 			"Carbon",
 			"carbon",
-			"validate",
-			"submitHandler",
-			"bugsnag",
-			"this.timeNewEstimated",
-			"this.timeNewEstimated.format(\"X",
-			"this.timeNewEst",
-			"Custom ORDER",
-			"conversion",
-			"console",
-			"location",
-			"payment_method",
-			"Stripe",
-			"stripe"
+			"validate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -838,149 +822,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/welcome.blade.php",
+					"file": "tests/Medium/Services/MediumServiceTest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13010,
+						"buffer_size": 1341,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11378,
-								11393
+								1102,
+								1102
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2515.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "public/assets/styles/sass/components/_featured-article.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2177,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								89,
-								89
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 1120.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/assets/styles/sass/components/_articles-container.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								456
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 72,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "public/assets/styles/sass/_foundation.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -992,59 +854,30 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 5,
-					"file": "public/assets/scripts/main.js",
+					"buffer": 1,
+					"file": "app/Lib/Medium/Services/MediumService.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1795,
+						"buffer_size": 2669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1684,
-								1684
+								1020,
+								1020
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 586.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "public/assets/scripts/classes/featured-article.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1052,7 +885,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "app/Post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/FeaturedPost.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								614
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1092,7 +987,7 @@
 		"cols":
 		[
 			0.0,
-			0.33,
+			0.243873288253,
 			0.66,
 			1.0
 		],
@@ -1125,16 +1020,224 @@
 		"selected_items":
 		[
 			[
+				"_settings",
+				"public/assets/styles/sass/_settings.scss"
+			],
+			[
+				"typ",
+				"public/assets/styles/sass/config/_typography.scss"
+			],
+			[
+				"typemix",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
+			],
+			[
+				"global",
+				"public/assets/styles/sass/utility/_global_mixins.scss"
+			],
+			[
+				"composer.lock",
+				"composer.lock"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"composer.json",
+				"composer.json"
+			],
+			[
+				"featured",
+				"public/assets/styles/sass/components/_featured-article.scss"
+			],
+			[
+				"main.js",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"featuredarticle",
+				"public/assets/styles/sass/components/_featured-article.scss"
+			],
+			[
+				"small-article",
+				"public/assets/styles/sass/components/_small-article.scss"
+			],
+			[
+				"bio",
+				"public/assets/styles/sass/components/_bio-container.scss"
+			],
+			[
+				"small",
+				"public/assets/styles/sass/components/_small-article.scss"
+			],
+			[
+				"articles",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"footer",
+				"public/assets/styles/sass/components/_footer.scss"
+			],
+			[
+				"stats",
+				"public/assets/styles/sass/components/_stats-table.scss"
+			],
+			[
+				"smallarti",
+				"public/assets/styles/sass/components/_small-article.scss"
+			],
+			[
+				"biocontainer",
+				"public/assets/styles/sass/components/_bio-container.scss"
+			],
+			[
+				"articlescont",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"content",
+				"public/assets/styles/sass/components/_content.scss"
+			],
+			[
+				"bio-con",
+				"public/assets/styles/sass/components/_bio-container.scss"
+			],
+			[
+				"articlescon",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"_buttons",
+				"public/assets/styles/sass/elements/_buttons.scss"
+			],
+			[
+				"bluehead",
+				"public/assets/styles/sass/components/_blue-header.scss"
+			],
+			[
+				"welcome",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"_colors",
+				"public/assets/styles/sass/config/_colors.scss"
+			],
+			[
+				"_layout",
+				"public/assets/styles/sass/base/_layout.scss"
+			],
+			[
+				"dev",
+				"dev.todo"
+			],
+			[
+				"introjs",
+				"node_modules/jquery/src/intro.js"
+			],
+			[
+				"featued",
+				"public/assets/scripts/classes/featured-article.js"
+			],
+			[
+				"blueheader.js",
+				"public/assets/scripts/classes/blue-header.js"
+			],
+			[
+				"biocon",
+				"public/assets/styles/sass/components/_bio-container.scss"
+			],
+			[
+				"_grid",
+				"node_modules/foundation-sites/scss/foundation/components/_grid.scss"
+			],
+			[
+				"small-ati",
+				"public/assets/styles/sass/components/_small-article.scss"
+			],
+			[
+				"links",
+				"public/assets/styles/sass/elements/_links.scss"
+			],
+			[
+				"_layou",
+				"public/assets/styles/sass/base/_layout.scss"
+			],
+			[
+				"_chrome",
+				"public/assets/styles/sass/base/_chrome.scss"
+			],
+			[
+				"_foundation",
+				"public/assets/styles/sass/_foundation.scss"
+			],
+			[
+				"typoh",
+				"public/assets/styles/sass/config/_typography.scss"
+			],
+			[
+				"app.scss",
+				"public/assets/styles/sass/app.scss"
+			],
+			[
+				"featuredart",
+				"public/assets/scripts/classes/featured-article.js"
+			],
+			[
+				"typograph",
+				"public/assets/styles/sass/config/_typography.scss"
+			],
+			[
+				"typo",
+				"public/assets/styles/sass/config/_typography.scss"
+			],
+			[
+				"main",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"color",
+				"public/assets/styles/sass/config/_colors.scss"
+			],
+			[
+				"_titles",
+				"public/assets/styles/sass/elements/_titles.scss"
+			],
+			[
+				"articles-con",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"blue",
+				"public/assets/styles/sass/components/_blue-header.scss"
+			],
+			[
+				"chrome",
+				"public/assets/styles/sass/base/_chrome.scss"
+			],
+			[
+				"articles-contai",
+				"public/assets/styles/sass/components/_articles-container.scss"
+			],
+			[
+				"buton",
+				"public/assets/styles/sass/elements/_buttons.scss"
+			],
+			[
+				"buttons",
+				"node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss"
+			],
+			[
 				"articles-container",
 				"public/assets/styles/sass/components/_articles-container.scss"
 			],
 			[
 				"featuredar",
 				"public/assets/scripts/classes/featured-article.js"
-			],
-			[
-				"main.js",
-				"public/assets/scripts/main.js"
 			],
 			[
 				"featured.a",
@@ -1161,14 +1264,6 @@
 				"public/assets/styles/sass/components/_intro.scss"
 			],
 			[
-				"articles",
-				"public/assets/styles/sass/components/_articles-container.scss"
-			],
-			[
-				"featured",
-				"public/assets/styles/sass/components/_featured-article.scss"
-			],
-			[
 				"featuredarti",
 				"public/assets/styles/sass/components/_featured-article.scss"
 			],
@@ -1177,16 +1272,8 @@
 				"public/assets/styles/sass/config/_colors.scss"
 			],
 			[
-				"chrome",
-				"public/assets/styles/sass/base/_chrome.scss"
-			],
-			[
 				"_color",
 				"public/assets/styles/sass/config/_colors.scss"
-			],
-			[
-				"app.scss",
-				"public/assets/styles/sass/app.scss"
 			],
 			[
 				"_ch",
@@ -1197,20 +1284,8 @@
 				"public/assets/styles/sass/components/_intro.scss"
 			],
 			[
-				"welcome",
-				"resources/views/welcome.blade.php"
-			],
-			[
 				"bluehea",
 				"public/assets/styles/sass/components/_blue-header.scss"
-			],
-			[
-				"content",
-				"public/assets/styles/sass/components/_content.scss"
-			],
-			[
-				"featuredarticle",
-				"public/assets/styles/sass/components/_featured-article.scss"
 			],
 			[
 				"classesintro.js",
@@ -1237,24 +1312,12 @@
 				"dev.todo"
 			],
 			[
-				"bluehead",
-				"public/assets/scripts/classes/blue-header.js"
-			],
-			[
 				"globalmix",
 				"public/assets/styles/sass/utility/_global_mixins.scss"
 			],
 			[
-				"typoh",
-				"public/assets/styles/sass/base/_typography.scss"
-			],
-			[
 				"typemx",
 				"public/assets/styles/sass/utility/_type_mixins.scss"
-			],
-			[
-				"typo",
-				"public/assets/styles/sass/config/_typography.scss"
 			],
 			[
 				"interaction",
@@ -1279,10 +1342,6 @@
 			[
 				"routes",
 				"app/Http/routes.php"
-			],
-			[
-				"_colors",
-				"httpdocs/assets/styles/sass/config/_colors.scss"
 			],
 			[
 				"bootstrap",
@@ -1315,10 +1374,6 @@
 			[
 				"ordersservice",
 				"third_party/dimos_store_api/lib/Services/OrdersService.php"
-			],
-			[
-				"dev",
-				"dev.todo"
 			],
 			[
 				"_for",
@@ -1475,166 +1530,6 @@
 			[
 				"ordersservi",
 				"third_party/store/src/Service/OrdersService.php"
-			],
-			[
-				"abstractservice",
-				"third_party/store/src/Service/AbstractService.php"
-			],
-			[
-				"ee_output",
-				"system/expressionengine/core/EE_Output.php"
-			],
-			[
-				"reportsservice",
-				"third_party/_store/src/Store/Service/ReportsService.php"
-			],
-			[
-				"paymentsservice",
-				"third_party/_store/src/Store/Service/PaymentsService.php"
-			],
-			[
-				"paymentsser",
-				"third_party/store/src/Service/PaymentsService.php"
-			],
-			[
-				"orderscontroller",
-				"third_party/store/src/Cp/OrdersController.php"
-			],
-			[
-				"cap",
-				"Capfile"
-			],
-			[
-				"code_head",
-				"templates/default_site/_stash_templates/site/code_header.html"
-			],
-			[
-				"gemfile",
-				"Gemfile"
-			],
-			[
-				"config_local",
-				"config/config_local.php"
-			],
-			[
-				"bootstrap.php",
-				"config/bootstrap.php"
-			],
-			[
-				".htaccess",
-				"httpdocs/.htaccess"
-			],
-			[
-				".htacces",
-				"httpdocs/.htaccess"
-			],
-			[
-				"_modules",
-				"httpdocs/assets/styles/sass/modules/_modules.scss"
-			],
-			[
-				"homeindex.html",
-				"templates/default_site/home.group/index.html"
-			],
-			[
-				"mobilecheck",
-				"third_party/mobile_checkout_api/mod.mobile_checkout_api.php"
-			],
-			[
-				"site.php",
-				"third_party/site_manager_client/classes/Site.php"
-			],
-			[
-				"templatemenu",
-				"httpdocs/assets/scripts/templates/template-menu.js"
-			],
-			[
-				"code_footer",
-				"templates/default_site/_stash_templates/site/code_footer.html"
-			],
-			[
-				"template-menu",
-				"httpdocs/assets/scripts/templates/template-menu.js"
-			],
-			[
-				"statusupdat",
-				"httpdocs/assets/scripts/bb/dims/views/itemViews/StatusUpdateContainerItemView.js"
-			],
-			[
-				"statusupdate",
-				"httpdocs/assets/scripts/bb/dims/views/itemViews/StatusUpdateContainerItemView.js"
-			],
-			[
-				"dims",
-				"httpdocs/assets/scripts/built/dims.js"
-			],
-			[
-				"paymentservice",
-				"third_party/store/src/Store/Service/PaymentsService.php"
-			],
-			[
-				"code_header",
-				"templates/default_site/_stash_templates/site/code_header.html"
-			],
-			[
-				"paymentaction",
-				"third_party/store/src/Store/Action/PaymentAction.php"
-			],
-			[
-				"storehelpes",
-				"third_party/store_helpers/ext.store_helpers.php"
-			],
-			[
-				"totalla",
-				"httpdocs/assets/scripts/bb/instant/layouts/TotalLayout.js"
-			],
-			[
-				"routingcontro",
-				"httpdocs/assets/scripts/bb/instant/controllers/RoutingController.js"
-			],
-			[
-				"favorite",
-				"httpdocs/assets/scripts/bb/instant/layouts/FavoritesLayout.js"
-			],
-			[
-				"productform",
-				"templates/default_site/_stash_templates/menu/product_form.html"
-			],
-			[
-				"app.js",
-				"httpdocs/assets/scripts/bb/instant/apps/App.js"
-			],
-			[
-				"router.js",
-				"httpdocs/assets/scripts/bb/instant/routers/Router.js"
-			],
-			[
-				"template-checkout",
-				"httpdocs/assets/scripts/templates/template-checkout.js"
-			],
-			[
-				"router",
-				"httpdocs/assets/scripts/bb/instant/routers/Router.js"
-			],
-			[
-				"analty",
-				"httpdocs/assets/scripts/classes/analyticsHelper.js"
-			],
-			[
-				"checkoutform",
-				"httpdocs/assets/scripts/bb/instant/views/itemViews/CheckoutFormItemView.js"
-			],
-			[
-				"thankslayout",
-				"httpdocs/assets/scripts/bb/instant/layouts/ThanksLayout.js"
-			],
-			[
-				"checkoutlayout",
-				"httpdocs/assets/scripts/bb/instant/layouts/CheckoutLayout.js"
-			],
-			[
-				"favorites",
-				"httpdocs/assets/scripts/bb/instant/layouts/FavoritesLayout.js"
 			]
 		],
 		"width": 0.0
@@ -1642,9 +1537,29 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "broom",
+		"last_filter": "js",
 		"selected_items":
 		[
+			[
+				"js",
+				"~/Sites/clients/jsheld/jsheldios/jsheldios.sublime-project"
+			],
+			[
+				"dims",
+				"~/Sites/clients/dimos/dims/dims.sublime-project"
+			],
+			[
+				"milen",
+				"~/Sites/clients/cultivator/milender-white/milender-white.sublime-project"
+			],
+			[
+				"bryant",
+				"~/Sites/clients/Personal/bryanthughes/bryanthughes.sublime-project"
+			],
+			[
+				"it-",
+				"~/Sites/clients/broomfield/it-portal/it-portal.sublime-project"
+			],
 			[
 				"broom",
 				"~/Sites/Clients/broomfield/openspaces-app/openspaces.sublime-project"
@@ -1656,18 +1571,6 @@
 			[
 				"smar",
 				"~/Sites/clients/smartzip/website/smartzip.sublime-project"
-			],
-			[
-				"js",
-				"~/Sites/Clients/jsheld/website/jsheld.sublime-project"
-			],
-			[
-				"bryant",
-				"~/Sites/clients/Personal/bryanthughes/bryanthughes.sublime-project"
-			],
-			[
-				"dims",
-				"~/Sites/clients/dimos/dims/dims.sublime-project"
 			],
 			[
 				"mil",
@@ -1961,7 +1864,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -1969,7 +1872,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 271.0,
+	"side_bar_width": 351.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

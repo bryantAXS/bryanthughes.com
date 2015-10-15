@@ -34,4 +34,16 @@ FeaturedArticle.loadContent = function(){
 
 };
 
+
+/**
+ * Getting things configured for having no animation
+ * @return {[type]} [description]
+ */
+FeaturedArticle.noAnimation = function(){
+
+  $("[featured-article]").addClass("animated-in");
+  $("[featured-article] .content").addClass("animated-in");
+
+};
+
 module.exports = FeaturedArticle;

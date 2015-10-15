@@ -1,0 +1,55 @@
+[footer]{
+
+  & > div:nth-child(1){
+    background-color: $blue;
+  }
+
+  & > div:nth-child(2){
+
+    background-color: rgba($blue, 0.7);
+    overflow:hidden;
+
+    .square{
+
+      &::before{
+        content:"";
+        border: 3px solid $white;
+        height: 100%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left: -12.5%;
+        margin-top: -12.5%;
+        width: 100%;
+      }
+
+      border: 3px solid $white;
+      height: 35%;
+      position: absolute;
+      top:45%;
+      left:45%;
+      margin-left: -17.5%;
+      margin-top: -17.5%;
+      width: 35%;
+      z-index:2;
+    }
+
+    img{
+      bottom:-30px;
+      left:0;
+      position:absolute;
+      width:100%;
+      z-index:1;
+    }
+
+  }
+
+  & > div:nth-child(3){
+    background-color: rgba($blue, 0.5);
+  }
+
+  & > div{
+    height: 500px;
+  }
+
+}

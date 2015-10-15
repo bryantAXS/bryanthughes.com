@@ -1,12 +1,17 @@
 [articles-container]{
 
   background-color: $white;
-  display:none;
-  padding-bottom: 400px;
+  padding-bottom: 280px;
   position:relative;
+  @include opacity(0);
+  @include transition(opacity 200ms $easing);
+
+  @media #{$medium-up}{
+    padding-bottom: 340px;
+  }
 
   &::before{
-    background-color: $white;
+    background-color: $grey;
     content: "";
     height:700px;
     left:0;
@@ -14,10 +19,7 @@
     position:absolute;
     width:100%;
     z-index:1;
-  }
-
-  &.animated-in{
-    display: block;
+    @include transition(background-color 800ms 500ms $easing);
   }
 
   .title-container{
@@ -25,12 +27,38 @@
 
     .title{
       position:absolute;
-      top:-185px;
+      top:-147px;
       z-index:5;
       @media #{$xlarge-up}{
-        top:-325px;
+        top:-190px;
       }
     }
+  }
+
+  .articles-row{
+    padding-top:60px;
+  }
+
+}
+
+.intro-animated-in{
+
+}
+
+//
+// On wide screen there was a jerky transition going from the gradient blue
+// to the white background -- so we're animating that to make it a bit smoother
+//
+.content-animated-in{
+
+  [articles-container]{
+
+    @include opacity(1);
+
+    &::before{
+      background-color: $white;
+    }
+
   }
 
 }

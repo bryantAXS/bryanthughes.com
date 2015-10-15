@@ -4,7 +4,7 @@ $line-height-header: 1.25em;
 $type-scale-ratio: 1.25;
 $em-ratio: $font-size / 1em;
 
-@include font-face("Ripley", "atc-ripley/ACTRipley-Regular", 400);
+@include font-face("Ripley", "atc-ripley/ATCRipley-Regular", 400);
 
 @include font-face("DecimaMono", "decima-mono/DecimaMono-Light", 200);
 @include font-face("DecimaMono", "decima-mono/DecimaMono", 400);

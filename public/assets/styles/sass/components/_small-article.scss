@@ -1,26 +1,73 @@
 [small-article]{
 
-  span{
+  min-height:180px;
+
+  .digit{
     color: $darkgrey;
     display:block;
     @include font("DecimaMono", 14px, 400, 18px);
+    @include transform(translateY(10px));
+    @include transition(all 200ms ease-in-out);
   }
 
   h2{
     color: $black;
     margin-top:20px;
     @include font("DecimaMono", 24px, 400, 28px);
+    @include transform(translateY(10px));
+    @include transition(all 200ms ease-in-out);
   }
 
-  .line{
-    background-color: $blue;
-    height:4px;
-    margin-top: 20px;
-    width:95px;
+  .read-this{
+
+    display:inline-block;
+    padding-bottom:4px;
+    position: relative;
+    margin-top:8px;
+    @include transform(translateY(-16px));
+    @include transition(transform 200ms ease-in-out);
+
+    &::before{
+      content:"";
+      height:4px;
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:95px;
+      @include background-image($blue-gradient);
+      @include opacity(1);
+    }
+
+    span{
+      color: $darkgrey;
+      @include font("DecimaMonoItalic", 16px, 400, 16px);
+      @include opacity(0);
+      @include transition(opacity 200ms ease-in-out);
+    }
+
   }
 
-  &:nth-child(1n+5){
-    margin-top: 80px;
+  @media #{$large-up}{
+    &:nth-child(1n+5){
+      margin-top: 80px;
+    }
+  }
+
+}
+
+[small-article]:hover{
+
+  .digit, h2{
+    @include opacity(1);
+    @include transform(translateY(0));
+  }
+
+  .read-this{
+    @include transform(translateY(0px));
+
+    span{
+      @include opacity(1);
+    }
   }
 
 }

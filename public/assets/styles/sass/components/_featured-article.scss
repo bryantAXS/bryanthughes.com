@@ -1,11 +1,19 @@
 [featured-article]{
 
   margin-bottom: 25px;
-  padding-bottom: 420px;
+  padding-bottom: 120px;
   position:relative;
 
+  @media #{$medium-up}{
+    padding-bottom: 260px;
+  }
+
+  @media #{$large-up}{
+    margin-bottom: 24px;
+  }
+
   @media #{$xlarge-up}{
-    margin-bottom: 150px;
+    margin-bottom: 65px;
   }
 
   //
@@ -14,6 +22,11 @@
   .content{
     position:relative;
     z-index:4;
+
+    @media #{$medium-up}{
+      top:-157px;
+    }
+
   }
 
   .title{
@@ -21,22 +34,46 @@
   }
 
   h1{
+    margin-bottom:0;
+    margin-top:90px;
     position:relative;
     text-transform: uppercase;
-    @include font("DecimaMono", 56px, 400);
+    @include font("DecimaMono", 46px, 400);
     @include transition(all 500ms 200ms $easing);
+
+    @media #{$medium-up}{
+      @include font("DecimaMono", 56px, 400);
+    }
 
     &::after{
       background-color: $blue;
       content: "";
-      height:45px;
-      left:-17px;
+      height:94px;
+      left:-36px;
       position:absolute;
-      bottom:-73px;
-      width:45px;
+      bottom:-100px;
+      width:94px;
       z-index:4;
       @include border-radius(50%);
+
+      @media #{$medium-up}{
+        bottom:-135px;
+      }
     }
+  }
+
+  h3{
+    color: $black;
+    display:none;
+    @include transition(all 500ms 200ms $easing);
+
+    @media #{$medium-up}{
+      display:block;
+      margin: 15px 0 0 105px;
+      @include font("DecimaMonoItalic", 22.6px, 400);
+    }
+
+
   }
 
   .intro-big{
@@ -46,14 +83,61 @@
     @include transition(all 500ms 400ms $easing);
   }
 
+  .big-letter{
+    position:relative;
+    top:6px;
+    @include font("Erato", 32px, 400, 32px);
+  }
+
   .intro-small{
     @include font("Erato", 18px, 400, 32px);
     @include transition(all 500ms 400ms $easing);
   }
 
-  .title, h1, .intro-big, .intro-small{
+  .title, h1, h3, .intro-big, .intro-small, .continue-reading{
     @include opacity(0);
     @include transform(translateX(20px));
+  }
+
+
+  //
+  // CONTINUE READING LINK
+  //
+  .continue-reading{
+
+    display:inline-block;
+    position:relative;
+    @include font("DecimaMono", 18px);
+    @include transition(all 500ms 400ms $easing);
+
+    &::before{
+      border: 3px solid #C3ECF0;
+      content: "";
+      left: 0px;
+      position: absolute;
+      width: 172px;
+      height: 0px;
+      top: 5px;
+      z-index: 1;
+      @include transition(all 400ms $easing);
+    }
+
+    &:hover{
+
+      &::before{
+        height: 31px;
+        left: -5px;
+        top: -8px;
+        width: 185px;
+      }
+
+    }
+
+    span{
+      position:relative;
+      z-index:2;
+    }
+
   }
 
   //
@@ -63,21 +147,45 @@
   .bg{
     background-color: $grey;
     height:100%;
-    left:-15%;
+    left:-50%;
     overflow:hidden;
     position:absolute;
-    top:-213px;
-    width:130%;
+    top:10px;
+    width:200%;
     z-index:3;
-    @include transform(rotate(7deg) translateY(100%));
+
+    @media #{$medium-up}{
+      top:-213px;
+    }
+
+    @include transform(rotate(7deg) translateY(120%));
   }
 
   //
   //
   //
   .mountain{
+
+    left: -200px;
+
+    @media #{$medium-only}{
+      left: 155px;
+    }
+
+    @media #{$large-up}{
+      left: 355px;
+    }
+
+    @media #{$xlarge-up}{
+      left: 550px;
+    }
+
+    @media #{$xxlarge-up}{
+      left: 785px;
+    }
+
     bottom: -345px;
-    left: -65px;
+
     height:593px;
     width:633px;
     position: absolute;
@@ -94,8 +202,9 @@
 // animating gey background
 
 [featured-article].animated-in{
+  // cubic-bezier(0.02, 0.93, 0.16, 1.04) - bezier with up and down
   .bg{
-    @include animation(featured-article-animate-in 800ms $easing);
+    @include animation(featured-article-animate-in 1000ms $easing);
     @include animation-fill-mode(forwards);
   }
 }
@@ -118,12 +227,22 @@
     @include transform(translateX(0));
   }
 
+  h3{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
   .intro-big{
     @include opacity(1);
     @include transform(translateX(0));
   }
 
   .intro-small{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+  .continue-reading{
     @include opacity(1);
     @include transform(translateX(0));
   }

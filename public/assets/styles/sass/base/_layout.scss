@@ -2,5 +2,22 @@
 // EM IS FOR TYPE RELATIVE ADJUSTMENTS
 
 html, body {
-  //height: 100%; // 100% height div hack
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+}
+
+body.content-animated-in{
+  height:auto;
+  overflow-x:hidden;
+}
+
+.row.full-width{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }

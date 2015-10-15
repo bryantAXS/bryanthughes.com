@@ -2,23 +2,58 @@
 
   background-color: $grey;
   position:relative;
-  padding-top:350px;
+  padding-bottom: 145px;
+  padding-top:165px;
+
+  @media #{$medium-up}{
+    padding-top:350px;
+  }
 
   .white-bg-container{
     background-color: $white;
+    overflow:hidden;
     position:absolute;
-    height: 380px;
-    top:-190px;
+    height: 445px;
+    top:-220px;
     left:0;
-    width:100%;
-    @include rotate(7deg);
+    right:-60px;
+    @include rotate(10deg);
 
     .more-container{
-      @include rotate(-7deg);
+      @include rotate(-10deg);
 
       .small-12{
         text-align:center;
       }
+
+      [button]{
+        position:relative;
+        margin-left: -100px;
+        top:10px;
+      }
+    }
+
+    .birds{
+      position:absolute;
+      height:150px;
+      width: 400px;
+      right:0;
+      bottom:100px;
+      z-index:2;
+      @include opacity(0.2);
+    }
+
+    .mountains{
+      position:absolute;
+      right:-20px;
+      bottom:-50px;
+      z-index:1;
+
+      @media #{$medium-up}{
+        bottom: -150px;
+      }
+
+      @include transform(rotate(-10deg));
     }
 
   }
@@ -29,7 +64,6 @@
 
   .subtitle{
     color: $darkgrey;
-    margin-bottom: 90px;
     text-transform: uppercase;
     @include font("DecimaMono", 16px, 400, 20px);
     a{
@@ -53,5 +87,19 @@
     @include font("Erato", 18px, 400, 29px);
   }
 
+  .signature{
+    color: $black;
+    display:block;
+    position:relative;
+    margin-left: 70px;
+    margin-top:100px;
+    @include font("Ripley", 64px, 400);
+  }
+
+  .birds{
+    bottom:0;
+    position:absolute;
+    right:-20;
+  }
 
 }

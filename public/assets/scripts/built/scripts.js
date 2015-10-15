@@ -17184,18 +17184,25 @@ BlueHeader.load = function(){
 
   setTimeout(function(){
 
-    console.log("go");
-
     $("[blue-header]").addClass("animated-in");
 
     setTimeout(function(){
       loaded.resolve();
     }, 500);
 
-
-  }, 1900);
+  }, 1500);
 
   return loaded;
+
+};
+
+/**
+ * Gettings things configured for no animation
+ * @return {[type]} [description]
+ */
+BlueHeader.noAnimation = function(){
+
+  $("[blue-header]").addClass("animated-in");
 
 };
 
@@ -17237,6 +17244,18 @@ FeaturedArticle.loadContent = function(){
 
 };
 
+
+/**
+ * Getting things configured for having no animation
+ * @return {[type]} [description]
+ */
+FeaturedArticle.noAnimation = function(){
+
+  $("[featured-article]").addClass("animated-in");
+  $("[featured-article] .content").addClass("animated-in");
+
+};
+
 module.exports = FeaturedArticle;
 },{}],7:[function(require,module,exports){
 
@@ -17275,7 +17294,6 @@ Intro.load = function(){
 
       // time to remove all the text
       setTimeout(function(){
-
 
         $("body").addClass("show-border");
 
@@ -17356,7 +17374,8 @@ var BlueHeader = require('./classes/blue-header.js');
 //
 // CONSTANTS
 //
-var LOAD_INTRO = true;
+var LOAD_INTRO = false;
+var NO_ANIMATION = false;
 
 /**
  * Starting things up!
@@ -17386,29 +17405,44 @@ $(window).ready(function(){
   // Getting things going
   introLoaded.done(function(){
 
-    setTimeout(function(){
+    if(NO_ANIMATION){
 
+      // getting everything in place at ONCE -- just for slicing
+      $("[intro]").addClass("is-hidden");
+      $("[content]").addClass("is-shown");
+      FeaturedArticle.noAnimation();
+      BlueHeader.noAnimation();
+      $("[articles-container]").addClass("animated-in");
+
+    }else{
+
+      $("body").addClass("intro-animated-in");
       $("[intro]").addClass("is-hidden");
       $("[content]").addClass("is-shown");
 
-      // 2) transition in grey box
-      FeaturedArticle.load();
+      setTimeout(function(){
 
-      // 3) animate in blue header / mountains
-      var done = BlueHeader.load();
+        // 2) transition in grey box
+        FeaturedArticle.load();
 
-      done.done(function(){
+        // 3) animate in blue header / mountains
+        var done = BlueHeader.load();
 
-        var featuredArticleDone = FeaturedArticle.loadContent();
+        done.done(function(){
 
-        featuredArticleDone.done(function(){
-          console.log("aaaa");
-          $("[articles-container]").addClass("animated-in");
+          var featuredArticleDone = FeaturedArticle.loadContent();
+
+          featuredArticleDone.done(function(){
+            $("body").addClass("content-animated-in");
+          });
+
         });
 
-      });
+      }, 1000);
 
-    }, 1000);
+    }
+
+
 
   });
 

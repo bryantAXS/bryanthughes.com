@@ -1,13 +1,24 @@
 [blue-header]{
 
-  height: 366px;
+  height: 150px;
+
+  @media #{$medium-up}{
+    height: 360px;
+  }
+
   @include background-image($blue-gradient);
 
   img{
     width:65%;
     @include opacity(0);
-    @include transform(translate3d(-10px, -55px, 0));
+    @include transform(translate3d(-10px, 65px, 0));
     @include transition(all 700ms $easing);
+  }
+
+  @media #{$medium-up}{
+    img{
+      @include transform(translate3d(-10px, -55px, 0));
+    }
   }
 
 }
@@ -16,7 +27,13 @@
 
   img{
     @include opacity(1);
-    @include transform(translate3d(0, -55px, 0));
+    @include transform(translate3d(0, 65px, 0));
+  }
+
+  @media #{$medium-up}{
+    img{
+      @include transform(translate3d(0, -55px, 0));
+    }
   }
 
 }

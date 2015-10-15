@@ -35,7 +35,6 @@ Intro.load = function(){
       // time to remove all the text
       setTimeout(function(){
 
-
         $("body").addClass("show-border");
 
         // time to animate the border and resolve the intro animation
