@@ -160,11 +160,13 @@
                   Beyond Remote
                 </h1>
 
+                <!--
                 <h3>
-                  Subtitle goes here about something
+                  A look at what it means to run a remote-business, and why it's so much more than being labeled a Digital Nomad.
                 </h3>
+                -->
 
-                <p class="intro-big mt35">
+                <p class="intro-big">
                   <span class="big-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 

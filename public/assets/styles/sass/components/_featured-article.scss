@@ -42,41 +42,43 @@
     @include transition(all 500ms 200ms $easing);
 
     @media #{$medium-up}{
-      @include font("DecimaMono", 56px, 400);
+      @include font("DecimaMono", 64px, 400);
     }
 
-    &::after{
-      background-color: $blue;
-      content: "";
-      height:94px;
-      left:-36px;
-      position:absolute;
-      bottom:-100px;
-      width:94px;
-      z-index:4;
-      @include border-radius(50%);
-
-      @media #{$medium-up}{
-        bottom:-135px;
-      }
-    }
   }
 
   h3{
     color: $black;
     display:none;
+    text-transform:uppercase;
     @include transition(all 500ms 200ms $easing);
 
     @media #{$medium-up}{
       display:block;
-      margin: 15px 0 0 105px;
-      @include font("DecimaMonoItalic", 22.6px, 400);
+      margin: 15px 0 0 0;
+      @include font("DecimaMono", 22.6px, 400, 26px);
     }
 
 
   }
 
   .intro-big{
+    &::before{
+      background-color: $blue;
+      content: "";
+      height:94px;
+      left:-36px;
+      position:absolute;
+      top:-29px;
+      width:94px;
+      z-index:-2;
+      @include border-radius(50%);
+
+      @media #{$medium-up}{
+        bottom:-135px;
+      }
+    }
+    margin-top:40px;
     position:relative;
     z-index:4;
     @include font("Erato", 22.6px, 400, 36px);
@@ -158,7 +160,7 @@
       top:-213px;
     }
 
-    @include transform(rotate(7deg) translateY(120%));
+    @include transform(rotate(7deg) translateY(145%));
   }
 
   //
