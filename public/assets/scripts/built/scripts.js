@@ -17219,7 +17219,7 @@ FeaturedArticle.load = function(){
 
   setTimeout(function(){
 
-    $("[featured-article]").addClass("animated-in");
+    $("body").addClass("containers-animated-in");
 
     loaded.resolve();
 

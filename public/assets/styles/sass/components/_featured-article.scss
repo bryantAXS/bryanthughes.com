@@ -155,12 +155,12 @@
     top:10px;
     width:200%;
     z-index:3;
+    @include transform(rotate(7deg) translateY(145%));
+    @include transition(all 1000ms $easing);
 
     @media #{$medium-up}{
       top:-213px;
     }
-
-    @include transform(rotate(7deg) translateY(145%));
   }
 
   //
@@ -201,18 +201,8 @@
 // Animations
 //
 
-// animating gey background
-
-[featured-article].animated-in{
-  // cubic-bezier(0.02, 0.93, 0.16, 1.04) - bezier with up and down
+.containers-animated-in [featured-article]{
   .bg{
-    @include animation(featured-article-animate-in 1000ms $easing);
-    @include animation-fill-mode(forwards);
-  }
-}
-
-@keyframes featured-article-animate-in{
-  100%{
     @include transform(rotate(-15deg) translateY(0));
   }
 }

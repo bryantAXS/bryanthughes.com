@@ -3,15 +3,15 @@
   background-color: $white;
   padding-bottom: 280px;
   position:relative;
-  @include opacity(0);
-  @include transition(opacity 200ms $easing);
+  @include transform(rotate(7deg) translateY(145%));
+  @include transition(all 1000ms $easing);
 
   @media #{$medium-up}{
     padding-bottom: 340px;
   }
 
   &::before{
-    background-color: $grey;
+    background-color: $white;
     content: "";
     height:700px;
     left:0;
@@ -19,7 +19,6 @@
     position:absolute;
     width:100%;
     z-index:1;
-    @include transition(background-color 800ms 500ms $easing);
   }
 
   .title-container{
@@ -45,20 +44,8 @@
 
 }
 
-//
-// On wide screen there was a jerky transition going from the gradient blue
-// to the white background -- so we're animating that to make it a bit smoother
-//
-.content-animated-in{
 
-  [articles-container]{
-
-    @include opacity(1);
-
-    &::before{
-      background-color: $white;
-    }
-
-  }
-
-}
+// Animating our content containers in
+.containers-animated-in [articles-container]{
+    @include transform(rotate(0deg) translateY(0));
+ }

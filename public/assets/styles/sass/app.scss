@@ -1,6 +1,8 @@
 // Comment out this import if you don't want to use normalize
 @import "overrides/normalize";
 
+@import "settings";
+
 // Foundation & Compass
 @import "foundation";
 @import "compass/css3";
