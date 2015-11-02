@@ -35,7 +35,11 @@
   }
 
   .articles-row{
-    padding-top:60px;
+    padding-top:160px;
+
+    @media #{$medium-up}{
+      padding-top:60px;
+    }
   }
 
 }

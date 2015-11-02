@@ -25,7 +25,7 @@ FeaturedArticle.loadContent = function(){
 
   setTimeout(function(){
 
-    $("[featured-article] .content").addClass("animated-in");
+    $("[featured-article]").addClass("animated-in");
     loaded.resolve();
 
   }, 300);
@@ -42,7 +42,6 @@ FeaturedArticle.loadContent = function(){
 FeaturedArticle.noAnimation = function(){
 
   $("[featured-article]").addClass("animated-in");
-  $("[featured-article] .content").addClass("animated-in");
 
 };
 

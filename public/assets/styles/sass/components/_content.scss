@@ -8,12 +8,17 @@
 
 [content] .gradient-container{
 
-  padding-bottom: 160px;
+  position:absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
 
   @media #{$medium-up}{
     padding-bottom: 0;
   }
 
   overflow:hidden;
+
   @include background-image($blue-gradient);
 }

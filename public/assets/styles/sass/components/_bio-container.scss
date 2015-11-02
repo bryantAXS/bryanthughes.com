@@ -3,9 +3,13 @@
   background-color: $grey;
   position:relative;
   padding-bottom: 145px;
-  padding-top:165px;
+  padding-top:182px;
 
-  @media #{$medium-up}{
+  @media #{$medium-only}{
+    padding-top:172px;
+  }
+
+  @media #{$large-up}{
     padding-top:350px;
   }
 
@@ -59,7 +63,13 @@
   }
 
   .bio-content-row{
-    margin-top: 60px;
+    margin-top: 90px;
+    @media #{$medium-only}{
+      margin-top: 140px;
+    }
+    @media #{$large-up}{
+      margin-top: 60px;
+    }
   }
 
   .subtitle{

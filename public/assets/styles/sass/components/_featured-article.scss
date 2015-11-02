@@ -1,11 +1,13 @@
 [featured-article]{
 
   margin-bottom: 25px;
+  margin-top:100px;
   padding-bottom: 120px;
   position:relative;
 
   @media #{$medium-up}{
     padding-bottom: 260px;
+    margin-top:350px;
   }
 
   @media #{$large-up}{
@@ -23,25 +25,30 @@
     position:relative;
     z-index:4;
 
-    @media #{$medium-up}{
-      top:-157px;
+    @media #{$medium-only}{
+      top:-183px;
+    }
+
+    @media #{$large-up}{
+      top:-140px;
     }
 
   }
 
-  .title{
+  #the-latest{
     @include transition(all 500ms $easing);
   }
 
   h1{
     margin-bottom:0;
-    margin-top:90px;
+    margin-top:60px;
     position:relative;
     text-transform: uppercase;
     @include font("DecimaMono", 46px, 400);
     @include transition(all 500ms 200ms $easing);
 
     @media #{$medium-up}{
+      margin-top:90px;
       @include font("DecimaMono", 64px, 400);
     }
 
@@ -59,13 +66,13 @@
       @include font("DecimaMono", 22.6px, 400, 26px);
     }
 
-
   }
 
   .intro-big{
     &::before{
       background-color: $blue;
       content: "";
+      display:none;
       height:94px;
       left:-36px;
       position:absolute;
@@ -76,6 +83,7 @@
 
       @media #{$medium-up}{
         bottom:-135px;
+        display:block;
       }
     }
     margin-top:40px;
@@ -96,7 +104,7 @@
     @include transition(all 500ms 400ms $easing);
   }
 
-  .title, h1, h3, .intro-big, .intro-small, .continue-reading{
+  #the-latest, h1, h3, .intro-big, .intro-small, .continue-reading{
     @include opacity(0);
     @include transform(translateX(20px));
   }
@@ -140,6 +148,36 @@
       z-index:2;
     }
 
+  }
+
+
+  //
+  // Our header at the bottom
+  //
+  .past-thoughts-container{
+    position:absolute;
+    height:67px;
+    width:100%;
+    bottom:-106px;
+    left:0;
+
+    @media #{$medium-only}{
+      bottom:83px;
+    }
+
+    @media #{$large-up}{
+      bottom:45px;
+    }
+
+    .title-container{
+      position:relative;
+      z-index:5;
+    }
+
+    #past-thoughts{
+      @include opacity(0);
+      @include transition(all 500ms 600ms $easing);
+    }
   }
 
   //
@@ -193,6 +231,7 @@
     position: absolute;
     z-index:1;
     @include transform(rotate(15deg));
+
   }
 
 }
@@ -207,9 +246,9 @@
   }
 }
 
-[featured-article] .content.animated-in{
+[featured-article].animated-in{
 
-  .title{
+  #the-latest{
     @include opacity(1);
     @include transform(translateX(0));
   }
@@ -235,6 +274,11 @@
   }
 
   .continue-reading{
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+  #past-thoughts{
     @include opacity(1);
     @include transform(translateX(0));
   }

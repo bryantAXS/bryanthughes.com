@@ -133,59 +133,66 @@
 
   <div content>
 
-    <div class="gradient-container">
+    <div blue-header>
+      <img src="/assets/images/mountains-header.png" />
+    </div>
 
-      <div blue-header>
-        <img src="/assets/images/mountains-header.png" />
-      </div>
+   <div featured-article>
 
-        <div featured-article>
-
-          <div class="bg">
-            <img class="mountain" src="/assets/images/mountains-grey.png" />
-          </div>
+    <div class="bg">
+      <img class="mountain" src="/assets/images/mountains-grey.png" />
+    </div>
 
 
-          <div class="row">
-            <div class="columns small-12 medium-offset-1 medium-10 large-offset-1 large-10">
+    <div class="row">
+      <div class="columns small-12 medium-offset-1 medium-10 large-offset-1 large-10">
 
-              <div class="content">
+        <div class="content">
 
-                <h2 class="title">
-                  <span>THE</span>
-                  <span>LATEST</span>
-                </h2>
+          <h2 id='the-latest' class="title">
+            <span>THE</span>
+            <span>LATEST</span>
+          </h2>
 
-                <h1>
-                  Beyond Remote
-                </h1>
+          <h1>
+            Beyond Remote
+          </h1>
 
-                <!--
-                <h3>
-                  A look at what it means to run a remote-business, and why it's so much more than being labeled a Digital Nomad.
-                </h3>
-                -->
+          <!--
+          <h3>
+            A look at what it means to run a remote-business, and why it's so much more than being labeled a Digital Nomad.
+          </h3>
+          -->
 
-                <p class="intro-big">
-                  <span class="big-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+          <p class="intro-big">
+            <span class="big-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
 
-                <p class="intro-small mt20">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+          <p class="intro-small mt20">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
 
-                <a class="continue-reading" href="">
-                  <span>CONTINUE READING</span>
-                </a>
+          <a class="continue-reading" href="">
+            <span>CONTINUE READING</span>
+          </a>
 
-              </div><!-- content -->
+        </div><!-- content -->
 
-            </div><!-- columns -->
-          </div><!-- row -->
+      </div><!-- columns -->
+    </div><!-- row -->
 
-        </div><!-- featured-article -->
+    <div class="past-thoughts-container">
+      <div class="row">
+        <div class="columns small-3 medium-offset-1 title-container">
+          <h2 id="past-thoughts" class="title">
+            <span>PAST</span>
+            <span>THOUGHTS</span>
+          </h2>
+        </div><!-- columns -->
+      </div><!-- row -->
+    </div>
 
-    </div><!-- gradient-container -->
+  </div><!-- featured-article -->
 
 
 
@@ -196,15 +203,6 @@
     -->
 
     <div articles-container>
-
-      <div class="row">
-        <div class="columns small-3 medium-offset-1 title-container">
-          <h2 class="title">
-            <span>PAST</span>
-            <span>THOUGHTS</span>
-          </h2>
-        </div>
-      </div>
 
       <div class="articles-row row">
 
@@ -372,12 +370,12 @@
           <table stats-table class="for-medium-up">
             <tr>
               <td>
-                <p><span>01</span>MOST VISTS PER DAY</p>
-                <span>23</span>
+                <p><span>01</span>TOTAL VISTS</p>
+                <span>{{ $analytics["totalSessions"] }}</span>
               </td>
               <td>
                 <p><span>02</span>AVG MIN ON SITE</p>
-                <span>5.6</span>
+                <span>{{ $analytics["avgSessionDuration"] }}</span>
               </td>
             </tr>
             <tr>

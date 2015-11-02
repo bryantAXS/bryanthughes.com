@@ -28,5 +28,10 @@ class AppServiceProvider extends ServiceProvider
         {
             return new Client;
         });
+
+        // $this->app->singleton('\Lib\Services\GoogleAnalyticsService', function($app)
+        // {
+        //     return new \Lib\Services\GoogleAnalyticsService;
+        // });
     }
 }

@@ -1,15 +1,21 @@
 [blue-header]{
 
-  height: 150px;
-
-  @media #{$medium-up}{
-    height: 360px;
-  }
+  position:absolute;
+  top:0;
+  left:0;
+  height:100vh;
 
   @include background-image($blue-gradient);
 
   img{
+    top:-40px;
     width:65%;
+    position:relative;
+
+    @media #{$medium-up}{
+      top:34px;
+    }
+
     @include opacity(0);
     @include transform(translate3d(-10px, 65px, 0));
     @include transition(all 700ms $easing);
