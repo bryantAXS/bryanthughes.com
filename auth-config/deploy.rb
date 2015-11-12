@@ -11,7 +11,7 @@ if !env.nil? && env == "production" then
   set :branch, "master"
 else
   set :application, "bryanthughes.authenticff.com"
-  set :branch, "dev"
+  set :branch, "master"
 end
 
 set :user, 'root'
@@ -26,7 +26,7 @@ role :db,  "198.58.109.239", :primary => true
 default_run_options[:pty] = true
 
 # the git-clone url for your repository
-set :repository, "git@codebasehq.com:thegoodlab/dimos/dims.git"
+set :repository, "git@codebasehq.com:thegoodlab/personal-projects/bryanthughescom.git"
 
 # Additional SCM settings
 set :scm, :git
