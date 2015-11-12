@@ -6,6 +6,6 @@ Homestead.json
 
 .sass-cache/*
 
-storage/*
-bootstrap/cache/*
-vendor/*
+/storage/*
+/bootstrap/cache/*
+/vendor/*
