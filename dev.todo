@@ -1,8 +1,30 @@
 
+Featured articles
 
+We're going to have a cron job that looks for all the medium posts and then creates
+Post models on our end holding all the data we need.
 
+We can potentially use a queue to handle this.
 
+First, do a json request to fetch the fetured post, if it doesn't exist on our end, add it to the Article processing queue
 
- Styles:
-   ☐ Make JSON variables which can be accessed by SCSS and JS
-   ☐ Organize JS so it's able to be component driven, and only called if the component is on the screen
+Second, go over all of the most recent articles, doing the same thing.
+
+Inside our processing queue handler, we would do reuqest to pull a specific article,
+turning the json that's returned into a Post entry in the db, extracting relavent fields.
+
+Lets also make sure to store the json from each article
+
+Medium Service:
+
+id => --
+name => title
+subtitle => content->subtitle
+paragraph_1 => content->bodyModel->paragraphs[2]
+paragraph_2 => content->bodyModel->paragraphs[3]
+slug => uniqueSlug
+latest_published_version => latestPublishedVersion
+post_date => latestPublishedAt
+medium_url => canonicalUrl
+json =>
+article_id => id

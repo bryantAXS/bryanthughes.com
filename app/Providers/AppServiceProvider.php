@@ -29,6 +29,12 @@ class AppServiceProvider extends ServiceProvider
             return new Client;
         });
 
+        $this->app->singleton('\App\Lib\Services\MediumService', function($app)
+        {
+            $client = new \GuzzleHttp\Client();
+            return new \App\Lib\Services\MediumService($client);
+        });
+
         // $this->app->singleton('\Lib\Services\GoogleAnalyticsService', function($app)
         // {
         //     return new \Lib\Services\GoogleAnalyticsService;

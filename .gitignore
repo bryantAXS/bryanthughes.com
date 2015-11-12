@@ -5,3 +5,7 @@ Homestead.json
 .env
 
 .sass-cache/*
+
+storage/*
+bootstrap/cache/*
+vendor/*

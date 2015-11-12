@@ -155,7 +155,7 @@
           </h2>
 
           <h1>
-            Beyond Remote
+            {{ $featuredArticle->name }}
           </h1>
 
           <!--
@@ -165,14 +165,15 @@
           -->
 
           <p class="intro-big">
-            <span class="big-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <span class="big-letter">{{ $featuredArticle->paragraph_1_first_letter }}</span>
+            {{ $featuredArticle->paragraph_1_display_text }}
           </p>
 
           <p class="intro-small mt20">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            {{ $featuredArticle->paragraph_2 }}
           </p>
 
-          <a class="continue-reading" href="">
+          <a class="continue-reading" href="{{ $featuredArticle->medium_url }}">
             <span>CONTINUE READING</span>
           </a>
 
@@ -385,7 +386,7 @@
               </td>
               <td>
                 <p><span>04</span>CODE DEPLOYS</p>
-                <span>18</span>
+                <span>{{ $totalCommits }}</span>
               </td>
             </tr>
           </table>

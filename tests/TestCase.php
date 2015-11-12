@@ -22,4 +22,13 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $app;
     }
+
+    public function mock($class)
+    {
+        $mock = Mockery::mock($class)->makePartial();
+
+        $this->app->instance($class, $mock);
+
+        return $mock;
+    }
 }

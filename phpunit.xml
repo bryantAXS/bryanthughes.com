@@ -8,7 +8,9 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false">
+         syntaxCheck="false"
+         printerFile="/Users/bryanthughes/.composer/vendor/kujira/phpunit-printer/src/Printer.php"
+         printerClass="Kujira\PHPUnit\Printer">
     <testsuites>
         <testsuite name="Application Test Suite">
             <directory>./tests/</directory>

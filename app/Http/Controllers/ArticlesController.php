@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Lib\Services\MediumService;
+use App\Article;
 
 class ArticlesController extends Controller
 {
 
-    public function __construct()
+    public function __construct(MediumService $medium)
     {
         $this->gaService = new \App\Lib\Services\GoogleAnalyticsService();
+        $mediumService = $medium;
     }
 
     /**
@@ -22,15 +25,27 @@ class ArticlesController extends Controller
     public function index()
     {
 
+        // analytics
         $analytics = $this->gaService->getData();
 
-        // dd($analytics);
+        // articles
+        $articles = Article::orderBy("post_date")->take(9)->get();
+        $featuredArticle = $articles->pop();
+        $featuredArticle->paragraph_1_first_letter = substr($featuredArticle->paragraph_1, 0, 1);
+        $featuredArticle->paragraph_1_display_text = substr($featuredArticle->paragraph_1, 1);
+
+        // number of commits
+        $number = shell_exec("git rev-list HEAD --count");
+        $number = (int) str_replace("\n", "", $number);
 
         return view('welcome', [
             "analytics" => [
                 "avgSessionDuration" => round($analytics["avgSessionDuration"] / 60, 1),
                 "totalSessions" => $this->_formatNumber($analytics["totalSessions"])
-            ]
+            ],
+            "totalCommits" => $number,
+            "articles" => $articles,
+            "featuredArticle" => $featuredArticle
         ]);
     }
 
