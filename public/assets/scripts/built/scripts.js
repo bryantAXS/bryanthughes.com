@@ -17169,10 +17169,6 @@ return jQuery;
 }.call(this));
 
 },{}],4:[function(require,module,exports){
-var settings = {};
-module.exports = settings;
-settings["_variables"] = {    "intro": {      "frameSpeed": "500ms",      "letterSpeedIn": "1000ms",      "letterSpeedOut": "750ms"    }};
-},{}],5:[function(require,module,exports){
 
 var BlueHeader = {
 
@@ -17207,7 +17203,7 @@ BlueHeader.noAnimation = function(){
 };
 
 module.exports = BlueHeader;
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 
 var FeaturedArticle = {
 
@@ -17256,7 +17252,7 @@ FeaturedArticle.noAnimation = function(){
 };
 
 module.exports = FeaturedArticle;
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 
 
 /**
@@ -17315,7 +17311,7 @@ Intro.load = function(){
 };
 
 module.exports = Intro;
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 
 var Sitewide = {
 
@@ -17332,7 +17328,7 @@ Sitewide.init = function(){
 };
 
 module.exports = Sitewide;
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 
 
 /**
@@ -17347,8 +17343,8 @@ var foundation = require('foundation');
 /**
  * Loading in our settings which we're sharing with SCSS
  */
-var Settings = require('./built/variables.js');
-window.settings = Settings["_variables"];
+// var Settings = require('./built/variables.js');
+// window.settings = Settings["_variables"];
 
 
 /**
@@ -17446,4 +17442,4 @@ $(window).ready(function(){
   });
 
 });
-},{"./built/variables.js":4,"./classes/blue-header.js":5,"./classes/featured-article.js":6,"./classes/intro.js":7,"./classes/sitewide.js":8,"foundation":1,"jquery":2,"underscore":3}]},{},[9]);
+},{"./classes/blue-header.js":4,"./classes/featured-article.js":5,"./classes/intro.js":6,"./classes/sitewide.js":7,"foundation":1,"jquery":2,"underscore":3}]},{},[8]);

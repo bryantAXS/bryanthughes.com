@@ -6,12 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0" />
 
-  <title>Jumpstart</title>
+  <title>{{ app("env") }}Bryant Hughes | Web Developer & Designer</title>
 
-  <link rel="stylesheet" href="/assets/styles/css/app.css">
+  @if (app("env") === "local")
+    <link rel="stylesheet" href="/assets/styles/css/app.css">
+    <script src="http://localhost:35729/livereload.js"></script>
 
-  <!--LR plugin, remove in production-->
-  <script src="http://localhost:35729/livereload.js"></script>
+  @else
+    <link rel="stylesheet" href="/assets/styles/css/app-blessed.css">
+  @endif
 
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0" />
@@ -145,7 +148,7 @@
 
 
     <div class="row">
-      <div class="columns small-12 medium-offset-1 medium-10 large-offset-1 large-10">
+      <div class="columns small-12 medium-offset-1 medium-10 large-9 large-centered">
 
         <div class="content">
 
@@ -454,7 +457,12 @@
 
   </div><!-- CONTENT  AREA -->
 
-  <script src="/assets/scripts/built/scripts.js"></script>
+  @if (app("env") === "production")
+    <script src="/assets/scripts/built/scripts.js"></script>
+  @else
+    <script src="/assets/scripts/built/built.js"></script>
+  @endif
+
 
 </body>
 </html>

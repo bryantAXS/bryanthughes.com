@@ -12,8 +12,8 @@ var foundation = require('foundation');
 /**
  * Loading in our settings which we're sharing with SCSS
  */
-var Settings = require('./built/variables.js');
-window.settings = Settings["_variables"];
+// var Settings = require('./built/variables.js');
+// window.settings = Settings["_variables"];
 
 
 /**
