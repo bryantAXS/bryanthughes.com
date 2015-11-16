@@ -26,7 +26,7 @@ class ArticlesController extends Controller
     {
 
         // analytics
-        $analytics = \Cache::store("file")->get("analytics", false)
+        $analytics = \Cache::store("file")->get("analytics", false);
 
         if(!$analytics)
         {
