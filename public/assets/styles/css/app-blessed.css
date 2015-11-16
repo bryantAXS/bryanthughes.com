@@ -4205,56 +4205,56 @@ a {
 
 @font-face {
   font-family: "Ripley";
-  src: url("/assets/fonts/atc-ripley/ATCRipley-Regular.eot");
-  src: url("/assets/fonts/atc-ripley/ATCRipley-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/atc-ripley/ATCRipley-Regular.woff") format("woff"), url("/assets/fonts/atc-ripley/ATCRipley-Regular.ttf") format("truetype"), url("/assets/fonts/atc-ripley/ATCRipley-Regular.otf") format("opentype"), url("/assets/fonts/atc-ripley/ATCRipley-Regular.svg#Ripley") format("svg");
+  src: url("/assets/fonts/atc-ripley/atcripley-regular-webfont.eot");
+  src: url("/assets/fonts/atc-ripley/atcripley-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/atc-ripley/atcripley-regular-webfont.woff") format("woff"), url("/assets/fonts/atc-ripley/atcripley-regular-webfont.ttf") format("truetype"), url("/assets/fonts/atc-ripley/atcripley-regular-webfont.otf") format("opentype"), url("/assets/fonts/atc-ripley/atcripley-regular-webfont.svg#Ripley") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-mono/DecimaMono-Light.eot");
-  src: url("/assets/fonts/decima-mono/DecimaMono-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Light.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Light.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Light.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Light.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/decimamono-light-webfont.eot");
+  src: url("/assets/fonts/decima-mono/decimamono-light-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/decimamono-light-webfont.woff") format("woff"), url("/assets/fonts/decima-mono/decimamono-light-webfont.ttf") format("truetype"), url("/assets/fonts/decima-mono/decimamono-light-webfont.otf") format("opentype"), url("/assets/fonts/decima-mono/decimamono-light-webfont.svg#DecimaMono") format("svg");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-mono/DecimaMono.eot");
-  src: url("/assets/fonts/decima-mono/DecimaMono.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/decimamono-webfont.eot");
+  src: url("/assets/fonts/decima-mono/decimamono-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/decimamono-webfont.woff") format("woff"), url("/assets/fonts/decima-mono/decimamono-webfont.ttf") format("truetype"), url("/assets/fonts/decima-mono/decimamono-webfont.otf") format("opentype"), url("/assets/fonts/decima-mono/decimamono-webfont.svg#DecimaMono") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMonoItalic";
-  src: url("/assets/fonts/decima-mono/DecimaMono-Italic.eot");
-  src: url("/assets/fonts/decima-mono/DecimaMono-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Italic.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Italic.svg#DecimaMonoItalic") format("svg");
+  src: url("/assets/fonts/decima-mono/decimamono-italic-webfont.eot");
+  src: url("/assets/fonts/decima-mono/decimamono-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/decimamono-italic-webfont.woff") format("woff"), url("/assets/fonts/decima-mono/decimamono-italic-webfont.ttf") format("truetype"), url("/assets/fonts/decima-mono/decimamono-italic-webfont.otf") format("opentype"), url("/assets/fonts/decima-mono/decimamono-italic-webfont.svg#DecimaMonoItalic") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "DecimaMono";
-  src: url("/assets/fonts/decima-mono/DecimaMono-Bold.eot");
-  src: url("/assets/fonts/decima-mono/DecimaMono-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.woff") format("woff"), url("/assets/fonts/decima-mono/DecimaMono-Bold.ttf") format("truetype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.otf") format("opentype"), url("/assets/fonts/decima-mono/DecimaMono-Bold.svg#DecimaMono") format("svg");
+  src: url("/assets/fonts/decima-mono/decimamono-bold-webfont.eot");
+  src: url("/assets/fonts/decima-mono/decimamono-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/decima-mono/decimamono-bold-webfont.woff") format("woff"), url("/assets/fonts/decima-mono/decimamono-bold-webfont.ttf") format("truetype"), url("/assets/fonts/decima-mono/decimamono-bold-webfont.otf") format("opentype"), url("/assets/fonts/decima-mono/decimamono-bold-webfont.svg#DecimaMono") format("svg");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: "Erato";
-  src: url("/assets/fonts/erato/Erato-Light.eot");
-  src: url("/assets/fonts/erato/Erato-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/Erato-Light.woff") format("woff"), url("/assets/fonts/erato/Erato-Light.ttf") format("truetype"), url("/assets/fonts/erato/Erato-Light.otf") format("opentype"), url("/assets/fonts/erato/Erato-Light.svg#Erato") format("svg");
+  src: url("/assets/fonts/erato/erato-ligh-webfont.eot");
+  src: url("/assets/fonts/erato/erato-ligh-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/erato-ligh-webfont.woff") format("woff"), url("/assets/fonts/erato/erato-ligh-webfont.ttf") format("truetype"), url("/assets/fonts/erato/erato-ligh-webfont.otf") format("opentype"), url("/assets/fonts/erato/erato-ligh-webfont.svg#Erato") format("svg");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: "EratoItalic";
-  src: url("/assets/fonts/erato/Erato-LightItalic.eot");
-  src: url("/assets/fonts/erato/Erato-LightItalic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/Erato-LightItalic.woff") format("woff"), url("/assets/fonts/erato/Erato-LightItalic.ttf") format("truetype"), url("/assets/fonts/erato/Erato-LightItalic.otf") format("opentype"), url("/assets/fonts/erato/Erato-LightItalic.svg#EratoItalic") format("svg");
+  src: url("/assets/fonts/erato/erato-lightitalic-webfont.eot");
+  src: url("/assets/fonts/erato/erato-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/erato-lightitalic-webfont.woff") format("woff"), url("/assets/fonts/erato/erato-lightitalic-webfont.ttf") format("truetype"), url("/assets/fonts/erato/erato-lightitalic-webfont.otf") format("opentype"), url("/assets/fonts/erato/erato-lightitalic-webfont.svg#EratoItalic") format("svg");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: "Erato";
-  src: url("/assets/fonts/erato/Erato-Regular.eot");
-  src: url("/assets/fonts/erato/Erato-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/Erato-Regular.woff") format("woff"), url("/assets/fonts/erato/Erato-Regular.ttf") format("truetype"), url("/assets/fonts/erato/Erato-Regular.otf") format("opentype"), url("/assets/fonts/erato/Erato-Regular.svg#Erato") format("svg");
+  src: url("/assets/fonts/erato/erato-regular-webfont.eot");
+  src: url("/assets/fonts/erato/erato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/erato-regular-webfont.woff") format("woff"), url("/assets/fonts/erato/erato-regular-webfont.ttf") format("truetype"), url("/assets/fonts/erato/erato-regular-webfont.otf") format("opentype"), url("/assets/fonts/erato/erato-regular-webfont.svg#Erato") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "Erato";
-  src: url("/assets/fonts/erato/Erato-Bold.eot");
-  src: url("/assets/fonts/erato/Erato-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/Erato-Bold.woff") format("woff"), url("/assets/fonts/erato/Erato-Bold.ttf") format("truetype"), url("/assets/fonts/erato/Erato-Bold.otf") format("opentype"), url("/assets/fonts/erato/Erato-Bold.svg#Erato") format("svg");
+  src: url("/assets/fonts/erato/erato-bold-webfont.eot");
+  src: url("/assets/fonts/erato/erato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/erato/erato-bold-webfont.woff") format("woff"), url("/assets/fonts/erato/erato-bold-webfont.ttf") format("truetype"), url("/assets/fonts/erato/erato-bold-webfont.otf") format("opentype"), url("/assets/fonts/erato/erato-bold-webfont.svg#Erato") format("svg");
   font-weight: 600;
   font-style: normal; }
 /* line 4, ../sass/base/_layout.scss */
@@ -4408,9 +4408,9 @@ body {
     border: 2px solid #282828;
     color: #282828;
     display: block;
-    height: 29px;
+    height: 31px;
     min-width: 119px;
-    padding-top: 2px; }
+    padding-top: 1px; }
   /* line 15, ../sass/elements/_titles.scss */
   .title span + span {
     margin-top: 4px; }
