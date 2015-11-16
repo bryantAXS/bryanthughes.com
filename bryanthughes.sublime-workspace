@@ -300,34 +300,10 @@
 	"buffers":
 	[
 		{
-			"file": ".env.staging",
+			"file": "public/assets/scripts/main.js",
 			"settings":
 			{
-				"buffer_size": 331,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/welcome.blade.php",
-			"settings":
-			{
-				"buffer_size": 18349,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "auth-config/deploy.rb",
-			"settings":
-			{
-				"buffer_size": 2440,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/ArticlesController.php",
-			"settings":
-			{
-				"buffer_size": 3268,
+				"buffer_size": 2071,
 				"line_ending": "Unix"
 			}
 		}
@@ -450,10 +426,34 @@
 	"expanded_folders":
 	[
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/auth-config"
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/stores"
 	],
 	"file_history":
 	[
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/stores/SessionStore.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_titles.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/package.json",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_typography.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/.env.staging",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/.env",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/Gruntfile.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/blue-header.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/sitewide.js",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_typography.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Http/Controllers/ArticlesController.php",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/auth-config/deploy.rb",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/Services/MediumServiceTest.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Lib/Services/MediumService.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Article.php",
@@ -466,31 +466,20 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/composer.json",
 		"/Users/bryanthughes/Desktop/bio.md",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/Services/GoogleAnalyticsServiceTest.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/package.json",
 		"/Users/bryanthughes/.Trash/Medium 5:44:17.645 PM/Services/MediumServiceTest.php",
 		"/Users/bryanthughes/.Trash/Medium/Services/MediumService.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Lib/Medium/Services/MediumService.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/config/database.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/.env",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Http/Controllers/ArticlesController.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Lib/Services/GoogleAnalyticsService.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/BryantHughes-719d7fde9477.json",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/vendor/google/apiclient/src/Google/Service/Analytics.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Http/routes.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_settings.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_articles-container.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_bio-container.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_content.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/blue-header.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_interactions.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_colors.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_interactions.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
@@ -499,7 +488,6 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Post.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/FeaturedPost.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/Medium/Services/MediumServiceTest.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/composer.lock",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/_Fixtures/articles.json",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/_Fixtures/article.json",
@@ -507,7 +495,6 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_stats-table.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_footer.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_buttons.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/intro.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/jquery/src/intro.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/foundation-sites/scss/foundation/components/_grid.scss",
@@ -515,20 +502,15 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_links.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_chrome.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_foundation.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/elements/_titles.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/.gitignore",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_intro.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/box.svg",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_variables.json",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/Gruntfile.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/built/variables.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/settings-helper.js",
 		"/Users/bryanthughes/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_typography.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/app-trebuchet.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/sitewide.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/Thanks.min.svg",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/Thanks-original.svg",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/images/svg/T.svg",
@@ -578,10 +560,7 @@
 		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/vendor/ellipsesynergie/api-response/src/Laravel/Response.php",
 		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/vendor/illuminate/routing/ResponseFactory.php",
 		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/vendor/illuminate/contracts/Routing/ResponseFactory.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/composer.json",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/composer.json",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/mcp.dimos_store_api.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/config/config_local.php"
+		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/composer.json"
 	],
 	"find":
 	{
@@ -633,6 +612,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"line-height",
 			"fullArticle",
 			".animated-in",
 			"guzz",
@@ -759,8 +739,7 @@
 			"get_cart",
 			".htpasswd",
 			"orders",
-			"OrderModel",
-			"Carbon"
+			"OrderModel"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -822,132 +801,32 @@
 			[
 				{
 					"buffer": 0,
-					"file": ".env.staging",
+					"file": "public/assets/scripts/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 331,
+						"buffer_size": 2071,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								331,
-								331
+								1049,
+								1049
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 1.0,
+						"translation.x": 0.0,
+						"translation.y": 200.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "resources/views/welcome.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10451,
-								10451
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 22.0,
-						"translation.y": 2129.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "auth-config/deploy.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2440,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								328,
-								328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "app/Http/Controllers/ArticlesController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3268,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1090,
-								1090
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -970,25 +849,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.33,
-			0.66,
 			1.0
 		],
 		"rows":
@@ -1020,16 +885,92 @@
 		"selected_items":
 		[
 			[
+				"session",
+				"public/assets/scripts/stores/SessionStore.js"
+			],
+			[
+				"main.js",
+				"public/assets/scripts/main.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"elements",
+				"public/assets/styles/sass/elements/_titles.scss"
+			],
+			[
+				"typogra",
+				"public/assets/styles/sass/config/_typography.scss"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"welcome",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"app.scss",
+				"public/assets/styles/sass/app.scss"
+			],
+			[
+				"blue",
+				"public/assets/styles/sass/components/_blue-header.scss"
+			],
+			[
+				"blue-hea",
+				"public/assets/scripts/classes/blue-header.js"
+			],
+			[
+				"featu",
+				"public/assets/scripts/classes/featured-article.js"
+			],
+			[
+				"intro",
+				"public/assets/scripts/classes/intro.js"
+			],
+			[
+				"featured-arti",
+				"public/assets/scripts/classes/featured-article.js"
+			],
+			[
+				"intro.js",
+				"public/assets/scripts/classes/intro.js"
+			],
+			[
+				"sitewide",
+				"public/assets/scripts/classes/sitewide.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"_blue",
+				"public/assets/styles/sass/components/_blue-header.scss"
+			],
+			[
+				"app.css",
+				"public/assets/styles/css/app.css"
+			],
+			[
+				"typemix",
+				"public/assets/styles/sass/utility/_type_mixins.scss"
+			],
+			[
+				"featured",
+				"public/assets/styles/sass/components/_featured-article.scss"
+			],
+			[
 				"mediumservic",
 				"tests/Services/MediumServiceTest.php"
 			],
 			[
 				"medium",
 				"app/Lib/Services/MediumService.php"
-			],
-			[
-				"welcome",
-				"resources/views/welcome.blade.php"
 			],
 			[
 				"testca",
@@ -1050,10 +991,6 @@
 			[
 				"package",
 				"package.json"
-			],
-			[
-				"featured",
-				"public/assets/styles/sass/components/_featured-article.scss"
 			],
 			[
 				"routes.php",
@@ -1080,16 +1017,8 @@
 				"public/assets/styles/sass/components/_content.scss"
 			],
 			[
-				"blue",
-				"public/assets/styles/sass/components/_blue-header.scss"
-			],
-			[
 				"welcome.",
 				"resources/views/welcome.blade.php"
-			],
-			[
-				"app.scss",
-				"public/assets/styles/sass/app.scss"
 			],
 			[
 				"_settings",
@@ -1110,10 +1039,6 @@
 			[
 				"featuredarti",
 				"public/assets/scripts/classes/featured-article.js"
-			],
-			[
-				"main.js",
-				"public/assets/scripts/main.js"
 			],
 			[
 				"typogr",
@@ -1146,10 +1071,6 @@
 			[
 				"typ",
 				"public/assets/styles/sass/config/_typography.scss"
-			],
-			[
-				"typemix",
-				"public/assets/styles/sass/utility/_type_mixins.scss"
 			],
 			[
 				"composer.lock",
@@ -1304,20 +1225,8 @@
 				"public/assets/styles/sass/components/_featured-article.scss"
 			],
 			[
-				"app.css",
-				"public/assets/styles/css/app.css"
-			],
-			[
 				"layout",
 				"public/assets/styles/sass/base/_layout.scss"
-			],
-			[
-				"intro.js",
-				"public/assets/scripts/classes/intro.js"
-			],
-			[
-				"intro",
-				"public/assets/styles/sass/components/_intro.scss"
 			],
 			[
 				"colorsscss",
@@ -1344,10 +1253,6 @@
 				"public/assets/scripts/classes/intro.js"
 			],
 			[
-				"grunt",
-				"Gruntfile.js"
-			],
-			[
 				"gruntf",
 				"Gruntfile.js"
 			],
@@ -1372,20 +1277,12 @@
 				"public/assets/styles/sass/base/_interactions.scss"
 			],
 			[
-				"featured-arti",
-				"public/assets/styles/sass/components/_featured-article.scss"
-			],
-			[
 				"wel",
 				"resources/views/welcome.blade.php"
 			],
 			[
 				"appscss",
 				"public/assets/styles/sass/app.scss"
-			],
-			[
-				"sitewide",
-				"public/assets/scripts/classes/sitewide.js"
 			],
 			[
 				"routes",
@@ -1498,38 +1395,6 @@
 			[
 				"laravelresponse",
 				"third_party/dimos_store_api/vendor/ellipsesynergie/api-response/src/Laravel/Response.php"
-			],
-			[
-				"apiresponse",
-				"third_party/dimos_store_api/lib/Responses/ApiResponse.php"
-			],
-			[
-				"config",
-				"config/config_local.php"
-			],
-			[
-				"panel",
-				"templates/default_site/_snippets/default_site/partials/panel_footer.html"
-			],
-			[
-				"templatecheckout",
-				"httpdocs/assets/scripts/templates/template-checkout.js"
-			],
-			[
-				"tglhelpers",
-				"third_party/tgl_helpers/pi.tgl_helpers.php"
-			],
-			[
-				"validate",
-				"bower_components/jquery.validation/jquery.validate.js"
-			],
-			[
-				"storecheckout",
-				"templates/default_site/store.group/checkout.html"
-			],
-			[
-				"order.php",
-				"third_party/store/src/Model/Order.php"
 			]
 		],
 		"width": 0.0
@@ -1868,7 +1733,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

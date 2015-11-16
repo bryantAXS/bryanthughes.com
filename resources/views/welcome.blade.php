@@ -457,7 +457,7 @@
 
   </div><!-- CONTENT  AREA -->
 
-  @if (app("env") === "production")
+  @if (app("env") === "local")
     <script src="/assets/scripts/built/scripts.js"></script>
   @else
     <script src="/assets/scripts/built/built.js"></script>
