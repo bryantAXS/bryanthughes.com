@@ -26,7 +26,13 @@ class ArticlesController extends Controller
     {
 
         // analytics
-        $analytics = $this->gaService->getData();
+        $analytics = \Cache::store("file")->get("analytics", false)
+
+        if(!$analytics)
+        {
+          $analytics = $this->gaService->getData();
+          \Cache::store("file")->put("analytics", $analytics, 360);
+        }
 
         // articles
         $articles = Article::orderBy("post_date")->take(9)->get();
