@@ -210,15 +210,20 @@
 
       <div class="articles-row row">
 
+        <?php $count = 0; ?>
+
         @foreach ($articles as $article)
 
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">01</span>
-          <h2>{{ $article->name }}</h2>
-          <a class="read-this" href="{{ $article->medium_url }}" target="_blank">
-            <span>Read this</span>
-          </a>
-        </div>
+          <?php $count += 1; ?>
+          <?php $textCount = $count < 10 ? "0".$count : $count; ?>
+
+          <div small-article class="columns small-12 medium-6 large-3">
+            <span class="digit">{{ $textCount }}</span>
+            <h2>{{ $article->name }}</h2>
+            <a class="read-this" href="{{ $article->medium_url }}" target="_blank">
+              <span>Read this</span>
+            </a>
+          </div>
 
         @endforeach
 
