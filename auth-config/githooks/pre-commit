@@ -6,5 +6,6 @@
 grunt compile
 
 git add -f httpdocs/assets/scripts/built
+git add -f httpdocs/assets/styles/css
 
 exit 0
