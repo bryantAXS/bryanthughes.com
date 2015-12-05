@@ -13,7 +13,7 @@
   h2{
     color: $black;
     margin-top:20px;
-    @include font("DecimaMono", 24px, 400, 28px);
+    @include font("Erato", 24px, 400, 38px);
     @include transform(translateY(10px));
     @include transition(all 200ms ease-in-out);
   }

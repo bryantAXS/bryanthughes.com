@@ -33,7 +33,7 @@ set :scm, :git
 set :ssh_options, { :forward_agent => true }
 set :deploy_via, :remote_cache
 set :copy_strategy, :checkout
-set :keep_releases, 3
+set :keep_releases, 2
 set :copy_compression, :bz2
 
 # Deployment process

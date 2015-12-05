@@ -176,7 +176,7 @@
             {{ $featuredArticle->paragraph_2 }}
           </p>
 
-          <a class="continue-reading" href="{{ $featuredArticle->medium_url }}">
+          <a class="continue-reading" href="{{ $featuredArticle->medium_url }}" target="_blank">
             <span>CONTINUE READING</span>
           </a>
 
@@ -210,61 +210,17 @@
 
       <div class="articles-row row">
 
+        @foreach ($articles as $article)
+
         <div small-article class="columns small-12 medium-6 large-3">
           <span class="digit">01</span>
-          <h2>Why React Destroys Angular</h2>
-          <a class="read-this" href="javascript:;">
+          <h2>{{ $article->name }}</h2>
+          <a class="read-this" href="{{ $article->medium_url }}" target="_blank">
             <span>Read this</span>
           </a>
         </div>
 
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">02</span>
-          <h2>An Athiest Finding Spirituality</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
-
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">03</span>
-          <h2>Why React Destroys Angular</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
-
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">04</span>
-          <h2>An Athiest Finding Spirituality</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
-
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">05</span>
-          <h2>An Athiest Finding Spirituality</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
-
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">06</span>
-          <h2>Why React Destroys Angular</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
-
-        <div small-article class="columns small-12 medium-6 large-3">
-          <span class="digit">07</span>
-          <h2>An Athiest Finding Spirituality</h2>
-          <a class="read-this" href="javascript:;">
-            <span>Read this</span>
-          </a>
-        </div>
+        @endforeach
 
       </div><!-- row -->
 
@@ -284,7 +240,7 @@
 
         <div class="more-container row">
           <div class="small-12">
-            <a button="diamond" href="javascript:;">
+            <a button="diamond" href="https://medium.com/@bryantaxs" target="_blank">
               <span class="more">More</span>
               <span class="plus">+</span>
             </a>
@@ -385,7 +341,7 @@
             <tr>
               <td>
                 <p><span>03</span>ARTICLE COUNT</p>
-                <span>7</span>
+                <span>{{ $articles->count() + 1 }}</span>
               </td>
               <td>
                 <p><span>04</span>CODE DEPLOYS</p>
@@ -397,26 +353,26 @@
           <table stats-table class="for-small">
             <tr>
               <td>
-                <p><span>01</span>MOST VISTS PER DAY</p>
-                <span>23</span>
+                <p><span>01</span>TOTAL VISTS</p>
+                <span>{{ $analytics["totalSessions"] }}</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p><span>02</span>AVG MIN ON SITE</p>
-                <span>5.6</span>
+                <span>{{ $analytics["avgSessionDuration"] }}</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p><span>03</span>ARTICLE COUNT</p>
-                <span>7</span>
+                <span>{{ $articles->count() + 1 }}</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p><span>04</span>CODE DEPLOYS</p>
-                <span>18</span>
+                <span>{{ $totalCommits }}</span>
               </td>
             </tr>
           </table>
