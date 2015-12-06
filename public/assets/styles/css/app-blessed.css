@@ -4425,14 +4425,14 @@ body {
   /* line 12, ../sass/components/_footer.scss */
   [footer] > div:nth-child(2) .square {
     border: 3px solid #fff;
-    height: 35%;
     position: absolute;
     top: 45%;
     left: 45%;
     margin-left: -17.5%;
     margin-top: -17.5%;
-    width: 35%;
-    z-index: 2; }
+    z-index: 2;
+    height: 150px;
+    width: 150px; }
     /* line 14, ../sass/components/_footer.scss */
     [footer] > div:nth-child(2) .square::before {
       content: "";
@@ -4444,17 +4444,32 @@ body {
       margin-left: -12.5%;
       margin-top: -12.5%;
       width: 100%; }
-  /* line 37, ../sass/components/_footer.scss */
+    @media only screen and (min-width: 41.8125em) and (max-width: 64em) {
+      /* line 12, ../sass/components/_footer.scss */
+      [footer] > div:nth-child(2) .square {
+        height: 100px;
+        width: 100px; } }
+    @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+      /* line 12, ../sass/components/_footer.scss */
+      [footer] > div:nth-child(2) .square {
+        height: 150px;
+        width: 150px; } }
+    @media only screen and (min-width: 90.0625em) {
+      /* line 12, ../sass/components/_footer.scss */
+      [footer] > div:nth-child(2) .square {
+        height: 200px;
+        width: 200px; } }
+  /* line 54, ../sass/components/_footer.scss */
   [footer] > div:nth-child(2) img {
     bottom: -30px;
     left: 0;
     position: absolute;
     width: 100%;
     z-index: 1; }
-/* line 47, ../sass/components/_footer.scss */
+/* line 64, ../sass/components/_footer.scss */
 [footer] > div:nth-child(3) {
   background-color: rgba(195, 236, 240, 0.5); }
-/* line 51, ../sass/components/_footer.scss */
+/* line 68, ../sass/components/_footer.scss */
 [footer] > div {
   height: 500px; }
 
@@ -6037,7 +6052,10 @@ body.show-border [frame="left"] {
     font-size: 1.125em;
     font-weight: 400;
     line-height: 29px; }
-  /* line 100, ../sass/components/_bio-container.scss */
+    /* line 99, ../sass/components/_bio-container.scss */
+    [bio-container] p a {
+      border-bottom: 1px dotted rgba(40, 40, 40, 0.6); }
+  /* line 105, ../sass/components/_bio-container.scss */
   [bio-container] .signature {
     color: #282828;
     display: block;
@@ -6048,7 +6066,7 @@ body.show-border [frame="left"] {
     font-size: 4em;
     font-weight: 400;
     line-height: 64px; }
-  /* line 109, ../sass/components/_bio-container.scss */
+  /* line 114, ../sass/components/_bio-container.scss */
   [bio-container] .birds {
     bottom: 0;
     position: absolute;
