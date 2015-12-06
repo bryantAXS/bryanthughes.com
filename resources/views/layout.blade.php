@@ -21,6 +21,7 @@
   <meta name="description" content="The personal musings of Bryant Hughes: Web Developer, Designer, and Partnern at Authentic F&F" />
   <meta name="keywords" content="Web Design Development Technology Authentic From & Function Writing Chicago Denver Minneapolis Strategy Remote Business Entrepreneur" />
   <meta name="robots" content="index,follow,archive">
+  <link rel="shortcut icon" href="http://bryanthughes.com/assets/images/icon.png" />
 
   <!-- Analytics -->
   @if(app("env") === "production")
