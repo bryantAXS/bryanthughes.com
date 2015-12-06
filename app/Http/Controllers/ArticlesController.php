@@ -41,6 +41,8 @@ class ArticlesController extends Controller
         $featuredArticle->paragraph_1_first_letter = substr($featuredArticle->paragraph_1, 0, 1);
         $featuredArticle->paragraph_1_display_text = substr($featuredArticle->paragraph_1, 1);
 
+        $articles = $articles->reverse();
+
         // number of commits
         $number = shell_exec("git rev-list HEAD --count");
         $number = (int) str_replace("\n", "", $number);
