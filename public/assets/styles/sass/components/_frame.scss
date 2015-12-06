@@ -1,9 +1,16 @@
 
+
+
 [frame]{
   background-color:$white;
+  display:none;
   position:fixed;
   z-index:100;
   @include transition(all 500ms $easing);
+
+  @media #{$medium-up}{
+    display:block;
+  }
 }
 
 [frame="top"]{

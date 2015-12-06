@@ -23,6 +23,7 @@
   }
 
   .logo{
+    display:none;
     height: 122px;
     position:absolute;
     top: 40px;
@@ -36,6 +37,9 @@
   @media #{$medium-up}{
     .bg{
       @include transform(translate3d(-10px, -55px, 0));
+    }
+    .logo{
+      display:block;
     }
   }
 

@@ -5401,6 +5401,7 @@ body {
         top: 34px; } }
   /* line 25, ../sass/components/_blue-header.scss */
   [blue-header] .logo {
+    display: none;
     height: 122px;
     position: absolute;
     top: 40px;
@@ -5417,14 +5418,17 @@ body {
     -webkit-transition: all 700ms cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 700ms cubic-bezier(0.77, 0, 0.175, 1); }
   @media only screen and (min-width: 41.8125em) {
-    /* line 37, ../sass/components/_blue-header.scss */
+    /* line 38, ../sass/components/_blue-header.scss */
     [blue-header] .bg {
       -moz-transform: translate3d(-10px, -55px, 0);
       -ms-transform: translate3d(-10px, -55px, 0);
       -webkit-transform: translate3d(-10px, -55px, 0);
-      transform: translate3d(-10px, -55px, 0); } }
+      transform: translate3d(-10px, -55px, 0); }
+    /* line 41, ../sass/components/_blue-header.scss */
+    [blue-header] .logo {
+      display: block; } }
 
-/* line 46, ../sass/components/_blue-header.scss */
+/* line 50, ../sass/components/_blue-header.scss */
 [blue-header].animated-in .bg {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -5432,7 +5436,7 @@ body {
   -ms-transform: translate3d(0, 65px, 0);
   -webkit-transform: translate3d(0, 65px, 0);
   transform: translate3d(0, 65px, 0); }
-/* line 51, ../sass/components/_blue-header.scss */
+/* line 55, ../sass/components/_blue-header.scss */
 [blue-header].animated-in .logo {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -5441,7 +5445,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 @media only screen and (min-width: 41.8125em) {
-  /* line 57, ../sass/components/_blue-header.scss */
+  /* line 61, ../sass/components/_blue-header.scss */
   [blue-header].animated-in .bg {
     -moz-transform: translate3d(0, -55px, 0);
     -ms-transform: translate3d(0, -55px, 0);
@@ -5767,50 +5771,55 @@ body {
   -webkit-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 2, ../sass/components/_frame.scss */
+/* line 4, ../sass/components/_frame.scss */
 [frame] {
   background-color: #fff;
+  display: none;
   position: fixed;
   z-index: 100;
   -moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1); }
+  @media only screen and (min-width: 41.8125em) {
+    /* line 4, ../sass/components/_frame.scss */
+    [frame] {
+      display: block; } }
 
-/* line 9, ../sass/components/_frame.scss */
+/* line 16, ../sass/components/_frame.scss */
 [frame="top"] {
   height: 0;
   top: 0;
   width: 100%; }
 
-/* line 15, ../sass/components/_frame.scss */
+/* line 22, ../sass/components/_frame.scss */
 [frame="right"] {
   height: 100vh;
   right: 0;
   width: 0; }
 
-/* line 21, ../sass/components/_frame.scss */
+/* line 28, ../sass/components/_frame.scss */
 [frame="bottom"] {
   height: 20px;
   top: calc(100vh);
   width: 100%; }
 
-/* line 27, ../sass/components/_frame.scss */
+/* line 34, ../sass/components/_frame.scss */
 [frame="left"] {
   height: 100vh;
   left: 0;
   width: 0; }
 
-/* line 35, ../sass/components/_frame.scss */
+/* line 42, ../sass/components/_frame.scss */
 body.show-border [frame="top"] {
   height: 20px; }
-/* line 39, ../sass/components/_frame.scss */
+/* line 46, ../sass/components/_frame.scss */
 body.show-border [frame="right"] {
   width: 20px; }
-/* line 43, ../sass/components/_frame.scss */
+/* line 50, ../sass/components/_frame.scss */
 body.show-border [frame="bottom"] {
   top: calc(100vh - 20px); }
-/* line 47, ../sass/components/_frame.scss */
+/* line 54, ../sass/components/_frame.scss */
 body.show-border [frame="left"] {
   width: 20px; }
 
