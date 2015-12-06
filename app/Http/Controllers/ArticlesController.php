@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Lib\Services\MediumService;
+use App\Lib\Services\MediumArticleParserService;
 use App\Article;
 
 class ArticlesController extends Controller
@@ -44,7 +45,7 @@ class ArticlesController extends Controller
         $number = shell_exec("git rev-list HEAD --count");
         $number = (int) str_replace("\n", "", $number);
 
-        return view('welcome', [
+        return view('index', [
             "analytics" => [
                 "avgSessionDuration" => round($analytics["avgSessionDuration"] / 60, 1),
                 "totalSessions" => $this->_formatNumber($analytics["totalSessions"])
@@ -84,7 +85,41 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        //
+
+        $results = Article::where("slug", $id)->get();
+
+        // send them to the home page
+        if(! $results->count())
+        {
+            return redirect("/");
+        }
+
+        // send them to the medium page
+        else
+        {
+
+            $article = $results->first();
+
+            if(\Crawler::isCrawler()) {
+                $articleJson = json_decode($article->json);
+                $paragraphs = $articleJson->content->bodyModel->paragraphs;
+
+                $service = new MediumArticleParserService();
+                $paragraphs = $service->parse($paragraphs);
+
+                return view('article', [
+                    "article" => $article,
+                    "paragraphs" => $paragraphs
+                ]);
+            }
+
+            else
+            {
+                return redirect($article->medium_url);
+            }
+
+        }
+
     }
 
     /**

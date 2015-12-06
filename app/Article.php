@@ -17,6 +17,7 @@ class Article extends Model
     "post_date",
     "medium_url",
     "article_id",
+    "json"
   ];
 
 }

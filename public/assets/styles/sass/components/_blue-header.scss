@@ -8,7 +8,7 @@
 
   @include background-image($blue-gradient);
 
-  img{
+  .bg{
     top:-40px;
     width:65%;
     position:relative;
@@ -22,8 +22,19 @@
     @include transition(all 700ms $easing);
   }
 
+  .logo{
+    height: 122px;
+    position:absolute;
+    top: 40px;
+    left:40px;
+    width: 122px;
+    @include opacity(0);
+    @include transform(translate3d(10px, 0, 0));
+    @include transition(all 700ms $easing);
+  }
+
   @media #{$medium-up}{
-    img{
+    .bg{
       @include transform(translate3d(-10px, -55px, 0));
     }
   }
@@ -32,13 +43,18 @@
 
 [blue-header].animated-in{
 
-  img{
+  .bg{
     @include opacity(1);
     @include transform(translate3d(0, 65px, 0));
   }
 
+  .logo{
+    @include opacity(1);
+    @include transform(translate3d(0, 0, 0));
+  }
+
   @media #{$medium-up}{
-    img{
+    .bg{
       @include transform(translate3d(0, -55px, 0));
     }
   }

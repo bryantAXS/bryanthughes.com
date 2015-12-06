@@ -9,7 +9,9 @@
         "laravel/framework": "5.1.*",
         "google/apiclient": "1.0.*@beta",
         "guzzlehttp/guzzle": "~6.0",
-        "mockery/mockery": "^0.9.4"
+        "mockery/mockery": "^0.9.4",
+        "roumen/sitemap": "^2.5",
+        "jaybizzle/laravel-crawler-detect": "1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -10,7 +10,7 @@ if !env.nil? && env == "production" then
   set :application, "bryanthughes.com"
   set :branch, "master"
 else
-  set :application, "bryanthughes.authenticff.com"
+  set :application, "bryanthughes.com"
   set :branch, "master"
 end
 
@@ -76,7 +76,7 @@ namespace :composer do
 
   desc "Install composer updates"
   task :install do
-    # run "sh -c 'cd #{release_path} && composer install --no-dev --no-progress && composer update --no-dev --no-progress'"
+    run "sh -c 'cd #{release_path} && composer install --no-dev --no-progress && composer update --no-dev --no-progress'"
   end
 
 end

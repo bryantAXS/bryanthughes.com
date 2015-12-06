@@ -118,7 +118,7 @@ class MediumService{
       "latest_published_version" => $articleData->latestPublishedVersion,
       "post_date" => $articleData->latestPublishedAt,
       "medium_url" => $articleData->canonicalUrl,
-      "json" => $json,
+      "json" => json_encode($articleData),
       "article_id" => $articleData->id,
     ];
 

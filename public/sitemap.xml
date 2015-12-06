@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://bryanthughes.local</loc>
+		<priority>1.0</priority>
+		<lastmod>2015-12-05T18:10:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>/articles/working-for-free-a39fd52586eb</loc>
+		<priority>0.7</priority>
+		<lastmod>2015-11-12T03:04:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>/articles/spirituality-philosophy-business-and-resolutions-f76b56a39ecb</loc>
+		<priority>0.7</priority>
+		<lastmod>2015-12-05T23:39:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>/articles/how-you-run-is-how-you-do-everything-4b68d2c27eca</loc>
+		<priority>0.7</priority>
+		<lastmod>2015-12-05T23:39:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>/articles/7-tips-for-finding-energy-during-the-day-bb8037ab0949</loc>
+		<priority>0.7</priority>
+		<lastmod>2015-12-05T23:39:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+  </url>
+</urlset>
+

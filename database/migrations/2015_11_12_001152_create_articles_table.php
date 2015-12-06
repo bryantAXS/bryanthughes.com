@@ -22,7 +22,7 @@ class CreateArticlesTable extends Migration
             $table->string("latest_published_version");
             $table->string("post_date");
             $table->string("medium_url");
-            $table->json("json");
+            $table->longText("json");
             $table->string("article_id");
             $table->timestamps();
         });
