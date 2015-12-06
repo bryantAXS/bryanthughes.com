@@ -41,7 +41,7 @@ $(window).ready(function(){
 
     // if our constant is set to false, we'll resolve it ourself and skip the intro
     if(SessionStore.get("hasSeenIntro")){
-      introLoaded.resolve();
+      introLoaded = Intro.showBorder();
     }else{
       introLoaded = Intro.load();
       SessionStore.set("hasSeenIntro", true);

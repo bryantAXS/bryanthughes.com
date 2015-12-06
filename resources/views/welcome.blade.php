@@ -287,20 +287,39 @@
 
           <div class="columns small-12 medium-8 large-5">
 
+
             <p>
-              Over the course of my career I have worked with digital agencies,
-              web product shops, and have collaborated and been a founding
-              member of several tech related startups. I have operated my
-              own firm since 2010, opening Authentic Form & Function
-              in early 2013.
+              I'll cut to the chase.
             </p>
 
             <p>
-              Over the course of my career I have worked with digital agencies,
-              web product shops, and have collaborated and been a founding
-              member of several tech related startups. I have operated my
-              own firm since 2010, opening Authentic Form & Function
-              in early 2013.
+              I love <a href="https://player.spotify.com/user/bryantaxs" target="_blank">hip hop</a> music, waking up early, slow productive weekends,
+              exploring cities with my wife, and spending time on the couch with our dog.
+              I subscribe to the cliche' notion of loving what you do, and doing what you love.
+            </p>
+
+            <p>
+              I'm a hard worker. Goal oriented and focused on building a <a href="http://authenticff.com/journal/beyond-remote" target="_blank">unique style of remote business.</a>
+              I struggle with the tendency to be lazy, and always wish I was able to produce more and consume less.
+            </p>
+
+            <p>
+              I'm inspired by progressive design and those who are at the forefront of creating it.
+              How aesthetics and style change with technology and culture. The ways people take
+              principles of the past, viewing them through a modern lens to create something unique.
+            </p>
+
+            <p>
+              I'm surprisingly athletic; Often times rush more than I should; And am a terrible cook.
+            </p>
+
+            <p>
+              This site really isn't a blog so much as it is an experiment.
+            </p>
+
+            <p>
+              If you want to chat, I'd love to hear from you! I'm pretty
+              good at responding quickly. You can tweet at me <a href="http://twitter.com/bryantaxs" target="_blank">here</a>.
             </p>
 
             <p>

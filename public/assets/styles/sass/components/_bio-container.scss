@@ -95,6 +95,11 @@
   p{
     color: $black;
     @include font("Erato", 18px, 400, 29px);
+
+    a{
+      border-bottom: 1px dotted rgba($black, 0.6);
+    }
+
   }
 
   .signature{

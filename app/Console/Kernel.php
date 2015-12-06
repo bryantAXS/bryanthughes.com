@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
             $service = $this->app->make('App\Lib\Services\MediumService');
             $service->processArticles();
 
-        })->everyMinute();
+        })->hourly();
 
     }
 }

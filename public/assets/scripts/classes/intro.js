@@ -11,14 +11,15 @@ var Intro = {
     renderText: 4000,
     removeText: 5000,
     pauseBeforeResolving: 500
-  }
+  },
+
+  $loaded: $.Deferred()
 
 };
 
 Intro.load = function(){
 
   var self = this;
-  var introLoaded = $.Deferred();
 
   // initial wait
   setTimeout(function(){
@@ -35,15 +36,7 @@ Intro.load = function(){
       // time to remove all the text
       setTimeout(function(){
 
-        $("body").addClass("show-border");
-
-        // time to animate the border and resolve the intro animation
-        setTimeout(function(){
-
-          introLoaded.resolve();
-
-        }, self.timings.pauseBeforeResolving);
-
+        self.showBorder();
 
       }, self.timings.removeText);
 
@@ -51,7 +44,23 @@ Intro.load = function(){
 
   }, self.timings.initialWait);
 
-  return introLoaded;
+  return this.$loaded;
+
+};
+
+Intro.showBorder = function(){
+
+  var self = this;
+  $("body").addClass("show-border");
+
+  // time to animate the border and resolve the intro animation
+  setTimeout(function(){
+
+    self.$loaded.resolve();
+
+  }, self.timings.pauseBeforeResolving);
+
+  return self.$loaded;
 
 };
 
