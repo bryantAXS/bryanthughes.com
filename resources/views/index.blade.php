@@ -170,12 +170,12 @@
             <p>
               I love <a href="https://player.spotify.com/user/bryantaxs" target="_blank">hip hop</a> music, waking up early, slow productive weekends,
               exploring cities with my wife, and spending time on the couch with our dog.
-              I subscribe to the cliche' notion of loving what you do, and doing what you love.
+              I subscribe to the cliché notion of loving what you do, and doing what you love.
             </p>
 
             <p>
               I'm a hard worker. Goal oriented and focused on building a <a href="http://authenticff.com/journal/beyond-remote" target="_blank">unique style of remote business.</a>
-              I struggle with the tendency to be lazy, and always wish I was able to produce more and consume less.
+              I struggle with the tendency to be lazy, and always wish I was able to produce more, consume less, and ship more often.
             </p>
 
             <p>
