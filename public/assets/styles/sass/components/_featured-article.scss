@@ -48,7 +48,6 @@
 
     @media #{$medium-up}{
       margin-top:90px;
-      width:90%;
       @include font("Erato", 55px, 400, 75px);
     }
 
