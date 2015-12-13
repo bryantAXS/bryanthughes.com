@@ -24,7 +24,6 @@
   <link rel="shortcut icon" href="http://bryanthughes.com/assets/images/icon.png" />
 
   <!-- Analytics -->
-  @if(app("env") === "production")
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,7 +33,6 @@
     ga('require', 'linkid');
     ga('send', 'pageview');
   </script>
-  @endif
 
   <!-- default page -->
   <meta property="og:description" content="The personal musings of Bryant Hughes: Web Developer, Designer, and Partnern at Authentic F&F"/>
