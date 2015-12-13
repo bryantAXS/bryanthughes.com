@@ -19420,10 +19420,10 @@ module.exports = FeaturedArticle;
 var Intro = {
 
   timings: {
-    initialWait: 2000,
-    renderText: 4000,
-    removeText: 5000,
-    pauseBeforeResolving: 500
+    initialWait: 500,
+    renderText: 3500,
+    removeText: 4500,
+    pauseBeforeResolving: 350
   },
 
   $loaded: $.Deferred()

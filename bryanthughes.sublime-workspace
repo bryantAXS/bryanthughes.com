@@ -308,18 +308,10 @@
 	"buffers":
 	[
 		{
-			"file": "public/assets/styles/sass/components/_frame.scss",
+			"file": "public/assets/styles/sass/app.scss",
 			"settings":
 			{
-				"buffer_size": 610,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/assets/styles/sass/components/_blue-header.scss",
-			"settings":
-			{
-				"buffer_size": 1049,
+				"buffer_size": 1193,
 				"line_ending": "Unix"
 			}
 		}
@@ -442,16 +434,19 @@
 	"expanded_folders":
 	[
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/auth-config/githooks",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/storage/logs"
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass"
 	],
 	"file_history":
 	[
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_global_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/overrides/_shame.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
+		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/index.blade.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/index.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Http/routes.php",
@@ -467,9 +462,7 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Lib/Services/MediumService.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Console/Kernel.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/database/migrations/2015_11_12_001152_create_articles_table.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_blue-header.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/resources/views/welcome.blade.php",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_featured-article.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/stores/SessionStore.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_bio-container.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/main.js",
@@ -491,7 +484,6 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/featured-article.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/scripts/classes/sitewide.js",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_typography.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_type_mixins.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/css/app.css",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/Services/MediumServiceTest.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/dev.todo",
@@ -511,11 +503,9 @@
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/_settings.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_articles-container.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_content.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/components/_frame.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_interactions.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/config/_interactions.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/base/_layout.scss",
-		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/public/assets/styles/sass/utility/_global_mixins.scss",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/Post.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/app/FeaturedPost.php",
 		"/Users/bryanthughes/Sites/clients/Personal/bryanthughes/tests/Medium/Services/MediumServiceTest.php",
@@ -578,8 +568,7 @@
 		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/eevent_helper/ext.eevent_helper.php",
 		"/Users/bryanthughes/Sites/clients/dimos/website/third_party/store/src/Service/CachedHttpService.php",
 		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/lib/Responses/ApiResponse.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/lib/Transformers/OrderItemTransformer.php",
-		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/store/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php"
+		"/Users/bryanthughes/Sites/Clients/dimos/website/third_party/dimos_store_api/lib/Transformers/OrderItemTransformer.php"
 	],
 	"find":
 	{
@@ -631,6 +620,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"90%",
 			"line-height",
 			"fullArticle",
 			".animated-in",
@@ -757,8 +747,7 @@
 			"setLocation",
 			"get_cart",
 			".htpasswd",
-			"orders",
-			"OrderModel"
+			"orders"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -820,26 +809,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "public/assets/styles/sass/components/_frame.scss",
+					"file": "public/assets/styles/sass/app.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 610,
+						"buffer_size": 1193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								435,
-								435
+								1193,
+								1137
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -848,47 +835,6 @@
 					"stack_index": 0,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "public/assets/styles/sass/components/_blue-header.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1049,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								736,
-								736
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -909,25 +855,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.33,
-			0.66,
 			1.0
 		],
 		"rows":
@@ -958,6 +890,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"app.scss",
+				"public/assets/styles/sass/app.scss"
+			],
+			[
+				"fe",
+				"public/assets/styles/sass/components/_featured-article.scss"
+			],
 			[
 				"bluehea",
 				"public/assets/styles/sass/components/_blue-header.scss"
@@ -1097,10 +1037,6 @@
 			[
 				".env",
 				".env"
-			],
-			[
-				"app.scss",
-				"public/assets/styles/sass/app.scss"
 			],
 			[
 				"blue",
@@ -1465,10 +1401,6 @@
 			[
 				"eventhelper",
 				"third_party/eevent_helper/ext.eevent_helper.php"
-			],
-			[
-				"inde",
-				"httpdocs/index.php"
 			]
 		],
 		"width": 0.0
@@ -1476,7 +1408,7 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "authen",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1815,7 +1747,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 351.0,
+	"side_bar_width": 232.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
