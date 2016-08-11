@@ -22,6 +22,7 @@
   <meta name="keywords" content="Web Design Development Technology Authentic From & Function Writing Chicago Denver Minneapolis Strategy Remote Business Entrepreneur" />
   <meta name="robots" content="index,follow,archive">
   <link rel="shortcut icon" href="http://bryanthughes.com/assets/images/icon.png" />
+  <meta name="google-site-verification" content="sMKWF7mYlrTZtjyXu0zZ2F7mUQu8Kx6acBmfFidxjuU" />
 
   <!-- Analytics -->
   <script>
