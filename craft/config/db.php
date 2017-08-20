@@ -21,14 +21,6 @@ return array(
 		'tablePrefix' => 'craft',
   ),
 
-  'dev' => array(
-    'server'      => 'localhost',
-    'user'        => 'root',
-    'password'    => 'udh4756fhdknd8',
-    'database'    => 'bryanthughes',
-    'tablePrefix' => 'craft',
-  ),
-
   'local' => array(
 		'server'      => 'localhost',
 		'user'        => 'root',
