@@ -45,10 +45,12 @@ module.exports = function (shipit) {
     var current = shipit.releasePath;
     var environment = shipit.environment;
 
+    // .then(function(){
+    //     return shipit.remote('chmod -R 777 ' + current + "/public/content");
+    // })
+
     return shipit.remote('echo "Post Deployment Tasks"').then(function(){
         return shipit.remote('chmod -R 777 ' + current + '/craft/storage');
-    }).then(function(){
-        return shipit.remote('chmod -R 755 ' + current + "/public/content");
     }).then(function(){
         return shipit.remote('rm ' + current + "/public/.htaccess");
     }).then(function(){
