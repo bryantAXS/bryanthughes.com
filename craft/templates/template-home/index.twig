@@ -1,0 +1,239 @@
+
+
+{% extends "_layout" %}
+
+{% set articles = craft.entries({section: 'articles'}) %}
+{% set firstArticle = articles.first() %}
+
+{% block content %}
+
+<!--
+  **
+  PAGE CONTENET
+  **
+-->
+
+<div content>
+
+  <div blue-header>
+    <img src="/assets/images/logo.svg" class="logo"/>
+    <img src="/assets/images/mountains-header.png" class="bg" />
+  </div>
+
+ <div featured-article>
+
+  <div class="bg">
+    <img class="mountain" src="/assets/images/mountains-grey.png" />
+  </div>
+
+  <div class="row">
+    <div class="columns small-12 medium-offset-1 medium-10 large-9 large-centered">
+      <div class="content">
+
+        <h2 id='the-latest' class="title">
+          <span>THE</span>
+          <span>LATEST</span>
+        </h2>
+
+        <h1>
+          {{ firstArticle.title }}
+        </h1>
+
+        {% if firstArticle.articleSubtitle %}
+          <h3>
+            {{ firstArticle.articleSubtitle }}
+          </h3>
+        {% endif %}
+
+        {% for section in firstArticle.articleContent.level(1).limit(2) %}
+
+          {% if loop.index == 1 %}
+
+            <p class="intro-big">
+              <span class="big-letter">
+                {{ section.neoParagraph | striptags | first }}
+              </span>
+              {{ section.neoParagraph | striptags | slice(1) }}
+            </p>
+
+          {% elseif loop.index == 2 %}
+
+            <p class="intro-small mt20">
+              {{ section.neoParagraph | striptags }}
+            </p>
+
+          {% else %}
+
+            {{ section.neoParagraph }}
+
+          {% endif %}
+
+        {% endfor %}
+
+        <a class="continue-reading" href="{{ firstArticle.articleExternalUrl }}">
+          <span>CONTINUE READING</span>
+        </a>
+
+      </div><!-- content -->
+    </div><!-- columns -->
+  </div><!-- row -->
+
+
+  <div class="past-thoughts-container">
+    <div class="row">
+      <div class="columns small-3 medium-offset-1 title-container">
+        <h2 id="past-thoughts" class="title">
+          <span>PAST</span>
+          <span>THOUGHTS</span>
+        </h2>
+      </div><!-- columns -->
+    </div><!-- row -->
+  </div>
+
+</div><!-- featured-article -->
+
+
+
+  <!--
+    **
+    ARTICLES
+    **
+  -->
+
+  <div articles-container>
+
+    <div class="articles-row row">
+
+      {% set articleCount = 0 %}
+
+      {% set articles = articles | slice(1) %}
+      {% for row in articles|batch(4, false) %}
+        <div class="articles-row row">
+          {% for article in row %}
+              {% if article %}
+              {% set articleCount = articleCount + 1 %}
+              <div small-article class="columns small-12 medium-6 large-3">
+                <span class="digit">{{ articleCount }}</span>
+                <h2>{{ article.title }}</h2>
+                <a class="read-this" href="{{ article.articleExternalUrl }}">
+                  <span>Read this</span>
+                </a>
+              </div>
+              {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+    </div><!-- row -->
+
+  </div><!-- bg-white -->
+
+
+  <!--
+    **
+    BIO
+    **
+  -->
+
+
+  <div bio-container>
+
+    <div class="white-bg-container">
+
+      <div class="more-container row">
+        <div class="small-12">
+          <a button="diamond" href="https://medium.com/@bryantaxs" target="_blank">
+            <span class="more">More</span>
+            <span class="plus">+</span>
+          </a>
+        </div>
+      </div><!-- more-container -->
+
+      <img class="birds" src="/assets/images/birds-slow.gif" />
+      <img class="mountains" src="/assets/images/mountains-white.png" />
+
+    </div><!-- white-bg-container -->
+
+    <div class="row">
+      <div class="columns small-3 medium-offset-2 title-container">
+        <h2 class="title">
+          <span>AN</span>
+          <span>OUTRO</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="bio-content-row">
+
+      <div class="row">
+        <div class="columns medium-offset-4 medium-8 large-offset-5 large-5">
+          <h4>
+            WORD
+          </h4>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="columns show-for-medium-up medium-4 large-offset-2 large-3 title-container">
+          <p class="subtitle">
+            THE PERSONAL MUSING OF BRYANT HUGHES: WEB DEVELOPER,
+            DESIGNER &amp; PARTNER AT <a href="http://authenticff.com">AUTHENTIC F&F</a>
+          </p>
+        </div><!-- columns -->
+
+        <div class="columns small-12 medium-8 large-5">
+
+
+          <p>
+            I'll cut to the chase.
+          </p>
+
+          <p>
+            I love <a href="https://player.spotify.com/user/bryantaxs" target="_blank">hip hop</a> music, waking up early, slow productive weekends,
+            exploring cities with my wife, and spending time on the couch with our dog.
+            I subscribe to the cliché notion of loving what you do, and doing what you love.
+          </p>
+
+          <p>
+            I'm a hard worker. Goal oriented and focused on building a <a href="http://authenticff.com/journal/beyond-remote" target="_blank">unique style of remote business.</a>
+            I struggle with the tendency to be lazy, and always wish I was able to produce more, consume less, and ship more often.
+          </p>
+
+          <p>
+            I'm inspired by progressive design and those who are at the forefront of creating it.
+            How aesthetics and style change with technology and culture. The ways people take
+            principles of the past, viewing them through a modern lens to create something unique.
+          </p>
+
+          <p>
+            I'm surprisingly athletic; Often times rush more than I should; And am a terrible cook.
+          </p>
+
+          <p>
+            This site really isn't a blog so much as it is an experiment.
+          </p>
+
+          <p>
+            If you want to chat, I'd love to hear from you! I'm pretty
+            good at responding quickly. You can tweet at me <a href="http://twitter.com/bryantaxs" target="_blank">here</a>.
+          </p>
+
+          <p>
+            Good things,
+          </p>
+
+          <span class="signature">
+            Bryant
+            <img class="birds" src="/assets/images/signature-birds.png" />
+          </span>
+
+        </div><!-- columns -->
+
+      </div><!-- row -->
+
+    </div><!-- bio-content -->
+
+  </div><!-- bio-container -->
+
+{% endblock %}

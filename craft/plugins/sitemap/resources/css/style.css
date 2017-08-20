@@ -1,0 +1,29 @@
+.sitemap h1 {
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.sitemap .first h1 {
+    margin-top: 30px;
+}
+
+input.text {
+    width: 90%;
+}
+
+th {
+    border-top: none !important;
+}
+
+tr.clone {
+	display: none;
+}
+
+tr.default_url a.delete {
+    display: none;
+}
+
+table.data thead th.heading {
+    padding-top: 30px;
+}

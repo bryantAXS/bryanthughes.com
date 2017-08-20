@@ -1,165 +1,216 @@
+// var mozjpeg = require('imagemin-mozjpeg');
+
 module.exports = function(grunt) {
+
+  require('load-grunt-tasks')(grunt);
+
+  //
+  // We use this to monitor when our processes are killed, so we can make sure we're halting vagrant
+  //
+  var ShutdownManager = require('node-shutdown-manager');
+  var shutdownManager = ShutdownManager.createShutdownManager({
+    timeout: 1000
+  });
 
   // Project configuration.
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // deployments: grunt.file.readJSON("config/settings/deployments.json"),
-    // rsync: grunt.file.readJSON("config/settings/rsync.json"),
-
-    clean: {
-      hooks: ['.git/hooks/pre-commit']
-    },
-
-    shell: {
-      hooks: {
-        command: ['cp config/githooks/pre-commit .git/hooks/', 'chmod 755 .git/hooks/pre-commit'].join(";")
-      }
-    },
-
+    //
+    // We're using a Git pre-commit hook to compile our code each time we make a Git commit.
+    // this task moves the contents of the .pre-commit-sample file into the pre-commit file within
+    // the .git directory
+    //
+    // This technically only needs to be done once, but we have it triggered each time the dev task starts
+    // to ensure it's not forgotten
+    //
     copy: {
-      plugins: {
+      dist:{
         files: [
-          // Foundation
-          {cwd: "node_modules/foundation-sites/scss/foundation", src: '**', dest: 'public/assets/styles/sass/foundation', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'foundation.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
-          {isFile: true, rename: function(dest, src){ return dest + "_" + src; }, cwd: "node_modules/foundation-sites/foundation/scss", src: 'normalize.scss', dest: 'public/assets/styles/sass/', expand: true, flatten: false},
+          {src: '.pre-commit-sample', dest: '.git/hooks/pre-commit'},
         ]
       }
     },
 
+    //
+    // Style Tasks
+    //
 
-    concat: {
-      dist: {
-        src: [
-          'public/assets/scripts/built/bower.js',
-          'public/assets/scripts/vendor/*',
-          'public/assets/scripts/classes/*',
-          'public/assets/scripts/templates/*',
-          'public/assets/scripts/main.js'
-        ],
-        dest: 'public/assets/scripts/built/scripts.js',
-      },
-    },
-
-    uglify: {
+    // Compiling our SCSS into CSS
+    //
+    // Note: our Bourbon and Foundation packages are being included
+    //
+    sass: {
       options: {
-        mangle: false,
-        compress: false,
-        beautify: false
+        sourceMap: true,
+        includePaths: [
+          require('node-bourbon').includePaths,
+          'node_modules/foundation-sites/scss'
+        ],
+        outputStyle: 'nested'
       },
-      my_target: {
-        files: {
-          'public/assets/scripts/built/built.js': [
-            'public/assets/scripts/built/scripts.js'
-            ]
-        }
-      }
-    },
-
-    compass: {
       dist: {
-        options: {
-          sassDir: 'public/assets/styles/sass',
-          cssDir: 'public/assets/styles/css',
-          imagesDir: 'public/assets/images',
-          javascriptsDir: 'public/assets/scripts',
-          outputStyle: "nested",
-          environment: "development",
-          require: "sass-json-vars"
-        }
+        files: {
+          'public/assets/styles/css/app.css': 'public/assets/styles/sass/app.scss',
+          'public/assets/styles/css/cp.css': 'public/assets/styles/sass/cp.scss'
+        },
       }
     },
 
+    // Compressing CSS into minified file
     cssmin: {
-      my_target: {
-        files: [{
-          expand: true,
-          cwd: 'public/assets/styles/css',
-          src: ['*.css', '!*.min.css'],
-          dest: 'public/assets/styles/css',
-          ext: '.min.css'
-        }]
+      dist: {
+        files: {
+          "public/assets/styles/css/app.min.css": "public/assets/styles/css/app.css"
+        }
       }
     },
 
+
+    //
+    // Javascript Tasks
+    //
+
+    // Compile javascript into a single file`
     browserify: {
-      dist: {
-        files: {
-          'public/assets/scripts/built/scripts.js': [
-            'public/assets/scripts/main.js'
-          ],
+      dist:{
+        files:{
+          "public/assets/scripts/built/scripts.js": "public/assets/scripts/main.js"
         },
         options: {
-        //  transform: ['babelify']
+          watch : true,
+          browserifyOptions : {
+            debug : true
+          }
         }
       }
     },
 
-    watch: {
-      all: {
-        files: ['site/**/*.php', 'public/content/**/*.txt'],
-        options: {
-          livereload: true
+    // When we commit our code, compress it for production
+    uglify: {
+      dist:{
+        files:{
+          "public/assets/scripts/built/built.js": "public/assets/scripts/built/scripts.js"
         }
+      }
+    },
+
+
+
+    //
+    // Images and Icons
+    //
+
+    // compiling svg icons
+    grunticon: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'public/assets/icons/original',
+          src: ['*.svg', '*.png'],
+          dest: "public/assets/icons/built"
+        }],
+        options: {
+          enhanceSVG: true
+        }
+      }
+    },
+
+
+    //
+    // Setting up our watch events
+    //
+    chokidar: {
+      all: {
+        files: ['app/**/*.html', 'app/**/*.twig'],
       },
       sass: {
         files: ['public/assets/styles/sass/**/*.scss'],
-        tasks: ['compass'],
-        options: {
-          livereload: true
-        }
-      },
-      scripts: {
-        files: ['public/assets/scripts/**/*.js',  'node_modules/underscore/underscore.js', 'public/assets/scripts/built/variables.js','!public/assets/scripts/built/*'],
-        tasks: ['browserify'],
-        options: {
-          livereload: true
-        }
-      },
-      configFiles: {
-        files: [ 'Gruntfile.js', 'config/*.js' ],
-        options: {
-          reload: true
-        }
+        tasks: [ 'sass' ]
       }
     },
-    bless: {
-      css: {
-        options: {
-          'force': true
+
+
+    //
+    // Setting up Browser Sync
+    //
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'public/assets/scripts/built/scripts.js',
+            'public/assets/styles/css/app.css'
+          ]
         },
-        files: {
-          'public/assets/styles/css/app-blessed.css': 'public/assets/styles/css/app.css',
-          'public/assets/styles/css/app-blessed.min.css': 'public/assets/styles/css/app.min.css',
+        options: {
+          watchTask: true,
+          open:false,
+          https: true,
+          proxy: {
+            target: "https://localhost:8890",
+            reqHeaders: function(config){
+              return {
+                "host": "localhost:3000"
+              }
+            }
+          }
         }
       }
     },
+
+    //
+    // Some shell commands we're using to help with Vagrant and converting things to Craft
+    //
+    shell: {
+      options: {
+        stdout: true
+      },
+      vagrantup: {
+        command: 'vagrant up'
+      },
+      converttocraft: {
+        command: 'bash ./server/provision-craft.sh'
+      },
+      syncdown: {
+        command: 'bash ./scripts/pull_db.sh && bash ./scripts/pull_assets.sh'
+      }
+    }
 
   });
 
   // TASKS
-
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-deployments');
-  grunt.loadNpmTasks("grunt-rsync");
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-bless');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-chokidar');
 
-  grunt.registerTask('hookmeup', ['clean:hooks', 'shell:hooks']);
-  grunt.registerTask("init", ["copy:plugins"]);
-  grunt.registerTask("compile", ["compass", "browserify", "uglify", 'cssmin', 'bless']);
+  //
+  // Halting vagrant when the watch process is killed
+  //
+  shutdownManager.on('preShutdown', function( reason, err) {
 
-  // grunt.registerTask("sync-down", ["db_pull","rsync:dev"]);
-  // grunt.registerTask("get-content", ["rsync:production"]);
-  // grunt.registerTask('default', [""]);
+    if(reason === "SIGINT"){
+      grunt.util.spawn({
+        cmd: 'vagrant',
+        args: ['halt']
+      });
+
+      grunt.log.writeln('\n' + "Halting Vagrant");
+    }
+
+  });
+
+  // Converting our project to a Craft project
+  grunt.registerTask('converttocraft', ['shell:converttocraft']);
+
+  // Compiling our Icons, Javascript, and SCSS
+  grunt.registerTask('compile', ['grunticon','uglify','cssmin']);
+
+  // Launching our Dev environment
+  grunt.registerTask('dev', ['copy', 'grunticon', 'shell:vagrantup', 'browserify', 'browserSync', 'chokidar']);
 
 };

@@ -1,11 +1,15 @@
 
+"use strict";
+
+global.$ = global.jQuery = require('jquery');
+global._ = window._ = require('underscore');
+
+require("./foundation-init");
+require("jquery.transit");
 
 /**
  * Some high-level JS includes
  */
-window.$ = window.jQuery = require('jquery');
-var _ = window._ = require('underscore');
-var foundation = require('foundation');
 var SessionStore = require('./stores/SessionStore');
 
 /**
@@ -19,7 +23,7 @@ var BlueHeader = require('./classes/blue-header.js');
 //
 // CONSTANTS
 //
-var LOAD_INTRO = true;
+var LOAD_INTRO = false;
 var NO_ANIMATION = false;
 
 /**
@@ -40,7 +44,7 @@ $(window).ready(function(){
   sessionLoaded.always(function(){
 
     // if our constant is set to false, we'll resolve it ourself and skip the intro
-    if(SessionStore.get("hasSeenIntro")){
+    if(SessionStore.get("hasSeenIntro") && LOAD_INTRO !== true){
       introLoaded = Intro.showBorder();
     }else{
       introLoaded = Intro.load();

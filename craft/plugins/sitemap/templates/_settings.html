@@ -1,0 +1,20 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.lightswitchField({
+    first: true,
+    label: "Enable Site Route"|t,
+    name: 'enableSiteRoute',
+    instructions: "Whether to automatically route /sitemap.xml to the XML sitemap"|t,
+    on: settings.enableSiteRoute,
+    required: true,
+    errors: settings.getErrors('enableSiteRoute')
+}) }}
+
+{{ forms.lightswitchField({
+    label: "Multi Locale Sitemap Enabled"|t,
+    name: 'multiLocale',
+    instructions: "Whether to allow multiple locales to appear in the sitemap"|t,
+    on: settings.multiLocale,
+    required: true,
+    errors: settings.getErrors('multiLocale')
+}) }}

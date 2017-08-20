@@ -1,0 +1,128 @@
+.amcommand {
+    display: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    position: fixed;
+    width: 400px;
+    z-index: 1337;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 25px -5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 25px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.amcommand__execute {
+    float: right;
+    margin: 6px 15px 0 0;
+}
+
+.amcommand__tabs {
+    padding: 8px 15px;
+    border-radius: 5px 5px 0 0;
+    color: #29323d;
+    cursor: default;
+    background-image: -webkit-linear-gradient(#f7f7f8, #f4f5f6);
+    background-image: -moz-linear-gradient(#f7f7f8, #f4f5f6);
+    background-image: -ms-linear-gradient(#f7f7f8, #f4f5f6);
+    background-image: -o-linear-gradient(#f7f7f8, #f4f5f6);
+    background-image: linear-gradient(#f7f7f8, #f4f5f6);
+}
+
+.amcommand__container {
+    padding: 15px;
+}
+
+
+/**
+ * Input
+ */
+.amcommand__search input[type=text] {
+    width: 100%;
+}
+
+.amcommand__search--hasButton {
+    overflow: hidden;
+}
+
+.amcommand__search--hasButton input[type=text] {
+    float: left;
+    width: 88%;
+}
+
+.amcommand__search--hasButton input[type=button] {
+    float: right;
+    width: 10%;
+    outline: none;
+}
+
+
+/**
+ * Loaders
+ */
+.amcommand__loader {
+    left: 175px;
+    position: relative;
+    margin-top: 5px;
+}
+
+
+/**
+ * Commands
+ */
+.amcommand__commands > ul {
+    max-height: 400px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.amcommand__commands li {
+    border-top: 1px dotted rgba(115, 127, 140, 0.15);
+    padding: 5px;
+}
+
+.amcommand__commands li:hover {
+    background: #f5f6f6;
+    cursor: pointer;
+}
+
+.amcommand__commands li.focus {
+    background: #eff0f1;
+}
+
+.amcommand__commands li.focus .go:after {
+    color: #0d78f2;
+}
+
+.amcommand__commands--name {
+    color: #0d78f2;
+    display: block;
+    font-size: 100%;
+}
+
+.amcommand__commands--info {
+    color: #b9bfc6;
+    display: block;
+    font-style: italic;
+    font-size: 80%;
+}
+
+
+/**
+ * Notices
+ */
+
+.amcommand__notice {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+/**
+ * Icon
+ */
+.visuallyhidden {
+    display: none;
+}
+

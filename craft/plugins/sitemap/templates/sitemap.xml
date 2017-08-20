@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+{% set multiLocale = craft.sitemap.multiLocale %}
+{% set count = 0 %}
+{% set offset = craft.request.getQuery('offset', 0) %}
+{% set limit = craft.request.getQuery('limit', 50000) %}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" {% if multiLocale %}xmlns:xhtml="http://www.w3.org/1999/xhtml"{% endif %}>
+
+	{% cache using key craft.sitemap.getCacheKey %}
+
+		<!-- Entries start -->
+		{% for section in craft.sitemap.sections %}
+			{% if section.hasUrls and section.include %}
+				<!--   {{ section.name }} start -->
+				{% for entry in craft.entries({sectionId: section.id, order: 'postDate desc', limit: 50000}) %}
+					{% if count >= offset and count < limit + offset %}
+						{% set lastmodDate = entry.dateUpdated ? entry.dateUpdated : entry.dateCreated %}
+						<url>
+							<loc>{{ entry.url }}</loc>
+							<lastmod>{{ lastmodDate.atom }}</lastmod>
+							<changefreq>{{ section.changeFrequency }}</changefreq>
+							<priority>{{ section.priority }}</priority>
+							{% if multiLocale %}
+								{% for sectionLocale in section.locales %}
+									{% set alternate = craft.entries({id: entry.id, locale: sectionLocale.locale}) %}
+									{% if alternate.first %}
+										<xhtml:link rel="alternate" hreflang="{{ sectionLocale.locale|replace({'_': '-'}) }}" href="{{ alternate.first.url }}"></xhtml:link>
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+						</url>
+					{% endif %}
+					{% set count = count + 1 %}
+				{% endfor %}
+				<!--   {{ section.name }} end -->
+			{% endif %}
+		{% endfor %}
+		<!-- Entries end -->
+
+		<!-- Categories start -->
+		{% for categoryGroup in craft.sitemap.categoryGroups %}
+			{% if categoryGroup.hasUrls and categoryGroup.include %}
+				<!--   {{ categoryGroup.name }} start -->
+				{% for category in craft.categories({groupId: categoryGroup.id, order: 'title asc', limit: 10000}) %}
+					{% if count >= offset and count < limit + offset %}
+						{% set lastmodDate = category.dateUpdated ? category.dateUpdated : category.dateCreated %}
+						<url>
+							<loc>{{ category.url }}</loc>
+							<lastmod>{{ lastmodDate.atom }}</lastmod>
+							<changefreq>{{ categoryGroup.changeFrequency }}</changefreq>
+							<priority>{{ categoryGroup.priority }}</priority>
+							{% if multiLocale %}
+								{% for categoryGroupLocale in categoryGroup.locales %}
+									{% set alternate = craft.categories({id: category.id, locale:categoryGroupLocale.locale}) %}
+									{% if alternate.first %}
+										<xhtml:link rel="alternate" hreflang="{{ categoryGroupLocale.locale|replace({'_': '-'}) }}" href="{{ alternate.first.url }}"></xhtml:link>
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+						</url>
+					{% endif %}
+					{% set count = count + 1 %}
+				{% endfor %}
+				<!--   {{ categoryGroup.name }} end -->
+			{% endif %}
+		{% endfor %}
+		<!-- Categories end -->
+
+		<!-- Commerce Products start -->
+		{% for productType in craft.sitemap.productTypes %}
+			{% if productType.hasUrls and productType.include %}
+				<!--   {{ productType.name }} start -->
+				{% for product in craft.commerce.products({productType: productType.handle, limit: 50000}) %}
+					{% if count >= offset and count < limit + offset %}
+						{% set lastmodDate = product.dateUpdated ? product.dateUpdated : product.dateCreated %}
+						<url>
+							<loc>{{ product.url }}</loc>
+							<lastmod>{{ lastmodDate.atom }}</lastmod>
+							<changefreq>{{ productType.changeFrequency }}</changefreq>
+							<priority>{{ productType.priority }}</priority>
+							{% if multiLocale %}
+								{% for productTypeLocale in productType.locales %}
+									{% set alternate = craft.commerce.products({id: product.id, locale: productTypeLocale.locale}) %}
+									{% if alternate.first %}
+										<xhtml:link rel="alternate" hreflang="{{ productTypeLocale.locale|replace({'_': '-'}) }}" href="{{ alternate.first.url }}"></xhtml:link>
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+						</url>
+					{% endif %}
+					{% set count = count + 1 %}
+				{% endfor %}
+				<!--   {{ productType.name }} end -->
+			{% endif %}
+		{% endfor %}
+		<!-- Commerce Products end -->
+
+		<!-- URLs start -->
+		{% for url in craft.sitemap.urls %}
+			{% if count >= offset and count < limit + offset %}
+				<url>
+					<loc>{{ url.url }}</loc>
+					<lastmod>{{ now.atom }}</lastmod>
+					<changefreq>{{ url.changeFrequency }}</changefreq>
+					<priority>{{ url.priority }}</priority>
+				</url>
+			{% endif %}
+			{% set count = count + 1 %}
+		{% endfor %}
+		<!-- URLs end -->
+
+		<!-- Plugin URLs start -->
+		{% for pluginName, pluginUrls in craft.sitemap.pluginUrls %}
+			<!--   {{ pluginName }} start -->
+			{% for pluginUrl in pluginUrls %}
+				{% if count >= offset and count < limit + offset %}
+					<url>
+						<loc>{{ pluginUrl.url }}</loc>
+						<lastmod>{{ pluginUrl.lastmodDate.atom }}</lastmod>
+						<changefreq>{{ pluginUrl.changeFrequency }}</changefreq>
+						<priority>{{ pluginUrl.priority }}</priority>
+					</url>
+				{% endif %}
+				{% set count = count + 1 %}
+			{% endfor %}
+			<!--   {{ pluginName }} end -->
+		{% endfor %}
+		<!-- Plugin URLs end -->
+
+	{% endcache %}
+
+</urlset>
+
+<!-- Generated by the Craft Sitemap Plugin v{{ craft.sitemap.version }} by PutYourLightsOn.net -->

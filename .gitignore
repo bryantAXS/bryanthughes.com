@@ -1,9 +1,7 @@
 /vendor
 /node_modules
-Homestead.yaml
-Homestead.json
-.env
-
-.sass-cache/*
-
-vendor
+/.sass-cache/*
+/.vagrant
+/scripts
+/.git
+/craft/storage
